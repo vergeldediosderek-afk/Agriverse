@@ -1,0 +1,37 @@
+AGRIVERSE — FARM BOUNDARY REDESIGN
+
+WHAT CHANGED
+- Rebalanced "Shape your farm" screen: more usable map, smaller heading, clearer instructions.
+- Added a liquid-glass field setup card with three steps and area display.
+- The Confirm button remains disabled until 3 distinct points form a nonzero-area polygon.
+- Map actions are easier to distinguish; demo mode is visibly identified.
+- If satellite imagery is unavailable, a schematic boundary can be shown for testing, never as real aerial imagery.
+- Existing Leaflet map, saved coordinates, crop navigation, and backend are retained.
+
+INSTALLATION — EASIEST (IF USING THE LAST AGRIVERSE ZIP)
+1. Back up your existing AgriVerse/index.html.
+2. Replace its content with the updated index.html from this package.
+3. Copy assets/boundary-redesign.css into your existing AgriVerse/assets/ folder.
+4. Copy assets/boundary-redesign.js into your existing AgriVerse/assets/ folder.
+5. Keep your existing server.py, catalog.json, Excel workbook, and other assets unchanged.
+6. In the AgriVerse directory run: python server.py
+7. Open http://localhost:8899 and press Ctrl+Shift+R.
+
+FOR USERS WITH CUSTOM CHANGES
+Do not overwrite your custom index.html without comparing it first. The new index.html includes
+changes to the boundary section, two asset references, and small hooks in updateBoundary()/initMap().
+Use a diff tool in VS Code to merge the changes into your current file.
+
+HOW TO TEST
+- Start the Farmer journey and select a location.
+- On "Shape your farm", Confirm must be disabled at zero points.
+- Click 3 or more corners on a loaded aerial map; the area and progress should update.
+- Use Undo and Clear; confirm should disable if fewer than 3 corners remain.
+- Use Try demo outline: an amber warning must identify it as simulated.
+- Confirm a demo outline: an acknowledgement checkbox must be required.
+
+LIMITATIONS
+- Actual aerial imagery depends on an internet connection to the map tile provider.
+- Estimated area is based on mapped polygon geometry, not a cadastral survey.
+- A simulated/offline boundary is not evidence of the user's actual farm.
+- Live NASA/PAGASA/SMAP integrations are not modified by this UI update.

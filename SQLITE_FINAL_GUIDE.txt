@@ -1,0 +1,40 @@
+AGRIVERSE — FINAL SQLITE GUIDE (WINDOWS)
+======================================
+
+1. Right-click the ZIP -> Extract All.
+2. Open the extracted AgriVerse folder.
+3. The populated SQLite database is already available at data/agriverse.db.
+4. Double-click RUN_AGRIVERSE.bat and visit http://localhost:8899.
+5. Open manual-validation.html from the local site to review records.
+
+To rebuild SQLite after replacing or adding source CSV files:
+1. Close AgriVerse (Ctrl+C in the server window).
+2. Open the AgriVerse folder in File Explorer.
+3. Click the address bar, type cmd, then press Enter.
+4. Run: python setup_sqlite.py
+   Or use: py setup_sqlite.py
+5. Wait for SUCCESS at the bottom.
+
+To inspect SQLite data visually:
+- Install DB Browser for SQLite from https://sqlitebrowser.org/
+- Click Open Database -> data/agriverse.db
+- Choose Browse Data and select a csv_* table.
+- For file inventory, open dataset_registry.
+- For review records, open validation_records.
+
+IMPORTANT CURRENT LIMITATIONS
+- 32 CSV files have been imported as tables; other documents/raster/Excel files
+  are inventoried but their entire binary contents are NOT relational rows.
+- The recommendation engine reads scientific tables through SQLite.
+  Restart AgriVerse after rebuilding the database. The website catalog is
+  loaded from catalog.json and manual approvals are read live from JSON.
+- The website's manual validation feature writes to data/manual_validation.json.
+  Run python setup_sqlite.py again to COPY existing reviews into SQLite.
+  Never edit SQLite validation_records and assume the website will read it.
+- Rebuilding resets the imported CSV tables from source files but preserves
+  SQLite validation records not overwritten by corresponding JSON records.
+- Existing historical climate values (2016-2025) are NOT live future forecasts.
+- Barangay reference sample values are not individual farm measurements.
+- Raw sources were preserved; never delete source files from data/.
+- Keep this local prototype off the public internet without authentication,
+  database access controls and secure file serving.

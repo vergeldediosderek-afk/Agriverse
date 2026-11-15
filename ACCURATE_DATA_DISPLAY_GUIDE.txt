@@ -1,0 +1,16 @@
+AGRIVERSE — ACCURATE DATA DISPLAY (READ-ONLY)
+
+1. Run RUN_AGRIVERSE.bat.
+2. Open http://localhost:8899/data-explorer.html
+3. Select a dataset, inspect original columns, and search/sort/page through all rows.
+4. Data from non-CSV formats are indexed and remain in data/spatial or data/raw_archive.
+
+IMPORTANT
+- Source CSV values are deliberately NOT rounded, rewritten, or altered.
+- Columns in the existing SQLite database remain TEXT so the original imported representation is preserved; this explorer applies numeric-aware sorting solely for display.
+- Units shown are hints inferred from column names, NOT independently validated units. Consult the source documentation for actual units, scaling, and reference period.
+- Blank/null is displayed as '—', not 0.
+- For NDVI and SMAP, check quality flags before interpretation.
+- Annual and monthly rainfall must never be compared without matching periods.
+- The original crop recommendation model is unchanged; this is for dataset display, not scientific validation.
+- Database is not exposed publicly: server binds to 127.0.0.1.
