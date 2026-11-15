@@ -9,7 +9,7 @@ from pathlib import Path
 from io import BytesIO
 from zipfile import ZipFile, BadZipFile
 from xml.etree import ElementTree as ET
-import argparse, errno, json, os, re, sqlite3, time, posixpath
+import argparse, errno, json, os, re, sqlite3, sys, time, posixpath
 from gis_profile import layers as gis_layers, map_start, profile as gis_profile, road_layer, seasonal_observations
 from datetime import date, datetime, timedelta, timezone
 from html import unescape
@@ -329,6 +329,15 @@ class Handler(SimpleHTTPRequestHandler):
             CACHE[key]=(time.time(),data);self.send_json(data)
         except Exception as exc:self.send_json({'error':str(exc)},502)
 
+
+class QuietServer(ThreadingHTTPServer):
+    def handle_error(self, request, client_address):
+        # Visitors closing the tab or reloading mid-download is normal; don't log a traceback.
+        if isinstance(sys.exc_info()[1], (ConnectionResetError, BrokenPipeError)):
+            return
+        super().handle_error(request, client_address)
+
+
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     # Hosting platforms such as Render supply PORT and need a public bind address.
@@ -337,12 +346,12 @@ if __name__=='__main__':
     parser.add_argument('--host', default=os.environ.get('HOST', '0.0.0.0' if hosted else '127.0.0.1'))
     args = parser.parse_args()
     try:
-        server = ThreadingHTTPServer((args.host, args.port), Handler)
+        server = QuietServer((args.host, args.port), Handler)
     except OSError as exc:
         if hosted or (exc.errno != errno.EADDRINUSE and getattr(exc, 'winerror', None) != 10048):
             raise
         print(f'Port {args.port} is in use. Starting this AgriVerse project on a free port.')
-        server = ThreadingHTTPServer((args.host, 0), Handler)
+        server = QuietServer((args.host, 0), Handler)
     with server:
         print(f'AgriVerse ({ROOT}): http://{args.host}:{server.server_port}', flush=True)
         server.serve_forever()
