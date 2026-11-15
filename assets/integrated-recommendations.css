@@ -1,0 +1,41 @@
+.avdr{border:1px solid #cbdcc6;border-radius:18px;background:#fbfff7;box-shadow:0 8px 35px #24452a0a;padding:17px;margin:15px 0;color:#244530;font-family:inherit}.avdr-head{display:flex;gap:8px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}.avdr-head b{font-size:17px}.avdr-head small{display:block;font-size:11px;color:#57755e;margin-top:4px}.avdr-head>span{font-size:9px;letter-spacing:.08em;color:#346349;background:#e0f1db;border-radius:14px;padding:5px 8px}.avdr-controls{display:flex;flex-wrap:wrap;gap:9px;margin:15px 0}.avdr-controls label{flex:1 1 130px;display:flex;flex-direction:column;font-size:10px;gap:4px;color:#4d6656;font-weight:700}.avdr-controls select,.avdr-controls input{background:white;color:#183f29;border:1px solid #c7d9c3;padding:9px 10px;border-radius:9px;min-height:37px;max-width:100%}.avdr-controls button{border:0;border-radius:10px;background:#276b48;color:white;font-weight:700;padding:10px 16px;align-self:flex-end;min-height:37px}.avdr-notice{background:#e9f4e6;border-radius:10px;padding:10px;font-size:11px;line-height:1.5}.avdr-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:12px 0}.avdr-metrics>div{padding:9px;background:#f2f7ef;border:1px solid #e0ecdc;border-radius:9px}.avdr-metrics small{display:block;color:#54735c;font-size:10px;line-height:1.2}.avdr-metrics b{display:block;font-size:13px;margin-top:4px}.avdr-summary{font-size:11px;line-height:1.6;color:#476350;margin:10px 0}.avdr-list{display:grid;gap:8px;max-height:500px;overflow:auto}.avdr-crop{display:flex;gap:12px;text-align:left;justify-content:space-between;align-items:center;background:white;color:#284831;border:1px solid #d9e7d5;border-radius:12px;padding:10px;width:100%}.avdr-crop:hover,.avdr-crop.avdr-selected{border-color:#4f9961;background:#f0fbed}.avdr-crop b{font-size:13px}.avdr-crop small{display:block;font-size:10px;color:#63806a;margin-top:3px;font-weight:400}.avdr-crop .avdr-caution{color:#93672a}.avdr-crop>strong{white-space:nowrap;font-size:14px}.avdr-crop>strong small{font-size:8px;text-align:right}.avdr-details{font-size:10px;line-height:1.6;color:#506d57;margin-top:15px}.avdr-details summary{cursor:pointer;font-weight:700}
+.avdr-pick{margin-top:8px;padding:7px 12px;border:1px solid #6f9d78;border-radius:8px;background:white;color:#245437;font:inherit;cursor:pointer}
+.avdr-pick[aria-pressed="true"]{background:#245437;color:white;border-color:#245437}
+
+/* Farm budget and weather reading hierarchy */
+#screen-farm-intelligence :is(.fi-profit, #avdr-weather) {
+  font-family: "DM Sans", system-ui, sans-serif;
+  line-height: 1.5;
+}
+#screen-farm-intelligence .fi-profit h4 {
+  margin: 12px 0 6px;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+#screen-farm-intelligence .fi-profit .fi-input-grid label {
+  font-size: .875rem;
+  line-height: 1.4;
+}
+#screen-farm-intelligence .fi-profit .fi-input-grid :is(input, select) {
+  min-height: 44px;
+  font-size: 1rem;
+}
+#screen-farm-intelligence .fi-live-estimate {
+  margin: 12px 0 0;
+  padding: 12px;
+  border-radius: 12px;
+  background: #e0f3e9;
+  color: #163f34;
+  font-size: .95rem;
+  font-weight: 700;
+}
+#avdr-weather .avdr-current {
+  padding: 12px;
+  border-radius: 12px;
+  background: #e5f4fa;
+  color: #13394a;
+}
+#avdr-weather :is(h3, a) { color: #134c59; }
+@media (max-width: 480px) {
+  #screen-farm-intelligence .fi-profit .fi-input-grid { grid-template-columns: 1fr; }
+}

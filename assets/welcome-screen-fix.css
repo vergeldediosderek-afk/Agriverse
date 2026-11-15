@@ -1,0 +1,190 @@
+/* AgriVerse welcome-screen viewport fix — November 2026.
+   Scoped to the welcome screen so other screens keep their layouts. */
+
+#screen-role {
+  min-height: 0;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+
+#screen-role .welcome-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 44%) minmax(0, 56%);
+  align-items: center;
+  gap: 0;
+  height: min(690px, calc(100svh - 145px));
+  min-height: 0;
+}
+
+#screen-role .welcome-copy {
+  min-width: 0;
+  padding: 14px 12px 14px clamp(0px, 1.6vw, 22px);
+}
+
+#screen-role .welcome-copy h1 {
+  max-width: 620px;
+  margin: 18px 0 16px;
+  font-size: clamp(3rem, min(4.8vw, 8.7svh), 5rem);
+  line-height: 1.02;
+  letter-spacing: -.068em;
+}
+
+#screen-role .welcome-copy p {
+  font-size: clamp(13px, 1.1vw, 16px);
+  line-height: 1.45;
+}
+
+#screen-role .role-cards {
+  max-width: 460px;
+  gap: 11px;
+  margin-top: 25px;
+}
+
+#screen-role .role-card {
+  min-height: 78px;
+  padding: 15px 18px;
+  border-radius: 20px;
+}
+
+#screen-role .role-icon {
+  flex: 0 0 49px;
+  width: 49px;
+  height: 49px;
+}
+
+#screen-role .role-card b { font-size: 17px; }
+#screen-role .role-card small { font-size: 12px; }
+#screen-role .mini-foot { margin-top: 19px; }
+
+#screen-role .welcome-visual {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 650px;
+  min-height: 0;
+  display: block;
+  overflow: hidden;
+  perspective: 1200px;
+}
+
+#screen-role #welcome-ph {
+  display: block;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  max-height: 600px;
+  overflow: visible;
+  --av-welcome-transform: rotateX(10deg) rotateZ(-5deg) scale(.9) translateY(-10px);
+  transform: var(--av-welcome-transform);
+  transform-origin: center center;
+  animation: avWelcomeFit 1.6s cubic-bezier(.15,.75,.24,1) both;
+}
+
+#screen-role .welcome-ocean { inset: 9% 0; }
+
+#screen-role .welcome-map-caption {
+  left: 50%;
+  bottom: 4%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 10px;
+  padding: 10px 17px;
+}
+
+/* Short laptop windows and browser zoom: reduce visual height and card spacing. */
+@media (min-width: 921px) and (max-height: 720px) {
+  #screen-role .welcome-layout { height: auto; min-height: calc(100svh - 140px); }
+  #screen-role .welcome-copy h1 {
+    font-size: clamp(2.7rem, min(4.4vw, 7.8svh), 4.3rem);
+    margin: 13px 0;
+  }
+  #screen-role .role-cards { margin-top: 17px; gap: 9px; }
+  #screen-role .role-card { min-height: 66px; padding: 10px 15px; }
+  #screen-role .role-icon { flex-basis: 42px; width: 42px; height: 42px; }
+  #screen-role .mini-foot { margin-top: 12px; }
+  #screen-role .welcome-visual { height: calc(100svh - 150px); max-height: 550px; }
+}
+
+/* Tablet: stack the map above the choice cards without clipping the islands. */
+@media (max-width: 920px) {
+  #screen-role { padding-top: 12px; padding-bottom: 18px; }
+  #screen-role .welcome-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    min-height: 0;
+  }
+  #screen-role .welcome-visual {
+    order: 1;
+    flex: none;
+    height: clamp(225px, 32svh, 335px);
+    max-height: none;
+    min-height: 0;
+    width: 100%;
+  }
+  #screen-role #welcome-ph {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    max-height: none;
+    --av-welcome-transform: rotateX(9deg) rotateZ(-5deg) scale(.87) translateY(-8px);
+  }
+  #screen-role .welcome-copy {
+    order: 2;
+    width: 100%;
+    padding: 4px 0 0;
+    text-align: center;
+  }
+  #screen-role .welcome-copy h1 {
+    font-size: clamp(2.6rem, 6.8vw, 4.1rem);
+    margin: 10px auto 9px;
+  }
+  #screen-role .role-cards {
+    width: min(100%, 470px);
+    margin: 16px auto 0;
+  }
+  #screen-role .mini-foot { margin-top: 14px; }
+  #screen-role .welcome-map-caption {
+    bottom: 2%;
+    font-size: 9px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 540px) {
+  #screen-role { padding-top: 6px; }
+  #screen-role .welcome-layout { gap: 3px; }
+  #screen-role .welcome-visual {
+    height: clamp(245px, 34svh, 305px);
+  }
+  #screen-role #welcome-ph {
+    --av-welcome-transform: rotateX(8deg) rotateZ(-4deg) scale(.89) translateY(-13px);
+  }
+  #screen-role .welcome-copy { text-align: left; }
+  #screen-role .welcome-copy h1 {
+    font-size: clamp(2.25rem, 9.5vw, 3rem);
+    line-height: 1.02;
+    margin: 8px 0;
+  }
+  #screen-role .welcome-copy p { font-size: 13px; }
+  #screen-role .role-cards { gap: 9px; margin-top: 14px; }
+  #screen-role .role-card { min-height: 65px; padding: 10px 13px; gap: 12px; }
+  #screen-role .role-icon { flex-basis: 40px; width: 40px; height: 40px; font-size: 22px; }
+  #screen-role .role-card b { font-size: 15px; }
+  #screen-role .role-card small { font-size: 10px; }
+  #screen-role .mini-foot { margin-top: 12px; font-size: 9px; }
+  #screen-role .welcome-map-caption { bottom: 0; font-size: 8px; }
+}
+
+@keyframes avWelcomeFit {
+  from { opacity: 0; filter: blur(12px); transform: translateY(45px) scale(.72); }
+  to { opacity: 1; filter: blur(0); transform: var(--av-welcome-transform); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #screen-role #welcome-ph { animation: none !important; }
+}

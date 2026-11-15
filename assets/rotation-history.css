@@ -1,0 +1,18 @@
+/* AgriVerse: Cropping history in the right farm-profile widget */
+#screen-location .avr-history{margin:8px 0 13px;padding:15px;border-radius:18px;background:linear-gradient(160deg,#f4fff8,#e1f3e9);border:1px solid #c3e6d2;display:grid;gap:9px;box-shadow:inset 0 1px #fff}
+#screen-location .avr-history[hidden],#screen-location #avr-other-wrap[hidden],#screen-location .avr-error[hidden]{display:none!important}
+#screen-location .avr-history-heading{display:flex;gap:10px;align-items:center;margin-bottom:1px}
+#screen-location .avr-leaf{display:grid;place-items:center;width:39px;height:39px;flex:none;border-radius:12px;color:#fff;background:linear-gradient(130deg,#2c8b75,#23665a);font-size:20px}
+#screen-location .avr-history h4{font-size:18px;line-height:1.15;color:#195348;letter-spacing:-.04em;margin:4px 0}
+#screen-location .avr-history p{color:#6b8f80;font-size:11px;line-height:1.4}
+#screen-location .avr-history label{font-size:11px;font-weight:750;color:#3d7166}
+#screen-location .avr-history select,#screen-location .avr-history input{width:100%;min-height:41px;padding:9px 11px;border-radius:11px;border:1px solid #c8dfd4;background:#fff;color:#245649;font-size:12px}
+#screen-location .avr-earlier{border-top:1px solid #cfe7d9;padding-top:10px}
+#screen-location .avr-earlier summary{cursor:pointer;color:#287b68;font-size:12px;font-weight:700}
+#screen-location .avr-earlier label{display:block;margin:10px 0 6px}
+#screen-location .avr-error{color:#a13535!important;font-weight:700}
+#screen-location .avr-analyze{justify-content:center;font-size:12px;min-height:44px}
+#screen-location .avr-disclaimer{font-size:10px!important}
+.avr-analysis-context{border:1px solid #c9e5d6;background:#eaf7ee;border-radius:13px;padding:12px;margin-bottom:10px;display:grid;gap:5px}
+.avr-analysis-context b{color:#206e57}.avr-analysis-context span{color:#4a7666;font-size:12px;line-height:1.4}
+@media(max-width:700px){#screen-location .avr-history{padding:12px}}

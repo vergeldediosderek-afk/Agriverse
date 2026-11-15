@@ -1,0 +1,132 @@
+/* AgriVerse Future Farmer: full-viewport voxel world, compact game HUD and glass tool drawers.
+   Scope intentionally limited to #screen-simulation; Farmer mode is unchanged. */
+body:has(#screen-simulation.active){overflow:hidden!important}
+#screen-simulation.active{
+  position:fixed!important;inset:0!important;z-index:9999!important;
+  display:block!important;width:100vw!important;height:100vh!important;height:100dvh!important;
+  min-height:0!important;max-height:none!important;max-width:none!important;
+  margin:0!important;padding:0!important;overflow:hidden!important;
+  isolation:isolate;background:#a5d69a!important;color:#173f37;
+}
+#screen-simulation .sim-board{position:absolute!important;inset:0!important;display:block!important;height:100%!important;min-height:0!important;overflow:visible!important;margin:0!important;padding:0!important}
+#screen-simulation .sim-center.sim-3d-center{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;
+  border:0!important;border-radius:0!important;box-shadow:none!important;overflow:hidden!important;
+  background:linear-gradient(180deg,#8ad1ec,#d0e5a2 55%,#9ecf79)!important;
+}
+#screen-simulation .sim-center.sim-3d-center::before{display:none!important}
+#screen-simulation #sim-3d-canvas{width:100%!important;height:100%!important;inset:0!important;touch-action:none}
+#screen-simulation .sim-top{
+  position:absolute!important;z-index:40;top:16px;left:18px;right:18px;
+  display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px;
+  width:auto!important;margin:0!important;padding:0!important;pointer-events:none;
+}
+#screen-simulation .sim-top>div:first-child{background:rgba(244,255,247,.86);border:1px solid rgba(255,255,255,.9);box-shadow:0 8px 28px #24594327;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:20px;padding:11px 17px;pointer-events:auto;max-width:400px}
+#screen-simulation .sim-top .sim-kicker{font-size:9px;letter-spacing:.11em;color:#4b9871;font-weight:850}
+#screen-simulation .sim-top h2{font-size:21px!important;line-height:1.08!important;margin:3px 0 0!important;letter-spacing:-.05em!important}
+#screen-simulation .sim-top p{display:none!important}
+#screen-simulation .sim-top-actions{pointer-events:auto;display:flex;align-items:center;gap:7px;max-width:none!important;flex-wrap:nowrap!important}
+#screen-simulation .sim-top-actions .sim-chip{display:none;background:#ffffffd9;border:1px solid #ffffffd9;box-shadow:0 5px 15px #24594316;color:#34745e;font-size:9px;padding:10px 13px;white-space:nowrap}
+#screen-simulation .sim-top-actions button{padding:11px 14px!important;border-radius:13px!important;background:#ffffffdc!important;border:1px solid #fff!important;color:#275d4c!important;font-size:11px!important;font-weight:850!important;white-space:nowrap;box-shadow:0 7px 18px #24594321}
+#screen-simulation .sim-top-actions button:hover{background:#f0ffe9!important}
+#screen-simulation .sim-scene-header{position:absolute;top:92px;left:auto;right:18px;z-index:5;pointer-events:none;width:auto;display:flex;gap:8px}
+#screen-simulation .sim-scene-header>span:first-child{display:none}
+#screen-simulation .sim-scene-header>span{background:#144a3ebc;color:#e6ffde;border:1px solid #d4f2d357;font-size:10px;padding:10px 14px;backdrop-filter:blur(16px)}
+#screen-simulation .sim-3d-tools{position:absolute!important;z-index:10;top:144px!important;right:18px!important;left:auto!important;bottom:auto!important;display:flex;flex-direction:column;gap:6px;transition:right .24s}
+#screen-simulation .sim-3d-tools button{background:#f7fff1df!important;color:#215d4c!important;border:1px solid #fff!important;box-shadow:0 7px 20px #1d573a25!important;border-radius:13px!important;padding:10px 12px!important}
+#screen-simulation.av3d-tools-open .sim-3d-tools{right:390px!important}
+#screen-simulation .sim-3d-hint{position:absolute!important;top:auto!important;bottom:105px!important;left:22px!important;max-width:350px!important;font-size:11px!important;line-height:1.5!important;color:#faffed!important;text-shadow:0 2px 6px #174b36bb!important;z-index:5}
+#screen-simulation .sim-scene-foot{position:absolute!important;left:20px!important;right:auto!important;bottom:19px!important;z-index:6;width:min(355px,calc(100vw - 40px));border:1px solid #d8f8d54a!important;background:#174a3dd6!important;box-shadow:0 12px 30px #0d423c33;backdrop-filter:blur(18px);padding:12px 15px!important;border-radius:16px!important;pointer-events:none}
+#screen-simulation .sim-scene-foot strong{font-size:12px!important}
+#screen-simulation .sim-scene-foot small{font-size:10px!important}
+#screen-simulation .sim-scene-foot .sim-field-tag{font-size:8px!important;max-width:80px}
+#screen-simulation .sim-panel{
+  position:absolute!important;z-index:25;top:138px!important;bottom:90px!important;height:auto!important;
+  min-height:0!important;width:350px!important;max-width:calc(100vw - 30px)!important;
+  border:1px solid #ffffffd9!important;border-radius:24px!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.95),rgba(230,250,230,.88))!important;
+  backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);
+  box-shadow:0 20px 60px #1b503b3b!important;overflow-y:auto!important;overscroll-behavior:contain;
+  transition:transform .26s ease,opacity .26s ease;opacity:0;pointer-events:none;
+}
+#screen-simulation .sim-panel.sim-left{left:18px!important;right:auto!important;transform:translateX(calc(-100% - 40px))}
+#screen-simulation .sim-panel.sim-right{right:18px!important;left:auto!important;transform:translateX(calc(100% + 40px));display:flex!important;flex-direction:column!important}
+#screen-simulation.av3d-status-open .sim-panel.sim-left{transform:translateX(0);opacity:1;pointer-events:auto}
+#screen-simulation.av3d-tools-open .sim-panel.sim-right{transform:translateX(0);opacity:1;pointer-events:auto}
+#screen-simulation .sim-right>.sim-options-scroll{overflow:auto!important;flex:1;min-height:0;scrollbar-width:thin}
+#screen-simulation .sim-right .sim-controls{flex:none;position:sticky;bottom:0;background:#f3fff4e6;backdrop-filter:blur(12px);border-radius:12px;padding:8px 0 0}
+#screen-simulation .sim-finish{position:absolute!important;inset:0!important;z-index:60}
+#screen-simulation .av3d-hud{
+ position:absolute;top:97px;left:18px;z-index:12;display:flex;flex-wrap:wrap;gap:7px;max-width:min(700px,calc(100vw - 210px));pointer-events:none;
+}
+#screen-simulation .av3d-hud-item{display:flex;align-items:center;gap:6px;border-radius:13px;padding:9px 12px;border:1px solid #ffffffc7;background:#ffffffdc;box-shadow:0 7px 19px #20533a1e;backdrop-filter:blur(16px);color:#225b49;font-size:11px;font-weight:850;white-space:nowrap}
+#screen-simulation .av3d-hud-item small{font-size:9px;color:#6b9981;font-weight:700}
+#screen-simulation .av3d-dock{position:absolute;z-index:22;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:6px;padding:7px;border:1px solid #ffffffde;background:#ffffffdf;border-radius:20px;box-shadow:0 13px 40px #1e52393b;backdrop-filter:blur(23px);-webkit-backdrop-filter:blur(23px);max-width:calc(100vw - 20px)}
+#screen-simulation .av3d-dock button{border:0;border-radius:13px;padding:11px 15px;min-width:78px;display:flex;align-items:center;justify-content:center;gap:7px;background:transparent;color:#28664e;font-size:12px;font-weight:850;cursor:pointer;white-space:nowrap}
+#screen-simulation .av3d-dock button:hover{background:#e5f7e7}
+#screen-simulation .av3d-dock button[aria-pressed=true]{background:#d7f0d9}
+#screen-simulation .av3d-dock button.av3d-primary{background:linear-gradient(120deg,#1d795a,#3b9d73);color:#fff}
+#screen-simulation .av3d-dock button:disabled{opacity:.48;cursor:not-allowed}
+#screen-simulation .av3d-dock .av3d-divider{width:1px;background:#cbe1d0;margin:5px 1px}
+#screen-simulation .av3d-close{display:block;width:100%;padding:10px;border:1px solid #c8e3d1;border-radius:12px;background:#f3fff6;color:#37765a;font-weight:850;margin:0 0 12px;cursor:pointer}
+#screen-simulation .av3d-note{position:absolute;z-index:5;top:145px;left:18px;pointer-events:none;font-size:10px;color:#efffe8;text-shadow:0 1px 5px #174835;font-weight:700;letter-spacing:.01em}
+#screen-simulation.sim-evening #sim-3d-canvas{filter:brightness(.68) saturate(.83) hue-rotate(8deg)}
+#screen-simulation.sim-evening .sim-center::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,#17345d50,transparent 75%)}
+@media(max-width:1150px){
+ #screen-simulation .sim-top .sim-kicker{font-size:8px}
+ #screen-simulation .sim-top h2{font-size:18px!important}
+ #screen-simulation .sim-top-actions .sim-chip{display:none}
+ #screen-simulation .av3d-hud{top:85px}
+ #screen-simulation .sim-panel{top:128px!important;bottom:85px!important}
+ #screen-simulation .sim-scene-header{top:90px}
+ #screen-simulation .sim-3d-tools{top:140px!important}
+}
+@media(max-width:700px){
+ #screen-simulation .sim-top{top:10px;left:10px;right:10px;gap:5px}
+ #screen-simulation .sim-top>div:first-child{padding:10px 11px;border-radius:15px}
+ #screen-simulation .sim-top h2{font-size:15px!important}
+ #screen-simulation .sim-top .sim-kicker{font-size:7px;letter-spacing:0}
+ #screen-simulation .sim-top-actions{gap:4px}
+ #screen-simulation .sim-top-actions button{font-size:10px!important;padding:9px!important;border-radius:11px!important}
+ #screen-simulation .sim-top-actions #sim-restart{display:none}
+ #screen-simulation .av3d-hud{left:9px;right:9px;max-width:none;top:76px;gap:4px}
+ #screen-simulation .av3d-hud-item{padding:7px 9px;font-size:10px;border-radius:11px}
+ #screen-simulation .av3d-hud-item small{font-size:8px}
+ #screen-simulation .av3d-note{top:135px;left:11px;font-size:9px;max-width:170px}
+ #screen-simulation .sim-scene-header{top:135px;right:10px}
+ #screen-simulation .sim-scene-header>span{font-size:8px;padding:7px 10px}
+ #screen-simulation .sim-3d-tools{top:174px!important;right:10px!important}
+ #screen-simulation.av3d-tools-open .sim-3d-tools{right:10px!important;opacity:0;pointer-events:none}
+ #screen-simulation .sim-3d-tools button{font-size:9px!important;padding:7px 8px!important}
+ #screen-simulation .sim-panel{left:8px!important;right:8px!important;top:auto!important;bottom:83px!important;width:auto!important;max-width:none!important;max-height:min(65dvh,580px)!important;border-radius:22px!important}
+ #screen-simulation .sim-panel.sim-left{transform:translateY(calc(100% + 100px))}
+ #screen-simulation .sim-panel.sim-right{transform:translateY(calc(100% + 100px))}
+ #screen-simulation.av3d-status-open .sim-panel.sim-left,#screen-simulation.av3d-tools-open .sim-panel.sim-right{transform:translateY(0)}
+ #screen-simulation .sim-scene-foot{left:10px!important;bottom:88px!important;width:min(320px,calc(100vw - 20px));padding:9px 11px!important}
+ #screen-simulation .sim-scene-foot small{font-size:9px!important}
+ #screen-simulation .sim-3d-hint{left:11px!important;bottom:161px!important;font-size:9px!important}
+ #screen-simulation .av3d-dock{bottom:8px;left:8px;right:8px;transform:none;justify-content:space-around;gap:2px;padding:5px;border-radius:15px}
+ #screen-simulation .av3d-dock button{min-width:0;flex:1;padding:11px 5px;font-size:10px;flex-direction:column;gap:2px}
+ #screen-simulation .av3d-dock .av3d-divider{display:none}
+ #screen-simulation .av3d-dock button span.av3d-icon{font-size:17px}
+ #screen-simulation .sim-panel .sim-crops{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #screen-simulation .sim-panel .sim-actions{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-height:620px) and (min-width:701px){
+ #screen-simulation .sim-top{top:8px}
+ #screen-simulation .av3d-hud{top:80px}
+ #screen-simulation .sim-panel{top:124px!important;bottom:73px!important}
+ #screen-simulation .av3d-dock{bottom:8px}
+ #screen-simulation .sim-scene-foot{bottom:9px!important}
+}
+@media(prefers-reduced-motion:reduce){#screen-simulation .sim-panel{transition:none}}
+@media(max-width:700px){
+ #screen-simulation .sim-top>div:first-child{max-width:168px}
+ #screen-simulation .sim-top-actions #av3d-fullscreen{font-size:0!important;min-width:35px}
+ #screen-simulation .sim-top-actions #av3d-fullscreen::before{content:'⛶';font-size:16px}
+ #screen-simulation .sim-top-actions #sim-exit{font-size:0!important;min-width:48px}
+ #screen-simulation .sim-top-actions #sim-exit::before{content:'← Exit';font-size:10px}
+ #screen-simulation .sim-scene-foot .sim-field-tag{display:none!important}
+ #screen-simulation .sim-scene-foot>div{min-width:0;max-width:100%}
+ #screen-simulation .sim-3d-hint{display:none!important}
+}

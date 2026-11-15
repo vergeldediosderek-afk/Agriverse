@@ -1,0 +1,30 @@
+AGRIVERSE: FIND YOUR PLACE — LOCATION SCREEN REDESIGN
+
+WHAT CHANGED
+• Creative location form with refined select fields and a 3-stage guide
+• New floating illustrated farm scene inside “One place. More possibilities.”
+• Live preview of the province, city, and barangay you select
+• Existing location, geocoding, coordinate input, and map navigation IDs preserved
+• Responsive layout and reduced-motion accessibility preferences
+
+FILES
+- index.html: replaced ONLY the <section id="screen-location"> HTML, plus added 2 references
+- assets/location-redesign.css: all NEW presentation styles
+- assets/location-redesign.js: new live location preview text
+- server.py and Excel/database: UNCHANGED
+
+IF YOU WANT TO INSTALL JUST THE REDESIGN IN YOUR EXISTING PROJECT
+1. Copy assets/location-redesign.css and assets/location-redesign.js to your existing project's assets folder.
+2. In index.html, replace the entire <section class="screen" id="screen-location">...</section> block with the same section from this edition.
+3. Add <link rel="stylesheet" href="assets/location-redesign.css"> just before </head>.
+4. Add <script src="assets/location-redesign.js" defer></script> just before </body>.
+5. Do not change server.py, crop JSON, or database.
+
+HOW TO RUN
+Double-click RUN_AGRIVERSE.bat and open http://127.0.0.1:8899
+Or run: python server.py
+
+CHECKS
+- location selectors update and city/barangay dropdowns retain logic
+- new preview does not represent verified farm location
+- exact boundaries still must be drawn on next screen

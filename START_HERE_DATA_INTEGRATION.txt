@@ -1,0 +1,54 @@
+AGRIVERSE — DATA-INTEGRATED VERSION
+==================================
+VERY SIMPLE WINDOWS INSTRUCTIONS
+
+1. Right-click AgriVerse_Data_Integrated.zip -> Extract All.
+2. Open the AgriVerse folder inside the extracted folder.
+3. Double-click RUN_AGRIVERSE.bat.
+   If it does not run, install Python 3.10+ from python.org, then repeat.
+4. Open http://localhost:8899 in your browser.
+5. Select Farmer, select a farm/location, choose a planting month, and continue to Analysis.
+6. In "Environment-based crop screening", check the reference barangay and click Analyze crops.
+7. Read the rankings; click a crop to use it as your selected crop.
+
+WHAT IS INTEGRATED
+- NASA POWER historical monthly temperature and rainfall, 2016-2025
+- CHIRPS historical monthly rainfall and local wetter/drier reference
+- ERA5-Land historical monthly values (retained for future cross-checks)
+- SoilGrids modeled 0-5 cm soil properties at barangay reference points
+- SRTM reference-point terrain plus original GIS raster
+- FAO ECOCROP full database and 721-crop filtered subset
+- SMAP source data plus quality-filtered monthly summaries
+- MODIS NDVI source data plus quality-filtered monthly summaries
+- Philippine Statistics Authority 2020 agricultural economics reference (not used for live profits)
+- All selected source files stored under data/; spatial GeoTIFFs under data/spatial/
+
+HOW IT FILTERS
+1. Determines selected month and wetter/drier local historical rainfall condition.
+2. Checks temperature through available FAO crop growing duration, otherwise current month only.
+3. Compares 10-year climatological ANNUAL rainfall to FAO annual optimal precipitation.
+4. Compares modeled topsoil pH to FAO optimal pH.
+5. Excludes crops only for temperature outside published hard tolerances;
+   remaining crops are ranked on a preliminary index with weights 45% temperature,
+   35% annual rainfall, 20% modeled pH, renormalized for missing dimensions.
+6. Surfaces water/rotation flags when known (not complete agronomic validation).
+
+IMPORTANT LIMITATIONS
+- Historical data from 2016-2025, NOT actual/forecast weather for November 2026.
+- Barangay representative-point sampling is not true farm-polygon zonal statistics.
+- SMAP/NDVI, terrain and crop economics are integrated as context/source datasets,
+  NOT included in the numerical crop suitability index.
+- Only 66 existing catalog crops have matchable sourced ecology profiles.
+- The planting calendar folder only contained an image, not a validated planting-calendar table.
+- The rotation-rule folder contained PSA economics files; these are not a rotation agronomy table.
+- Scores are exploratory comparative indices, not probabilities, forecast yields, or
+  certified agronomic recommendations. For farm decisions, validate in the field.
+
+FILES THAT POWER THE FEATURE
+- server.py                   (existing server plus new endpoint)
+- recommendation_engine.py    (new filtering engine)
+- assets/integrated-recommendations.js and .css (new panel)
+- data/                       (all transferred and quality-processed source files)
+
+No pip installation is required; Python standard library only.
+Do not open index.html directly; launch the Python server to use API features.

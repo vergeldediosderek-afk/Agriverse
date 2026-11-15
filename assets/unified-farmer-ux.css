@@ -1,0 +1,65 @@
+/* Unified, easy-to-follow farm planning. Mint widgets, center map, one decision at a time. */
+#screen-farm-intelligence .fi-side-right .fi-focus-tabs{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-flow:unset;grid-auto-columns:unset;}
+#screen-farm-intelligence .av-unified-plans{padding:17px!important;overflow:auto;min-height:0;scrollbar-width:thin;}
+#screen-farm-intelligence .av-unified-plans *{box-sizing:border-box;}
+#screen-farm-intelligence .av-unified-intro{margin-bottom:14px;}
+#screen-farm-intelligence .av-unified-eyebrow{font-size:10px;letter-spacing:.12em;font-weight:800;color:#478b7d;}
+#screen-farm-intelligence .av-unified-intro h3{font-size:clamp(20px,2vw,27px);line-height:1.12;letter-spacing:-.045em;color:#16463c;margin:7px 0;}
+#screen-farm-intelligence .av-unified-intro p{font-size:12px;line-height:1.45;color:#578478;}
+#screen-farm-intelligence .av-unified-history{display:inline-flex;background:#e1f3e7;border-radius:999px;padding:7px 11px;margin-top:9px;font-size:11px;font-weight:700;color:#216452;}
+#screen-farm-intelligence .av-unified-list{display:grid;gap:11px;}
+#screen-farm-intelligence .av-unified-plan{display:block;width:100%;text-align:left;background:#ffffffd9;border:1px solid #cae7da;border-radius:19px;padding:13px 12px;color:#174c3f;box-shadow:0 6px 20px #174a3210;transition:border-color .2s,transform .2s,background .2s;}
+#screen-farm-intelligence .av-unified-plan:hover,#screen-farm-intelligence .av-unified-single:hover{transform:translateY(-2px);border-color:#58ab90;}
+#screen-farm-intelligence .av-unified-plan.selected{border:2px solid #268f78;background:#ebf9ee;padding:12px 11px;}
+#screen-farm-intelligence .av-unified-card-head{display:flex;justify-content:space-between;gap:7px;align-items:center;margin-bottom:8px;}
+#screen-farm-intelligence .av-unified-card-head strong{font-size:14px;line-height:1.3;}
+#screen-farm-intelligence .av-unified-card-head>span{font-size:10px;white-space:nowrap;background:#e2f1e6;color:#245f4b;padding:6px 8px;border-radius:99px;font-weight:800;}
+#screen-farm-intelligence .selected .av-unified-card-head>span{background:#268f78;color:white;}
+#screen-farm-intelligence .av-unified-steps{display:flex;gap:3px;align-items:stretch;min-width:0;}
+#screen-farm-intelligence .av-unified-season{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:7px 2px;border:1px solid #d9ebdf;background:#fff;border-radius:12px;text-align:center;}
+#screen-farm-intelligence .av-unified-season>span{min-width:0;}
+#screen-farm-intelligence .av-unified-icon{width:40px;height:40px;object-fit:contain;flex-shrink:0;}
+#screen-farm-intelligence .av-unified-season small{display:block;font-size:9px;color:#718f7c;line-height:1.2;}
+#screen-farm-intelligence .av-unified-season b{display:block;overflow-wrap:anywhere;font-size:10px;color:#1b4c3c;line-height:1.25;}
+#screen-farm-intelligence .av-unified-arrow{align-self:center;font-size:14px;flex:0 0 auto;color:#43937b;}
+#screen-farm-intelligence .av-unified-note{display:block;margin-top:7px;line-height:1.35;font-size:10px;color:#658a75;}
+#screen-farm-intelligence .av-unified-caution{margin:12px 0;font-size:10px;line-height:1.45;color:#65877a;}
+#screen-farm-intelligence .av-unified-go{width:100%;min-height:46px;padding:12px 15px;display:flex;align-items:center;justify-content:space-between;border:0;background:#236e60;color:white;border-radius:14px;font-weight:800;font-size:13px;}
+#screen-farm-intelligence .av-unified-go:hover{background:#1b534a;}
+#screen-farm-intelligence .av-unified-singles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;}
+#screen-farm-intelligence .av-unified-single{min-height:100px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;position:relative;border:1px solid #d4e7d8;border-radius:17px;background:#fffcf6;color:#224e3c;font-size:12px;font-weight:800;transition:.2s;}
+#screen-farm-intelligence .av-unified-single.selected{border:2px solid #24866e;background:#e7f5e8;}
+#screen-farm-intelligence .av-unified-check{position:absolute;top:7px;right:9px;color:#24866e;}
+#screen-farm-intelligence .fi-focus-dock[hidden]{display:none!important;}
+/* Override old dark dashboard theme: the map is dark, all surrounding panels remain mint glass. */
+body.av-fi-focus{background:#e4f7ef!important;}
+body.av-fi-focus #app:before{background:radial-gradient(circle at 75% 15%,#ccfff0,transparent 48%),linear-gradient(145deg,#eaf6ed,#c0e4d9)!important;}
+body.av-fi-focus .topbar{background:#e9f9efee!important;border-bottom:1px solid #a6d8c2!important;}
+body.av-fi-focus .logo,body.av-fi-focus .crumb b{color:#214a3c!important;}
+body.av-fi-focus .journey-back,body.av-fi-focus .stat,body.av-fi-focus .icon-btn{background:#ffffffc9!important;color:#245c4a!important;border-color:#fff!important;}
+body.av-fi-focus .crumb span,body.av-fi-focus .stat small{color:#6d957f!important;}
+#screen-farm-intelligence,#screen-farm-intelligence .fi-heading h2{color:#194d40!important;}
+#screen-farm-intelligence .fi-heading h2 em{color:#3c9d8a!important;}
+#screen-farm-intelligence .fi-heading p,#screen-farm-intelligence .fi-eyebrow,#screen-farm-intelligence .fi-back{color:#498675!important;}
+#screen-farm-intelligence .fi-glass,#screen-farm-intelligence .fi-monthly-panel{background:linear-gradient(145deg,#fffffff2,#e3f8eeed)!important;color:#215346!important;border:1px solid #fff!important;box-shadow:0 15px 36px #285d4b18!important;}
+#screen-farm-intelligence .fi-label-row h3,#screen-farm-intelligence .fi-kv b{color:#205846!important;}
+#screen-farm-intelligence .fi-kv span,#screen-farm-intelligence .fi-muted,#screen-farm-intelligence .fi-footnote{color:#61897c!important;}
+#screen-farm-intelligence .fi-focus-tabs{background:#ffffffbc!important;border-color:#fff!important;box-shadow:0 5px 16px #295d4b10!important;}
+#screen-farm-intelligence .fi-focus-tab{color:#4d8273!important;}
+#screen-farm-intelligence .fi-focus-tab.is-selected{background:#d8f4e6!important;color:#1e5c4b!important;}
+#screen-farm-intelligence .fi-tag{color:#438678!important;background:#e4f4ec!important;border-color:#ceeadb!important;}
+#screen-farm-intelligence .fi-farm-center{background:#154f46;}
+#screen-farm-intelligence .fi-focus-dock{background:#ffffffd9!important;border-color:#fff!important;}
+#screen-farm-intelligence .fi-heading-chip{background:#ffffffb0!important;color:#397e6c!important;}
+#screen-farm-intelligence .fi-area{background:#d5f2e3!important;color:#205e4b!important;}
+#screen-farm-intelligence .fi-area strong,#screen-farm-intelligence .fi-area small,#screen-farm-intelligence .fi-area span{color:#1c6656!important;}
+#screen-farm-intelligence .fi-crop-details b,#screen-farm-intelligence .fi-crop-details span{color:#345c4e!important;}
+@media(max-width:800px){#screen-farm-intelligence .fi-side-right .fi-focus-tabs{grid-template-columns:repeat(3,minmax(0,1fr));}#screen-farm-intelligence .av-unified-steps{gap:2px;}}
+@media(prefers-reduced-motion:reduce){#screen-farm-intelligence .av-unified-plan,#screen-farm-intelligence .av-unified-single{transition:none!important;}}
+
+/* Give whole crop sequences enough room without crowding the map. */
+@media(min-width:1180px){
+ #screen-farm-intelligence:has(.fi-side-right[data-active-focus-tab="plans"]) .fi-layout{grid-template-columns:minmax(205px,.65fr) minmax(380px,1.5fr) minmax(370px,1.24fr);}
+ #screen-farm-intelligence:has(.fi-side-right[data-active-focus-tab="plans"]) .av-unified-icon{width:48px;height:48px;}
+ #screen-farm-intelligence:has(.fi-side-right[data-active-focus-tab="plans"]) .av-unified-season b{font-size:11px;}
+}

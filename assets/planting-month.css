@@ -1,0 +1,15 @@
+/* Planting month: compact, responsive and consistent with AgriVerse */
+#screen-location .avc-fields > label:nth-child(4),
+#screen-location .avc-fields > label.av-month-field {grid-column:span 1;}
+#screen-location .av-month-hint {font-size:11px;line-height:1.45;color:#3f806f;margin:0;min-height:16px;}
+#screen-location #av-planting-month {background:#f9fffc;}
+#screen-location #av-planting-month:invalid {color:#668d83;}
+#screen-location .avc-place-form {gap:8px;}
+#screen-location .avc-fields {row-gap:10px;}
+#screen-location .avc-fields label {gap:5px;}
+#screen-location .avc-fields select,#screen-location .avc-fields input {min-height:44px;}
+#screen-location .avc-honesty {padding:7px 10px;}
+.av-month-summary {display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12px;color:#2d725f;background:#eef9f3;border:1px solid #cde9da;padding:9px 12px;border-radius:13px;margin:9px 0;line-height:1.45;}
+.av-month-summary b {color:#205847;}
+@media(max-width:680px){#screen-location .avc-fields > label:nth-child(4),#screen-location .avc-fields > label.av-month-field {grid-column:span 1;}#screen-location .avc-fields {gap:9px;} }
+@media(max-width:370px){#screen-location .avc-fields > label:nth-child(4),#screen-location .avc-fields > label.av-month-field {grid-column:1/-1;}}

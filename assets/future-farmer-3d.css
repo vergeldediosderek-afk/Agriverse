@@ -1,0 +1,108 @@
+/* AgriVerse — Future Farmer: immersive perspective-3D farm with light glass widgets. */
+#screen-simulation.active{min-height:0;gap:12px;padding-top:16px;padding-bottom:13px}
+#screen-simulation .sim-top h2{font-size:clamp(27px,2.8vw,39px)}
+#screen-simulation .sim-top p{font-size:11px}
+#screen-simulation .sim-board{grid-template-columns:minmax(210px,.86fr) minmax(400px,1.7fr) minmax(265px,1.03fr);gap:13px}
+#screen-simulation .sim-panel{border-radius:25px;background:linear-gradient(145deg,rgba(255,255,255,.91),rgba(235,251,243,.8));backdrop-filter:blur(22px);padding:17px}
+#screen-simulation .sim-3d-center{position:relative;background:radial-gradient(circle at 70% 20%,#78bb9c,#16463e 70%);border:1px solid #c8e8d3;box-shadow:0 23px 52px #164b3d32;min-height:0}
+#screen-simulation .sim-3d-center::before{display:none}
+#screen-simulation #sim-3d-canvas{position:absolute;inset:0;display:block;width:100%;height:100%;touch-action:none;cursor:grab;outline:none}
+#screen-simulation #sim-3d-canvas:active{cursor:grabbing}
+#screen-simulation #sim-3d-canvas:focus-visible{outline:3px solid #e6ffab;outline-offset:-6px}
+#screen-simulation .sim-scene-header{top:16px;left:17px;right:17px;pointer-events:none}
+#screen-simulation .sim-scene-header>span{background:rgba(14,59,51,.73);border:1px solid rgba(239,255,235,.35);color:#e8ffe7;backdrop-filter:blur(16px);font-size:9px;letter-spacing:.07em;padding:10px 12px}
+#screen-simulation .sim-3d-pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:#c7ffab;box-shadow:0 0 0 4px #a8f6ad3a;margin-right:7px}
+#screen-simulation .sim-3d-tools{position:absolute;right:16px;top:65px;z-index:5;display:flex;flex-direction:column;gap:7px}
+#screen-simulation .sim-3d-tools button{border:1px solid #ffffff5c;border-radius:12px;padding:10px 11px;background:#123f38d9;color:#e5ffe9;font-size:12px;font-weight:800;box-shadow:0 7px 16px #0d352f36;backdrop-filter:blur(12px)}
+#screen-simulation .sim-3d-tools button:hover{background:#2b715b}
+#screen-simulation .sim-3d-hint{position:absolute;z-index:4;left:18px;top:66px;max-width:65%;font-size:10px;font-weight:700;color:#d7f5e4;text-shadow:0 2px 8px #123c35b9;pointer-events:none}
+#screen-simulation .sim-3d-hint span{color:#a5e4bc;margin:0 3px}
+#screen-simulation .sim-scene-foot{background:rgba(14,56,48,.83);bottom:15px;left:16px;right:16px;border-color:#ffffff45;pointer-events:none}
+#screen-simulation .sim-scene-foot small{max-width:340px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#screen-simulation .sim-day-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 0 11px;font-size:10px;font-weight:800;color:#658f7b;letter-spacing:.03em}
+#screen-simulation .sim-day-row strong{font-size:16px;color:#235c4a}
+#screen-simulation .sim-weather{margin-bottom:11px}
+#screen-simulation .sim-mission{margin-bottom:11px}
+#screen-simulation .sim-finances{margin:11px 0}
+#screen-simulation .sim-farm-summary{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 11px}
+#screen-simulation .sim-farm-summary>div{border:1px solid #e0eee3;border-radius:13px;background:#ffffffb8;padding:10px}
+#screen-simulation .sim-farm-summary span{display:block;font-size:9px;color:#729383}
+#screen-simulation .sim-farm-summary b{font-size:17px;color:#246b57}
+#screen-simulation .sim-right{display:flex;flex-direction:column;overflow:hidden}
+#screen-simulation .sim-right>.sim-options-scroll{flex:1;min-height:0;overflow:auto;padding:0 4px 4px 0;scrollbar-width:thin;scrollbar-color:#b4d8c9 transparent}
+#screen-simulation .sim-choice-head{margin-bottom:6px}
+#screen-simulation .sim-right>p{margin-bottom:9px;font-size:10px}
+#screen-simulation .sim-action-title{margin:10px 0 7px;font-size:9px}
+#screen-simulation .sim-crops{gap:6px}
+#screen-simulation .sim-crop{padding:8px 7px;border-radius:12px}
+#screen-simulation .sim-crop-icon{font-size:21px}
+#screen-simulation .sim-crop b{font-size:10px}
+#screen-simulation .sim-crop small{font-size:8px}
+#screen-simulation .sim-select-title{display:flex;justify-content:space-between;gap:8px}
+#screen-simulation .sim-select-title span{color:#4c9b7a;letter-spacing:0}
+#screen-simulation .sim-plot-picker{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px}
+#screen-simulation .sim-pick{position:relative;min-width:0;min-height:31px;border:1px solid #cfe3d7;border-radius:9px;background:#f7fff8;color:#427965;font-weight:800;font-size:10px}
+#screen-simulation .sim-pick:hover{border-color:#70b997}
+#screen-simulation .sim-pick[aria-pressed="true"]{background:#266e59;border-color:#266e59;color:#fff;box-shadow:0 4px 10px #246c5235}
+#screen-simulation .sim-pick.occupied{background:#d8eadb}
+#screen-simulation .sim-pick.occupied[aria-pressed="true"]{background:#266e59}
+#screen-simulation .sim-pick.ready{border-color:#d4b95e}
+#screen-simulation .sim-pick span{position:absolute;top:2px;right:3px;font-size:7px;color:#4ca377}
+#screen-simulation .sim-selection-tools{display:flex;gap:7px;margin-top:6px}
+#screen-simulation .sim-selection-tools button{padding:6px 9px;background:#e9f5eb;border:1px solid #c9e4d3;color:#36775e;border-radius:9px;font-size:9px;font-weight:800}
+#screen-simulation .sim-choice-info{margin-top:8px;padding:9px;font-size:9px}
+#screen-simulation .sim-actions{gap:6px}
+#screen-simulation .sim-action{padding:8px 7px;font-size:9px}
+#screen-simulation .sim-action small{font-size:8px}
+#screen-simulation .sim-apply{width:100%;margin-top:7px;padding:9px 12px;border:1px solid #b8dcca;border-radius:11px;background:#e7f6eb;color:#266d58;font-size:10px;font-weight:850}
+#screen-simulation .sim-apply:disabled{opacity:.5;cursor:not-allowed}
+#screen-simulation .sim-controls{display:grid;gap:7px;margin-top:10px;padding-top:9px;border-top:1px solid #dcefe3;flex:none}
+#screen-simulation .sim-plant,#screen-simulation .sim-next{min-height:40px;padding:10px 12px;font-size:11px;border-radius:11px}
+#screen-simulation .sim-time-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+#screen-simulation .sim-time-actions button,#screen-simulation .sim-harvest{min-height:36px;padding:9px 8px;border-radius:10px;border:1px solid #b9ddc8;background:#f2fff5;color:#276d55;font-size:10px;font-weight:850}
+#screen-simulation .sim-time-actions .sim-grow{background:#d7f1e3}
+#screen-simulation .sim-harvest{background:#fff5dc;border-color:#e9dcae;color:#796139}
+#screen-simulation .sim-time-actions button:disabled,#screen-simulation .sim-harvest:disabled{opacity:.46;cursor:not-allowed}
+#screen-simulation .sim-smallprint{font-size:8px!important;margin-top:9px!important}
+#screen-simulation .sim-outcome{font-size:10px;padding:10px;margin-top:9px}
+@media(max-width:1270px) and (min-width:1001px){
+ #screen-simulation .sim-board{grid-template-columns:minmax(195px,.8fr) minmax(325px,1.4fr) minmax(240px,1fr);gap:9px}
+ #screen-simulation .sim-panel{padding:13px}
+ #screen-simulation .sim-3d-hint{font-size:9px;max-width:60%}
+}
+@media(max-width:1000px){
+ #screen-simulation.active{height:auto;min-height:calc(100dvh - 85px);overflow:visible}
+ #screen-simulation .sim-board{grid-template-columns:minmax(220px,.8fr) minmax(340px,1.4fr)}
+ #screen-simulation .sim-center{min-height:540px}
+ #screen-simulation .sim-right{grid-column:1/-1;overflow:visible}
+ #screen-simulation .sim-right>.sim-options-scroll{overflow:visible}
+ #screen-simulation .sim-crops{grid-template-columns:repeat(3,1fr)}
+ #screen-simulation .sim-actions{grid-template-columns:repeat(4,1fr)}
+ #screen-simulation .sim-controls{grid-template-columns:1fr 1fr}
+ #screen-simulation .sim-next{grid-column:1/-1}
+}
+@media(max-width:650px){
+ #screen-simulation.active{padding:15px 12px 40px}
+ #screen-simulation .sim-board{display:flex;flex-direction:column}
+ #screen-simulation .sim-3d-center{min-height:440px;order:0}
+ #screen-simulation .sim-right{order:1}
+ #screen-simulation .sim-left{order:2}
+ #screen-simulation .sim-scene-header{left:11px;right:11px;top:12px}
+ #screen-simulation .sim-scene-header>span{font-size:8px;padding:8px}
+ #screen-simulation .sim-3d-tools{top:55px;right:11px}
+ #screen-simulation .sim-3d-hint{left:12px;top:54px;max-width:67%;font-size:9px;line-height:1.6}
+ #screen-simulation .sim-scene-foot{left:10px;right:10px;bottom:10px;padding:10px}
+ #screen-simulation .sim-scene-foot strong{font-size:11px}
+ #screen-simulation .sim-scene-foot .sim-field-tag{font-size:8px}
+ #screen-simulation .sim-crops{grid-template-columns:repeat(2,1fr)}
+ #screen-simulation .sim-actions{grid-template-columns:repeat(2,1fr)}
+ #screen-simulation .sim-controls{grid-template-columns:1fr}
+}
+@media(max-width:650px){
+ #screen-simulation .sim-board>.sim-panel.sim-right{order:1}
+ #screen-simulation .sim-board>.sim-panel.sim-left{order:2}
+ #screen-simulation .sim-top-actions{gap:5px;max-width:105px}
+ #screen-simulation .sim-chip{font-size:8px;padding:7px 9px}
+ #screen-simulation .sim-top button{padding:8px 9px}
+ #screen-simulation .sim-3d-hint{max-width:58%}
+}

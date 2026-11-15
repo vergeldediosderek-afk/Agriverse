@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AgriVerse | Scientific Data Explorer</title><style>
+:root{font:15px system-ui,Segoe UI,Arial,sans-serif;color:#183529;background:#f4f7f5}*{box-sizing:border-box}main{max-width:1500px;margin:24px auto;padding:0 18px}h1{font-size:1.8rem;margin-bottom:6px}p{line-height:1.45}.muted{color:#567166;font-size:.9rem}.panel{background:#fff;border:1px solid #d9e6de;border-radius:15px;padding:18px;margin:15px 0}label{font-size:.84rem;font-weight:600;display:block;margin:0 0 5px}select,input,button{font:inherit;border:1px solid #b9d0c1;border-radius:8px;padding:10px;background:white;max-width:100%}button{cursor:pointer}button:disabled{opacity:.4}button.primary{background:#167d50;color:white;border:0}#file{width:100%}.bar{display:grid;grid-template-columns:2fr 1.2fr 1fr auto auto;gap:9px;align-items:end}.scroll{overflow:auto;max-height:67vh;border:1px solid #e2ece5;border-radius:10px}table{border-collapse:collapse;width:max-content;min-width:100%;font-size:.85rem}th,td{border-right:1px solid #e1eae4;border-bottom:1px solid #e1eae4;padding:9px 11px;min-width:110px;max-width:440px;overflow-wrap:anywhere;text-align:left;white-space:pre-wrap}th{position:sticky;top:0;background:#e9f3ed;z-index:1;vertical-align:top;white-space:normal}td.num{text-align:right;font-variant-numeric:tabular-nums}th button{background:none;border:0;padding:0;text-align:left;font-weight:bold;font-size:inherit}small{font-weight:normal;color:#597267;display:block;padding-top:4px}#paging{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:15px}a{color:#0a7046}#error{color:#a12424}#count{font-weight:600}code{background:#edf3ef;padding:2px 5px;border-radius:4px}@media(max-width:850px){.bar{grid-template-columns:1fr 1fr}.bar>div:first-child{grid-column:1/-1}}
+</style><link rel="stylesheet" href="assets/blue-green-theme.css"></head><body class="av-data-page"><main><p><a href="/index.html">← AgriVerse</a></p><h1>Scientific Data Explorer</h1><p class="muted">Full, read-only view of the original CSV rows imported into SQLite. Values are displayed exactly as stored. Numeric-aware sorting does not alter source measurements. Other formats remain available in the data folders.</p>
+<section class="panel"><label for="file">Choose source dataset</label><select id="file"></select><p class="muted" id="meta"></p><div class="bar"><div><label for="filtercolumn">Search in column</label><select id="filtercolumn"></select></div><div><label for="search">Search exact text/part of value</label><input id="search" placeholder="e.g. Bagontaas"></div><div><label for="size">Rows per page</label><select id="size"><option>25</option><option selected>50</option><option>100</option></select></div><button class="primary" id="go">Search</button><button id="clear">Clear</button></div><p id="error" role="alert"></p></section>
+<section class="panel"><div id="count" aria-live="polite">Select a dataset to begin.</div><p class="muted">Click a column heading to sort. A blank value means no value was stored; it does not mean zero. Labels and unit hints are informational—refer to dataset metadata for exact units and scaling.</p><div class="scroll"><table><thead id="head"></thead><tbody id="body"></tbody></table></div><div id="paging"><button id="prev">← Previous</button><span id="page"></span><button id="next">Next →</button></div></section>
+<p class="muted">Original source CSV and raster files are preserved. This explorer does not change the recommendation model. Review the supporting source README files for data quality, resolution and temporal coverage.</p><section class="panel"><h2>Google Drive sources</h2><p><a id="drive-folder" href="https://drive.google.com/drive/folders/1rG1va0xv832wQ3ZUWzrZKmGWTsLJ6j9r">Open source folder in Drive</a></p><p id="drive-status" aria-live="polite">Checking sources…</p><details><summary>Browse source files</summary><ul id="drive-sources"></ul></details></section></main><script>
+const $=x=>document.getElementById(x); let state={page:1,sort:'',desc:false,last:null};let datasets=[];
+const fmt=x=>x==null?'—':String(x);function showError(s){$('error').textContent=s||''}
+function option(label,value){let o=document.createElement('option');o.textContent=label;o.value=value;return o}
+async function load(){try{const r=await fetch('/api/data-explorer/datasets');if(!r.ok)throw Error('Cannot read database');datasets=(await r.json()).datasets||[];$('file').replaceChildren(...datasets.map(d=>option((d.queryable?'📊 ':'📁 ')+d.file+(d.rows!=null?' — '+Number(d.rows).toLocaleString()+' rows':''),d.table||'file:'+d.file)));const first=datasets.find(d=>d.queryable);if(first){$('file').value=first.table;await display()}}catch(e){showError(e.message+' — launch through RUN_AGRIVERSE.bat')}}
+function getCurrent(){return datasets.find(d=>d.table===$('file').value||'file:'+d.file===$('file').value)}
+async function display(){showError('');const d=getCurrent();if(!d)return;$('meta').textContent='Source: '+d.file+' • '+(d.bytes!=null?(d.bytes/1024).toFixed(1)+' KB • ':'')+(d.queryable?'Imported SQLite table (raw values preserved)':'Original file indexed only; open it with its appropriate software');if(!d.queryable){$('head').replaceChildren();$('body').replaceChildren();$('count').textContent='This format has no row table. Original file is preserved in the project.';$('page').textContent='';return}try{const q=new URLSearchParams({table:d.table,page:state.page,size:$('size').value,column:$('filtercolumn').value,query:$('search').value,sort:state.sort,descending:String(state.desc)});const r=await fetch('/api/data-explorer/rows?'+q);const x=await r.json();if(!r.ok)throw Error(x.error||'Request failed');state.last=x;const prev=$('filtercolumn').value;$('filtercolumn').replaceChildren(option('All / select column',''),...x.columns.map(c=>option(c.name,c.name)));if(x.columns.some(c=>c.name===prev))$('filtercolumn').value=prev;const hr=document.createElement('tr');for(const c of x.columns){const th=document.createElement('th');const b=document.createElement('button');b.textContent=c.name;b.title='Sort by '+c.name;b.addEventListener('click',()=>{if(state.sort===c.name)state.desc=!state.desc;else{state.sort=c.name;state.desc=false}state.page=1;display()});th.append(b);const detail=document.createElement('small');detail.textContent=c.type+(c.unit?' · '+c.unit:'');th.append(detail);hr.append(th)}$('head').replaceChildren(hr);const fragment=document.createDocumentFragment();for(const row of x.rows){const tr=document.createElement('tr');row.forEach((v,i)=>{const td=document.createElement('td');td.textContent=fmt(v);if(x.columns[i].type==='number')td.className='num';tr.append(td)});fragment.append(tr)}$('body').replaceChildren(fragment);$('count').textContent=`${x.total.toLocaleString()} matching rows • ${x.columns.length} original columns • ${x.file}`;$('page').textContent=`Page ${x.page} of ${x.pages||1}`;$('prev').disabled=x.page<=1;$('next').disabled=x.page>=x.pages;}catch(e){showError(e.message)}}
+$('file').addEventListener('change',()=>{state={page:1,sort:'',desc:false,last:null};$('search').value='';$('filtercolumn').replaceChildren(option('Choose a column',''));display()});$('go').addEventListener('click',()=>{state.page=1;display()});$('clear').addEventListener('click',()=>{$('search').value='';state.page=1;display()});$('prev').onclick=()=>{state.page--;display()};$('next').onclick=()=>{state.page++;display()};$('search').addEventListener('keydown',e=>{if(e.key==='Enter'){$('go').click()}});load();
+fetch('/api/drive-sources').then(async response => {
+  const inventory = await response.json();
+  if (!response.ok) throw Error(inventory.error || 'Source inventory unavailable');
+  const root = $('drive-sources');
+  for (const file of inventory.files) {
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = file.url;
+    link.textContent = [file.folder, file.name].filter(Boolean).join(' / ');
+    item.append(link, ' · ' + (file.table ? 'SQLite rows available' : file.local_path ? 'Local source file available' : 'Drive only'));
+    if (file.local_path) {
+      const original = document.createElement('a');
+      original.href = '/data/' + file.local_path.split('/').map(encodeURIComponent).join('/');
+      original.download = file.name;
+      original.textContent = 'Download local source';
+      item.append(' · ', original);
+    }
+    if (file.table) {
+      const open = document.createElement('button');
+      open.type = 'button';
+      open.textContent = 'View rows';
+      open.onclick = () => {
+        $('file').value = file.table;
+        $('file').dispatchEvent(new Event('change'));
+        $('file').focus();
+      };
+      item.append(' ', open);
+    }
+    root.append(item);
+  }
+  const local = inventory.files.filter(file => file.local_path).length;
+  $('drive-status').textContent = `${inventory.files.length} Drive files · ${local} local matches by name and size`;
+}).catch(error => { $('drive-status').textContent = 'Source inventory unavailable. ' + error.message; });
+</script></body></html>

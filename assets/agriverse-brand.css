@@ -1,0 +1,46 @@
+.av-brand-art {
+  position: relative;
+  display: block;
+  width: clamp(105px, 14vw, 183px);
+  aspect-ratio: 4.05;
+  overflow: hidden;
+  flex: none;
+}
+.av-brand-art img {
+  position: absolute;
+  width: 118%;
+  max-width: none;
+  height: auto;
+  left: -11%;
+  top: -174%;
+  filter: url(#av-logo-transparency);
+}
+#brand-home { padding: 5px 9px; background: transparent; border-radius: 12px; }
+.intro-brand .av-brand-art { width: min(260px, 65vw); margin: auto; border-radius: 8px; }
+body:has(#screen-role.active) .topbar { background: #eff9ff; border-bottom: 3px solid #3288b8; }
+body:has(#screen-role.active) #app::before {
+  background: radial-gradient(ellipse at 85% 42%, #9bd5f5 0, transparent 52%),
+              linear-gradient(145deg, #f4fbff 0%, #dfefec 55%, #aed8c0 100%);
+}
+#screen-role .welcome-copy h1 { color: #103b25; }
+#screen-role .welcome-copy h1 em { color: #197447; }
+#screen-role .welcome-copy > p,
+#screen-role .welcome-copy .eyebrow { color: #285139; }
+#screen-role .welcome-ocean {
+  background: radial-gradient(ellipse at 50% 49%, #75bee9a8, #b4e1fa40 67%, transparent 76%);
+}
+#screen-role .role-card { background: #f4fbff; border: 1px solid #9ab787; }
+#screen-role .role-card[data-role="farmer"] { background: #105735; border-color: #105735; }
+#screen-role .role-card[data-role="farmer"] b,
+#screen-role .role-card[data-role="farmer"] small { color: #f4fffa; }
+#screen-role .role-card[data-role="farmer"] .role-arrow { color: #b5e4ff; }
+#screen-role .role-card[data-role="future"] small { color: #355d43; }
+#screen-role .role-card .role-icon { background: #d0ebff; }
+#screen-role .role-card:hover { border-color: #176e9f; box-shadow: 0 0 0 2px #80c6ed; }
+#screen-role .role-card:focus-visible { outline: 3px solid #145f90; outline-offset: 4px; }
+#screen-role .welcome-map-caption { background: #d4edfc; color: #17452d; }
+
+/* A pale intro keeps the original dark-green wordmark readable. */
+#intro { background: radial-gradient(ellipse at 50% 45%, #c0e8f8, #eaf7f0 72%); color: #163f32; }
+#intro :is(#intro-name,.intro-note,#skip-intro) { color: #163f32; }
+#intro #skip-intro { border-color: #487a6b; }

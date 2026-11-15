@@ -1,0 +1,27 @@
+{
+  "raster_band_count": 55,
+  "property_depth_band_count": 54,
+  "properties": 9,
+  "depth_intervals": 6,
+  "crs": "EPSG:32651",
+  "pixel_size_metres": [
+    250.0,
+    250.0
+  ],
+  "width_pixels": 195,
+  "height_pixels": 125,
+  "total_pixels": 24375,
+  "full_54_data_pixels": 24017,
+  "full_54_data_percent": 98.5313,
+  "soil_ph_surface_valid_pixels": 24078,
+  "soil_ph_surface_missing_pixels": 297,
+  "pH_surface_min": 5.0,
+  "pH_surface_max": 5.900000095367432,
+  "soil_total_n_surface_median_g_kg_AS_EXPORTED": 37.37,
+  "soil_organic_carbon_surface_median_g_kg": 52.5,
+  "median_SOC_to_N_ratio_surface": 1.4251,
+  "all_31_points_have_54_values": true,
+  "distinct_raster_cells_for_31_points": 31,
+  "units_unchanged_FROM_export": true,
+  "nitrogen_scoring_blocked_until_primary_source_crosscheck": true
+}

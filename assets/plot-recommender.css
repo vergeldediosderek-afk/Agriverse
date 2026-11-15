@@ -1,0 +1,41 @@
+/* AgriVerse — Plot Intelligence, light mint / liquid-glass UI */
+#screen-analysis .plot-suitability {margin:16px 0 20px}
+#screen-analysis .avp-topline{display:flex;align-items:center;justify-content:space-between;gap:14px}
+#screen-analysis .plot-suitability{background:linear-gradient(135deg,rgba(255,255,255,.82),rgba(223,248,236,.77));border:1px solid rgba(255,255,255,.95);border-radius:23px;padding:19px 21px;box-shadow:0 14px 42px rgba(28,96,78,.11);backdrop-filter:blur(18px)}
+#screen-analysis .avp-title{display:flex;align-items:center;gap:11px}
+#screen-analysis .avp-symbol{width:39px;height:39px;border-radius:13px;background:linear-gradient(135deg,#dbf6e5,#b6e6d1);display:grid;place-items:center;color:#277d70;font-size:23px}
+#screen-analysis .avp-eyebrow{display:block;color:#538b7d;letter-spacing:.14em;font-size:9px;font-weight:800}
+#screen-analysis .avp-title h4{font-size:19px;color:#194c43;letter-spacing:-.04em;line-height:1.3;margin:1px 0 0}
+#screen-analysis .avp-edit{background:#236b60;color:#f7fff7;border:1px solid #2b8473;border-radius:12px;padding:11px 14px;display:flex;align-items:center;gap:10px;font-size:11px;font-weight:800;white-space:nowrap;box-shadow:0 7px 16px #1b695b22}
+#screen-analysis .avp-edit:hover{background:#2c8273;transform:translateY(-1px)}
+#screen-analysis .avp-factor-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:17px}
+#screen-analysis .avp-factor{min-width:0;border-radius:13px;background:#f6fff9;border:1px solid #dceee4;padding:12px 11px;display:flex;flex-direction:column;gap:4px}
+#screen-analysis .avp-factor>span{color:#63988a;text-transform:uppercase;font-size:9px;font-weight:800;letter-spacing:.09em}
+#screen-analysis .avp-factor b{color:#215b51;font-size:12px;overflow-wrap:anywhere}
+#screen-analysis .avp-factor small{color:#73958a;font-size:10px;line-height:1.4;overflow-wrap:anywhere}
+#screen-analysis .avp-bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:14px}
+#screen-analysis .avp-evidence{font-size:10px;color:#2d7567;font-weight:800}
+#screen-analysis .avp-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#5fbb91;margin-right:5px}
+#screen-analysis .avp-temperature{color:#729185;font-size:10px}
+#screen-analysis .avp-disclosure{margin-top:9px;color:#718f83;font-size:10px;line-height:1.55}
+#screen-analysis .crop-card .avp-rank{position:absolute;top:12px;left:12px;z-index:1;background:#f7fff1e9;border:1px solid #ffffffb5;color:#2a786a;border-radius:30px;padding:6px 9px;font-size:10px;font-weight:800}
+#screen-analysis .crop-art{position:relative}
+#screen-analysis .crop-card .avp-card-checks{font-size:10px;color:#456e5c;line-height:1.45;margin-top:7px;display:block}
+#screen-analysis .crop-card .avp-card-caution{display:block;color:#a57839;font-size:9px;font-weight:750;margin-top:5px}
+.avp-modal .avp-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:17px}
+.avp-modal .avp-form-grid label{min-width:0;display:flex;flex-direction:column;gap:5px;color:#295d51;font-size:11px;font-weight:800}
+.avp-modal .avp-form-grid label small{font-size:10px;color:#7c9b90;font-weight:500}
+.avp-modal .avp-form-grid input,.avp-modal .avp-form-grid select{width:100%;min-width:0;padding:11px 12px;border-radius:12px;border:1px solid #d3e5db;background:#fbfffc;color:#19483e;font-size:13px}
+.avp-modal .avp-form-grid input:focus,.avp-modal .avp-form-grid select:focus{outline:2px solid #85d6b7;outline-offset:1px}
+.avp-modal .avp-form-note{font-size:11px;color:#6b877c;line-height:1.55;margin-top:15px;padding:12px 14px;border-radius:12px;background:#f0f8f0}
+@media(max-width:1250px){#screen-analysis .avp-factor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){#screen-analysis .plot-suitability{padding:15px;border-radius:19px}#screen-analysis .avp-title h4{font-size:17px}#screen-analysis .avp-edit{font-size:10px;padding:9px}#screen-analysis .avp-factor-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}#screen-analysis .avp-factor{padding:10px}}
+@media(max-width:430px){.avp-modal .avp-form-grid{grid-template-columns:1fr}#screen-analysis .avp-topline{align-items:flex-start}#screen-analysis .avp-edit{gap:4px}}
+
+/* Keep field-profile actions reachable in a typical laptop viewport. */
+.modal:has(.avp-modal){padding:22px 25px;max-height:94vh}
+.avp-modal .avp-form-grid{gap:8px 12px;margin-top:11px}
+.avp-modal .avp-form-grid label{gap:3px}
+.avp-modal .avp-form-grid input,.avp-modal .avp-form-grid select{padding:8px 10px;min-height:35px}
+.avp-modal .avp-form-note{margin-top:10px;padding:9px 12px}
+.avp-modal .modal-actions{margin-top:12px}

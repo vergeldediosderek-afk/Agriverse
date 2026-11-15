@@ -1,0 +1,186 @@
+/* AgriVerse · MAP-ONLY DEEP GREEN THEME
+   Keep the site's original soft mint background, white topbar and pale
+   liquid-glass side widgets. Deep forest green is confined to the map.
+   Load AFTER dashboard-focus.css. */
+
+/* Restore the site's original light shell when Farm Intelligence is open. */
+body.av-fi-focus { background:#dbeee5; color:#193d37; }
+body.av-fi-focus #app::before {
+  background:
+    radial-gradient(ellipse at 80% 15%,rgba(216,255,240,.94),transparent 45%),
+    radial-gradient(ellipse at 12% 75%,rgba(158,215,210,.74),transparent 48%),
+    linear-gradient(148deg,#e9f6e8,#bbdbd1 54%,#b1d4cd);
+}
+body.av-fi-focus .topbar {
+  background:rgba(252,255,255,.55);
+  color:#193d37;
+  border-bottom:1px solid rgba(255,255,255,.75);
+  backdrop-filter:blur(24px) saturate(150%);
+}
+body.av-fi-focus .logo { color:#193d37; }
+body.av-fi-focus .logo strong span { color:#679d7e; }
+body.av-fi-focus .journey-back,
+body.av-fi-focus .stat,
+body.av-fi-focus .icon-btn {
+  color:#235b4d;
+  background:rgba(255,255,255,.60);
+  border-color:rgba(255,255,255,.88);
+  box-shadow:inset 0 1px #fff;
+}
+body.av-fi-focus .crumb span,
+body.av-fi-focus .stat small { color:#78948a; }
+body.av-fi-focus .crumb b { color:#365e50; }
+body.av-fi-focus .progress { background:rgba(255,255,255,.45); }
+body.av-fi-focus .progress-bar { background:linear-gradient(90deg,#328b8a,#9be9f5); }
+
+/* Light, airy Farm Intelligence canvas and heading. */
+#screen-farm-intelligence { color:#1b493f; }
+#screen-farm-intelligence::before {
+  background-image:radial-gradient(#348a7930 .75px,transparent .75px);
+  opacity:.34;
+}
+#screen-farm-intelligence .fi-back { color:#41887b; }
+#screen-farm-intelligence .fi-eyebrow { color:#6a9b8b; }
+#screen-farm-intelligence .fi-heading h2 { color:#16473f; }
+#screen-farm-intelligence .fi-heading h2 em { color:#3f9d8b; }
+#screen-farm-intelligence .fi-heading p { color:#729387; }
+#screen-farm-intelligence .fi-heading-chip {
+  color:#4d887a;background:#ffffffad;border:1px solid #fff;
+  box-shadow:0 10px 28px #195e4a10;
+}
+#screen-farm-intelligence .fi-pulse { background:#4fb69e;box-shadow:0 0 0 4px #c1eee0; }
+
+/* Left and right widget tabs: pale liquid glass, not dark panels. */
+#screen-farm-intelligence .fi-focus-tabs {
+  background:rgba(249,255,252,.61);
+  border:1px solid rgba(255,255,255,.94);
+  box-shadow:0 8px 26px #225d4b12,inset 0 1px #fff;
+  backdrop-filter:blur(22px) saturate(160%);
+}
+#screen-farm-intelligence .fi-focus-tab { color:#578577; }
+#screen-farm-intelligence .fi-focus-tab:hover { background:#e0f6eb; }
+#screen-farm-intelligence .fi-focus-tab.is-selected {
+  color:#1b6554;background:#d5f1e5;
+  border-color:#fff;box-shadow:0 3px 11px #256e5520;
+}
+#screen-farm-intelligence .fi-focus-tab:focus-visible { outline-color:#379b88; }
+#screen-farm-intelligence .fi-focus-view { scrollbar-color:#9bcbb9 transparent; }
+#screen-farm-intelligence .fi-glass,
+#screen-farm-intelligence .fi-monthly-panel {
+  color:#254d43;
+  background:linear-gradient(145deg,rgba(255,255,255,.83),rgba(237,252,246,.71));
+  border:1px solid rgba(255,255,255,.95);
+  box-shadow:0 14px 38px #1c66501b,inset 0 1px #fff;
+  backdrop-filter:blur(26px) saturate(150%);
+}
+#screen-farm-intelligence .fi-label-row h3 { color:#205b4e; }
+#screen-farm-intelligence .fi-tag {
+  color:#428b7b;background:#e3f6ed;border:1px solid #ccebdd;
+}
+#screen-farm-intelligence .fi-tag-caution {
+  color:#987538;background:#fff4db;border-color:#f0deb9;
+}
+#screen-farm-intelligence .fi-area {
+  color:#1d6453;
+  background:linear-gradient(115deg,#d8f3e6,#b9e7d4);
+  border:1px solid #ffffffdf;
+}
+#screen-farm-intelligence .fi-area strong { color:#1c6b58; }
+#screen-farm-intelligence .fi-area small,
+#screen-farm-intelligence .fi-area span { color:#4c8b79; }
+#screen-farm-intelligence .fi-kv { border-bottom:1px solid #dcefe6; }
+#screen-farm-intelligence .fi-kv span { color:#709387; }
+#screen-farm-intelligence .fi-kv b { color:#235c4e; }
+#screen-farm-intelligence .fi-footnote,
+#screen-farm-intelligence .fi-muted { color:#719387; }
+#screen-farm-intelligence .fi-hazard { border-bottom:1px solid #dfede5; }
+#screen-farm-intelligence .fi-hazard-ico { background:#eef3e4;color:#987942; }
+#screen-farm-intelligence .fi-hazard b { color:#315d51; }
+#screen-farm-intelligence .fi-hazard p { color:#789487; }
+#screen-farm-intelligence .fi-source-link { color:#2e8e79; }
+#screen-farm-intelligence .fi-access-field { color:#517e6d; }
+
+/* Monthly and imagery controls within the LEFT pale widget. */
+#screen-farm-intelligence .fi-monthly-eyebrow { color:#6d9d8c; }
+#screen-farm-intelligence .fi-monthly-heading h3 { color:#235b4f; }
+#screen-farm-intelligence .fi-month-grid button.selected,
+#screen-farm-intelligence .fi-map-layers button.active {
+  background:#c6ead8;color:#245f50;border-color:#fff;
+}
+#screen-farm-intelligence .fi-month-stats>div {
+  background:#edf9f2;border-color:#d9ede1;
+}
+#screen-farm-intelligence .fi-month-stats small { color:#749588; }
+#screen-farm-intelligence .fi-month-stats strong { color:#235e50; }
+#screen-farm-intelligence .fi-month-status,
+#screen-farm-intelligence #fi-month-source { color:#6f8f83; }
+
+/* CropPedia and rotation details within the RIGHT pale widget. */
+#screen-farm-intelligence .fi-crop-head h4 { color:#225c4f; }
+#screen-farm-intelligence .fi-crop-details div { border-bottom:1px solid #dcefe5; }
+#screen-farm-intelligence .fi-crop-details span { color:#749487; }
+#screen-farm-intelligence .fi-crop-details b { color:#376f5e; }
+#screen-farm-intelligence .fi-weakness,
+#screen-farm-intelligence .fi-focus-weakness {
+  background:#fff7e6;border-color:#f1e2c2;
+}
+#screen-farm-intelligence .fi-weakness b,
+#screen-farm-intelligence .fi-focus-weakness summary { color:#97713c; }
+#screen-farm-intelligence .fi-weakness p,
+#screen-farm-intelligence .fi-focus-weakness .fi-weakness p { color:#937c53; }
+#screen-farm-intelligence .fi-sequence:not([hidden]) {
+  background:#e9f8ed;border-color:#d2e9da;
+}
+#screen-farm-intelligence .fi-sequence-title { color:#679587; }
+#screen-farm-intelligence .fi-rotation-button {
+  background:#ffffffd9;border-color:#cde6d7;color:#3a7664;
+}
+#screen-farm-intelligence .fi-rotation-button.active { border-color:#67b59c; }
+#screen-farm-intelligence .fi-rotation-arrow { color:#7caf9d; }
+
+/* Profit inputs, mini tabs and fixed bottom summary: all LIGHT. */
+#screen-farm-intelligence .fi-focus-season-btn,
+#screen-farm-intelligence .fi-focus-finance-switch button {
+  background:#eff9f2;border:1px solid #d8ebe0;color:#578778;
+}
+#screen-farm-intelligence .fi-focus-season-btn.is-selected,
+#screen-farm-intelligence .fi-focus-finance-switch button.is-selected {
+  background:#c9ebdb;border-color:#fff;color:#205d4f;
+}
+#screen-farm-intelligence .fi-season {
+  background:#f7fdf9;border:1px solid #dceee4;
+}
+#screen-farm-intelligence .fi-season-name span { color:#2d6a5b; }
+#screen-farm-intelligence .fi-season-name small { color:#7da496; }
+#screen-farm-intelligence .fi-input-grid label { color:#608c7b; }
+#screen-farm-intelligence .fi-season-hint,
+#screen-farm-intelligence .fi-focus-hint summary { color:#719486; }
+#screen-farm-intelligence .fi-focus-breakdown {
+  background:#f4fbf6;border:1px solid #deeee4;
+}
+#screen-farm-intelligence .fi-focus-breakdown summary { color:#376e5b; }
+#screen-farm-intelligence .fi-profit-kv { color:#719183; }
+#screen-farm-intelligence .fi-profit-kv b { color:#2a6253; }
+#screen-farm-intelligence .fi-focus-dock {
+  background:rgba(248,255,250,.80);
+  border:1px solid rgba(255,255,255,.96);
+  box-shadow:0 8px 25px #236b5519,inset 0 1px #fff;
+}
+#screen-farm-intelligence .fi-focus-dock .fi-profit-result span { color:#658e7d; }
+#screen-farm-intelligence .fi-focus-dock .fi-profit-result strong { color:#25846d; }
+#screen-farm-intelligence .fi-focus-dock .fi-profit-result strong.fi-negative { color:#b96152; }
+#screen-farm-intelligence .fi-focus-dock .fi-profit-result small { color:#789688; }
+#screen-farm-intelligence .fi-focus-dock .fi-next {
+  background:#c8ecdb;color:#205b4b;border:1px solid #fff;
+}
+#screen-farm-intelligence .fi-focus-dock .fi-next:hover { background:#b5e4d0; }
+
+/* Only the MAP remains dark forest green. Keep its dark overlay, boundary,
+   labels, and Leaflet controls exactly as designed. */
+#screen-farm-intelligence .fi-farm-center {
+  background:#103f37;border-color:#e3fff37d;
+  box-shadow:0 22px 48px #124d3d35;
+}
+#screen-farm-intelligence #fi-map-placeholder {
+  background:radial-gradient(circle at 48% 42%,#438b75,#123e37 72%);
+}

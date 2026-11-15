@@ -1,0 +1,17 @@
+/* A single clear action for the combined location -> plotting journey. */
+#screen-location .avc-location-stage #to-map {
+  display:flex!important; align-items:center; justify-content:space-between;
+  width:100%; min-height:58px; margin-top:15px; padding:14px 22px;
+  background:linear-gradient(105deg,#154d49,#2c8074);
+  border:1px solid rgba(255,255,255,.55); border-radius:16px;
+  color:#fff; box-shadow:0 12px 26px rgba(28,94,82,.18);
+  font-size:15px; font-weight:800; line-height:1.4;
+  cursor:pointer; transition:transform .22s ease,box-shadow .22s ease,background .22s ease;
+}
+#screen-location .avc-location-stage #to-map:hover {transform:translateY(-2px);box-shadow:0 16px 32px rgba(28,94,82,.24);}
+#screen-location .avc-location-stage #to-map:focus-visible {outline:3px solid #65bba9;outline-offset:3px;}
+#screen-location .avc-location-stage #to-map span {font-size:21px;transition:transform .25s ease;}
+#screen-location .avc-location-stage #to-map:hover span {transform:translateX(5px);}
+#screen-location .avc-location-stage .avc-honesty {margin-top:14px;line-height:1.5;}
+@media(max-width:680px){#screen-location .avc-location-stage #to-map{min-height:50px;font-size:13px;padding:11px 16px;}}
+@media(prefers-reduced-motion:reduce){#screen-location .avc-location-stage #to-map,*{scroll-behavior:auto!important;}}

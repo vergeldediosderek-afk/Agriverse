@@ -1,0 +1,111 @@
+/* AgriVerse Future Farmer · standalone educational game */
+body:has(#screen-simulation.active) .site-foot{display:none}
+#screen-simulation{--sim-ink:#1a4940;--sim-accent:#277c68;--sim-pale:#e7f6e9;--sim-line:#d7eae1;color:var(--sim-ink)}
+#screen-simulation.active{display:flex;flex-direction:column;gap:15px;height:calc(100dvh - 85px);min-height:660px;max-width:1640px;padding:21px clamp(20px,3.7vw,64px) 17px;overflow:hidden}
+#screen-simulation *{box-sizing:border-box}
+#screen-simulation button{font-family:inherit;cursor:pointer}
+#screen-simulation button:focus-visible{outline:3px solid #69bda0;outline-offset:3px}
+#screen-simulation .sim-top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex:none}
+#screen-simulation .sim-top .sim-kicker{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:850;letter-spacing:.17em;color:#42846c}
+#screen-simulation .sim-top .sim-kicker i{width:8px;height:8px;border-radius:50%;background:#78c49b;box-shadow:0 0 0 5px #b9e4c780}
+#screen-simulation h2{margin:7px 0 3px;font-size:clamp(28px,3vw,42px);line-height:1.04;letter-spacing:-.055em;font-weight:800}
+#screen-simulation h2 em{font-style:normal;color:#519f80}
+#screen-simulation .sim-top p{font-size:12px;margin:0;color:#6c9183}
+#screen-simulation .sim-top-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+#screen-simulation .sim-chip{padding:10px 13px;border-radius:100px;border:1px solid #ffffffd6;background:#ffffffad;color:#477d69;font-size:10px;font-weight:750;white-space:nowrap}
+#screen-simulation .sim-top button{padding:10px 15px;border-radius:13px;border:1px solid #bdddcf;background:#f5fff8;color:#306e5a;font-size:11px;font-weight:800}
+#screen-simulation .sim-board{display:grid;grid-template-columns:minmax(235px, .84fr) minmax(360px, 1.55fr) minmax(270px, 1fr);gap:15px;flex:1;min-height:0}
+#screen-simulation .sim-panel{background:linear-gradient(145deg,#ffffffd9,#effbf5c4);border:1px solid #ffffff;box-shadow:0 16px 42px #255d4b15,inset 0 1px #fff;border-radius:25px;padding:19px;min-height:0;overflow:auto;scrollbar-width:thin;scrollbar-color:#b4d8c9 transparent}
+#screen-simulation .sim-panel h3{font-size:16px;letter-spacing:-.035em;margin:0 0 4px}
+#screen-simulation .sim-panel p{margin:0;color:#7b978c;font-size:11px;line-height:1.5}
+#screen-simulation .sim-label{font-size:9px;letter-spacing:.15em;color:#6c9c84;font-weight:850}
+#screen-simulation .sim-season{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:14px 0}
+#screen-simulation .sim-season strong{font-size:22px;letter-spacing:-.04em}
+#screen-simulation .sim-progress{display:flex;gap:5px}
+#screen-simulation .sim-progress span{width:27px;height:6px;background:#d9e9dd;border-radius:20px}
+#screen-simulation .sim-progress span.done{background:#57ad85}
+#screen-simulation .sim-progress span.now{background:#1d6b58}
+#screen-simulation .sim-weather{display:flex;align-items:center;gap:11px;padding:13px;border:1px solid #cde8d7;background:#e8f7e7;border-radius:16px;margin-bottom:14px}
+#screen-simulation .sim-weather-icon{font-size:29px;line-height:1}
+#screen-simulation .sim-weather strong{display:block;font-size:13px}
+#screen-simulation .sim-weather small{display:block;font-size:10px;color:#66897b;line-height:1.4;margin-top:2px}
+#screen-simulation .sim-mission{border:1px solid #d7e9dc;background:#ffffffaa;border-radius:16px;padding:13px;margin-bottom:15px}
+#screen-simulation .sim-mission strong{display:block;font-size:12px;margin:5px 0}
+#screen-simulation .sim-mission small{font-size:10px;color:#7b988b;line-height:1.45}
+#screen-simulation .sim-stat{margin:13px 0}
+#screen-simulation .sim-stat-line{display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:700;gap:10px}
+#screen-simulation .sim-stat-line strong{font-size:13px}
+#screen-simulation .sim-track{height:7px;background:#dcece2;border-radius:10px;overflow:hidden;margin-top:6px}
+#screen-simulation .sim-track>span{display:block;height:100%;border-radius:10px;background:linear-gradient(90deg,#5cae87,#2a8876);transition:width .4s}
+#screen-simulation .sim-finances{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:16px 0}
+#screen-simulation .sim-finance{padding:12px;background:#e8f4e8;border-radius:14px}
+#screen-simulation .sim-finance small{display:block;font-size:9px;color:#769a88;font-weight:800;letter-spacing:.08em}
+#screen-simulation .sim-finance strong{display:block;font-size:19px;letter-spacing:-.045em;margin-top:4px}
+#screen-simulation .sim-log{border-top:1px solid #d7e9dc;padding-top:12px;margin-top:6px}
+#screen-simulation .sim-log h4{font-size:11px;margin:0 0 8px}
+#screen-simulation .sim-log-item{font-size:10px;color:#5e8576;padding:7px 0;border-bottom:1px solid #e5efe7;line-height:1.5}
+#screen-simulation .sim-center{position:relative;min-width:0;min-height:0;border-radius:26px;overflow:hidden;background:linear-gradient(180deg,#a2dbb9 0%,#d9efbb 38%,#6aa77a 38%,#316c55 100%);border:1px solid #b2ddc2;box-shadow:0 18px 48px #184c3b23}
+#screen-simulation .sim-center:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 73% 16%,#f9ffd6c9,transparent 22%),linear-gradient(0deg,#0d453f36,transparent 48%);pointer-events:none}
+#screen-simulation .sim-scene-header{position:absolute;top:18px;left:19px;right:19px;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:8px}
+#screen-simulation .sim-scene-header>span{background:#f2fff1df;border:1px solid #fff;border-radius:100px;padding:9px 12px;font-size:10px;font-weight:800;color:#376f5b}
+#screen-simulation .sim-sun{position:absolute;right:13%;top:13%;width:65px;height:65px;border-radius:50%;background:#fff5bd;box-shadow:0 0 0 17px #fff9c42c,0 0 70px #fff5a4aa}
+#screen-simulation .sim-hills{position:absolute;top:27%;left:-10%;width:120%;height:35%;background:#83b78c;clip-path:polygon(0 60%,13% 30%,25% 57%,43% 10%,62% 53%,77% 25%,100% 59%,100% 100%,0 100%)}
+#screen-simulation .sim-hills:after{content:"";position:absolute;inset:40% 0 0;background:#589976;clip-path:polygon(0 100%,0 36%,25% 0,50% 62%,72% 12%,100% 52%,100% 100%)}
+#screen-simulation .sim-barn{position:absolute;top:34%;left:12%;z-index:2;font-size:clamp(55px,6vw,100px);filter:drop-shadow(0 12px 9px #215b4c44)}
+#screen-simulation .sim-plot-wrap{position:absolute;left:7%;right:7%;top:43%;bottom:16%;transform:perspective(800px) rotateX(17deg);z-index:3;border-radius:24px;background:#285f49;padding:14px;box-shadow:0 25px 0 #184c3e,0 35px 28px #0d433c70;border:5px solid #b9e5a1}
+#screen-simulation .sim-plots{height:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:7px}
+#screen-simulation .sim-plot{display:flex;align-items:center;justify-content:center;border-radius:10px;border:1px solid #d7eeae7a;background:repeating-linear-gradient(155deg,#83b16c 0 12px,#729e60 12px 22px);box-shadow:inset 0 3px 9px #2a694540;font-size:clamp(23px,3.3vw,45px);text-shadow:0 3px 4px #1e614a44;transition:transform .3s}
+#screen-simulation .sim-plot:nth-child(3n){background:repeating-linear-gradient(155deg,#a6c980 0 12px,#8db771 12px 22px)}
+#screen-simulation .sim-plot.grown{animation:sim-grow .55s ease both}
+#screen-simulation .sim-plot.empty{color:#d9efb2;font-size:22px}
+@keyframes sim-grow{0%{transform:scale(.65);opacity:.6}70%{transform:scale(1.13)}100%{transform:scale(1);opacity:1}}
+#screen-simulation .sim-scene-foot{position:absolute;z-index:5;left:16px;right:16px;bottom:16px;border:1px solid #ffffff63;background:#123e37c9;backdrop-filter:blur(16px);border-radius:17px;padding:13px 15px;display:flex;justify-content:space-between;gap:12px;align-items:center;color:#fff}
+#screen-simulation .sim-scene-foot strong{display:block;font-size:13px}
+#screen-simulation .sim-scene-foot small{font-size:10px;color:#d2f1df;display:block;margin-top:3px}
+#screen-simulation .sim-scene-foot .sim-field-tag{font-size:9px;font-weight:800;letter-spacing:.1em;color:#bdeabf;text-align:right}
+#screen-simulation .sim-choice-head{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:11px}
+#screen-simulation .sim-choice-head span{font-size:9px;color:#64957f;font-weight:800}
+#screen-simulation .sim-crops{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#screen-simulation .sim-crop{min-width:0;display:flex;align-items:center;gap:8px;text-align:left;border:1px solid #d7e9d8;border-radius:14px;padding:10px 9px;background:#fffef6d9;color:#275347;transition:background .2s,transform .2s,border .2s}
+#screen-simulation .sim-crop:hover,#screen-simulation .sim-action:hover{transform:translateY(-1px);border-color:#83bea4}
+#screen-simulation .sim-crop[aria-pressed="true"],#screen-simulation .sim-action[aria-pressed="true"]{background:#e0f3e7;border-color:#398d72;box-shadow:0 0 0 2px #6eb6983a}
+#screen-simulation .sim-crop-icon{font-size:25px;flex:none}
+#screen-simulation .sim-crop b{font-size:11px;display:block;line-height:1.25}
+#screen-simulation .sim-crop small{font-size:9px;color:#81988b;display:block;margin-top:2px}
+#screen-simulation .sim-action-title{margin:15px 0 9px;font-size:10px;letter-spacing:.12em;font-weight:850;color:#548771}
+#screen-simulation .sim-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+#screen-simulation .sim-action{padding:9px 8px;border:1px solid #d6e9df;border-radius:12px;background:#f8fff8;color:#396f5d;font-size:10px;font-weight:750;text-align:left}
+#screen-simulation .sim-action small{display:block;color:#91a799;font-size:9px;margin-top:3px}
+#screen-simulation .sim-choice-info{margin-top:12px;border:1px solid #d4e8d7;background:#edf8e9;border-radius:13px;padding:11px;color:#577b6a;font-size:10px;line-height:1.5}
+#screen-simulation .sim-choice-info b{color:#275f4d}
+#screen-simulation .sim-controls{margin-top:12px;display:grid;gap:8px}
+#screen-simulation .sim-plant,#screen-simulation .sim-next{width:100%;padding:13px 14px;background:linear-gradient(110deg,#16584d,#2c8871);color:#fff;border:0;border-radius:14px;font-weight:850;font-size:12px;box-shadow:0 8px 18px #155e4d28}
+#screen-simulation .sim-plant:disabled{background:#a2bfb0;cursor:not-allowed;box-shadow:none}
+#screen-simulation .sim-next{background:#f0fff5;color:#226955;border:1px solid #a7d8be}
+#screen-simulation .sim-outcome{margin-top:10px;border-radius:14px;padding:11px;background:#e4f6eb;border:1px solid #a6d6b7;color:#265e4b;font-size:11px;line-height:1.5}
+#screen-simulation .sim-outcome strong{display:block;font-size:13px;margin-bottom:3px}
+#screen-simulation .sim-smallprint{margin-top:9px!important;font-size:9px!important;color:#85a091!important}
+#screen-simulation .sim-finish{position:absolute;inset:0;z-index:10;background:#143f37d9;backdrop-filter:blur(16px);display:grid;place-items:center;padding:20px}
+#screen-simulation .sim-finish[hidden]{display:none}
+#screen-simulation .sim-finish-card{width:min(450px,100%);background:linear-gradient(145deg,#f7fff4,#dff4e8);border:1px solid #fff;border-radius:26px;padding:30px;box-shadow:0 30px 60px #0c362c55;text-align:center;color:#235c4d}
+#screen-simulation .sim-finish-card h3{font-size:31px;letter-spacing:-.05em;margin:7px 0}
+#screen-simulation .sim-finish-card p{font-size:12px;line-height:1.6;color:#6d8d7e}
+#screen-simulation .sim-finish-number{font-size:46px;font-weight:850;letter-spacing:-.06em}
+#screen-simulation .sim-finish-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:20px 0}
+#screen-simulation .sim-finish-grid div{border-radius:13px;background:#fff;padding:11px 5px}
+#screen-simulation .sim-finish-grid b{display:block;font-size:18px}
+#screen-simulation .sim-finish-grid small{font-size:9px;color:#6e9582}
+#screen-simulation .sim-finish-card button{width:100%;padding:14px;border:0;border-radius:14px;background:#206b58;color:white;font-size:13px;font-weight:800}
+@media(max-width:1230px){#screen-simulation .sim-board{grid-template-columns:minmax(215px,.86fr) minmax(320px,1.5fr) minmax(250px,1fr);gap:10px}#screen-simulation .sim-panel{padding:14px}#screen-simulation .sim-crop{padding:8px 6px;gap:5px}}
+@media(max-width:1000px){#screen-simulation.active{height:auto;min-height:calc(100dvh - 85px);overflow:visible;padding:22px 20px 45px}#screen-simulation .sim-board{grid-template-columns:minmax(220px,1fr) minmax(350px,1.6fr)}#screen-simulation .sim-board>.sim-panel:last-child{grid-column:1/-1}#screen-simulation .sim-center{min-height:540px}#screen-simulation .sim-panel{overflow:visible}#screen-simulation .sim-crops{grid-template-columns:repeat(3,1fr)}#screen-simulation .sim-actions{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:650px){#screen-simulation.active{padding:18px 14px 45px}#screen-simulation .sim-top{align-items:flex-start}#screen-simulation .sim-top-actions{max-width:120px}#screen-simulation .sim-chip{white-space:normal;font-size:9px;text-align:center}#screen-simulation .sim-top button{font-size:10px}#screen-simulation h2{font-size:30px}#screen-simulation .sim-board{display:flex;flex-direction:column}#screen-simulation .sim-center{min-height:440px;order:0}#screen-simulation .sim-board>.sim-panel:first-child{order:1}#screen-simulation .sim-board>.sim-panel:last-child{order:2}#screen-simulation .sim-crops{grid-template-columns:repeat(2,1fr)}#screen-simulation .sim-actions{grid-template-columns:repeat(2,1fr)}#screen-simulation .sim-plot-wrap{top:42%;bottom:20%;padding:8px}#screen-simulation .sim-barn{font-size:55px}#screen-simulation .sim-scene-foot{bottom:12px}}
+@media(prefers-reduced-motion:reduce){#screen-simulation .sim-plot.grown{animation:none}}
+
+/* Keep the main harvest action visible on short laptop screens. */
+@media(min-width:1001px){
+ #screen-simulation .sim-board>.sim-panel:last-child{display:flex;flex-direction:column;overflow:hidden}
+ #screen-simulation .sim-options-scroll{flex:1;min-height:0;overflow:auto;scrollbar-width:thin;scrollbar-color:#b4d8c9 transparent;padding:0 3px 4px 0}
+ #screen-simulation .sim-controls{flex:none;padding-top:9px;margin-top:0}
+ #screen-simulation .sim-smallprint{flex:none}
+ #screen-simulation .sim-outcome{flex:none;max-height:100px;overflow:auto}
+}

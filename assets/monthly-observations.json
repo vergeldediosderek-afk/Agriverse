@@ -1,0 +1,5 @@
+{
+  "schema": "agriverse-monthly-v1",
+  "description": "Empty observation adapter. Add real, dated, georeferenced monthly records after processing satellite and rainfall datasets. Never fabricate vegetation or precipitation values.",
+  "records": []
+}

@@ -1,0 +1,67 @@
+{
+  "time_basis": "historical 2016-2025, NOT current 2026 observations or weather forecasts",
+  "spatial_basis": "barangay representative points, not farmer-specific field measurements",
+  "datasets": [
+    {
+      "file": "power_monthly_climatology_2016_2025.csv",
+      "bytes": 109945
+    },
+    {
+      "file": "power_monthly_2016_2025.csv",
+      "bytes": 1109183
+    },
+    {
+      "file": "chirps_v3_month_of_year_reference_2016_2025.csv",
+      "bytes": 27908
+    },
+    {
+      "file": "chirps_v3_monthly_31_reference_points.csv",
+      "bytes": 281355
+    },
+    {
+      "file": "SoilGrids_31_Barangays_Safe_Surface_Preview.csv",
+      "bytes": 5682
+    },
+    {
+      "file": "SRTM_31_Barangay_Reference_Point_Samples_FROM_RASTER.csv",
+      "bytes": 5348
+    },
+    {
+      "file": "Filtered_Valencia_Crops.csv",
+      "bytes": 585587
+    },
+    {
+      "file": "EcoCrop_DB.csv",
+      "bytes": 1622384
+    },
+    {
+      "file": "ERA5_Land_Monthly_31_Barangay_Points_2016_2025.csv",
+      "bytes": 968508
+    },
+    {
+      "file": "AgriVerse_PSA_2020_Crop_Economics.csv",
+      "bytes": 6493
+    },
+    {
+      "file": "barangay_reference_points.csv",
+      "bytes": 7563
+    },
+    {
+      "file": "AgriVerse-Valencia-NDVI-2016-2025-MOD13Q1-061-results.csv",
+      "bytes": 2539641
+    },
+    {
+      "file": "AgriVerse-Valencia-SMAP-2016-2025-SPL3SMP-E-006-results.csv",
+      "bytes": 33449133
+    }
+  ],
+  "smap_quality_counts": {
+    "9.0": 18818,
+    "7.0": 70308,
+    "8.0": 21454,
+    "13.0": 121
+  },
+  "smap_usable_groups": 211,
+  "ndvi_usable_groups": 372,
+  "annual_rainfall_note": "ECOCROP ROPMN/ROPMX are annual precipitation ranges. Compare with climatological annual totals, never a single month."
+}

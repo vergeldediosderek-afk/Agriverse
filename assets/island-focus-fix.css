@@ -1,0 +1,28 @@
+/* AgriVerse island selection: remove browser-native black SVG focus boxes.
+   Scoped to the island selection screen only. */
+#screen-islands #ph-map:focus,
+#screen-islands #ph-map *:focus {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Keep a clear, soft-mint keyboard-focus indication instead of a black box. */
+#screen-islands #ph-map .map-land:focus-visible {
+  outline: none !important;
+  stroke: #e8fff0 !important;
+  stroke-width: 4px !important;
+  filter: drop-shadow(0 0 7px rgba(136, 255, 217, .9));
+}
+
+/* Clicking or tapping should not leave a dark browser tap highlight. */
+#screen-islands .island-choice,
+#screen-islands #ph-map,
+#screen-islands #ph-map [data-go-island] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Keyboard users retain a visible focus cue on the island buttons. */
+#screen-islands .island-choice:focus-visible {
+  outline: 2px solid #3aab93;
+  outline-offset: 3px;
+}

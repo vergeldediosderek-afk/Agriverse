@@ -1,0 +1,10 @@
+# Windows-only local packages; Render installs Linux builds from requirements.txt
+.gis-deps/
+__pycache__/
+*.pyc
+
+# Rebuilt on Render by setup_sqlite.py (131 MB, over GitHub's 100 MB file limit)
+data/agriverse.db
+data/agriverse.db-*
+
+.vercel/

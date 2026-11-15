@@ -1,0 +1,132 @@
+/* AgriVerse Future Farmer — Sprig companion + scenario setup.
+   Isolated to simulation; original mint Farmer mode stays unchanged. */
+#screen-simulation .av-adventure [hidden]{display:none!important}
+#screen-simulation .av-adventure{position:absolute;inset:0;pointer-events:none;z-index:65;font-family:inherit;color:#194e40}
+#screen-simulation .av-adventure button{font-family:inherit;cursor:pointer}
+#screen-simulation .av-setup{position:absolute;inset:0;z-index:110;pointer-events:auto;background:radial-gradient(ellipse at 22% 35%,#d6f8d8a0,transparent 60%),#0b3b32d9;backdrop-filter:blur(15px);display:grid;place-items:center;padding:20px;overflow:auto}
+#screen-simulation .av-setup-shell{width:min(1000px,100%);min-height:540px;display:grid;grid-template-columns:.82fr 1.18fr;border-radius:32px;overflow:hidden;background:#f6fff1;box-shadow:0 30px 110px #04261d8c;border:1px solid #ffffffd6}
+#screen-simulation .av-setup-story{background:radial-gradient(circle at 50% 45%,#a8dca4 0,#69af83 39%,#1b6254 94%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:34px;gap:20px;position:relative;overflow:hidden;color:#f1ffe8}
+#screen-simulation .av-setup-story:before{content:'';position:absolute;inset:0;background-image:radial-gradient(#d7f3b940 1px,transparent 1px);background-size:23px 23px;mask-image:linear-gradient(135deg,#000,transparent)}
+#screen-simulation .av-setup-story:after{content:'';position:absolute;width:340px;height:130px;bottom:38px;border:1px solid #e4ffca38;border-radius:50%;transform:rotate(-12deg)}
+#screen-simulation .av-overline{font-size:10px;font-weight:900;letter-spacing:.17em;position:relative;z-index:1}
+#screen-simulation .av-setup-mascot{width:210px;height:220px;position:relative;z-index:2;display:grid;place-items:center;filter:drop-shadow(0 18px 13px #184f3c40);animation:av-float 3s ease-in-out infinite}
+#screen-simulation .av-setup-mascot .sprig-svg{width:100%;height:100%}
+#screen-simulation .av-story-bubble{position:relative;z-index:2;border:1px solid #e9fff5bd;border-radius:20px;background:#f6fff1ed;color:#205644;text-align:center;font-size:19px;line-height:1.4;font-weight:650;padding:19px 26px;box-shadow:0 14px 28px #17513c3c;max-width:330px}
+#screen-simulation .av-story-bubble strong{color:#279c70}
+#screen-simulation .av-story-caption{font-size:12px;line-height:1.7;opacity:.83;max-width:280px;text-align:center;position:relative;z-index:2}
+#screen-simulation .av-setup-content{padding:36px 42px 26px;display:flex;flex-direction:column;min-width:0;overflow:auto}
+#screen-simulation .av-setup-header{display:flex;align-items:center;justify-content:space-between;color:#4d8a6a}
+#screen-simulation #av-setup-exit{width:35px;height:35px;border:1px solid #d6e9d8;border-radius:11px;background:#fff;color:#547e6a;font-weight:900;font-size:16px}
+#screen-simulation #av-setup-title{font-size:clamp(29px,3vw,45px);line-height:1.05;letter-spacing:-.065em;margin:17px 0 12px;color:#194e40;font-weight:900}
+#screen-simulation #av-setup-subtitle{font-size:13px;line-height:1.65;color:#719184;margin:0 0 20px;max-width:460px}
+#screen-simulation .av-preset-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#screen-simulation .av-preset{border:1.5px solid #d9e9d7;background:#f8fbf4;border-radius:18px;min-height:119px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:5px;padding:16px 12px;text-align:left;transition:background .2s,border-color .2s,transform .2s;box-shadow:none}
+#screen-simulation .av-preset:hover{transform:translateY(-2px);border-color:#81bf9b}
+#screen-simulation .av-preset[aria-pressed=true]{background:#e0f5df;border-color:#3f9d76;box-shadow:inset 0 0 0 1px #3f9d76}
+#screen-simulation .av-preset span{font-size:28px}
+#screen-simulation .av-preset b{font-size:13px;color:#235846}
+#screen-simulation .av-preset small{font-size:10px;color:#729281;line-height:1.4}
+#screen-simulation .av-land-info{border:1px solid #d8e9da;border-radius:15px;background:#ecf7e8;padding:14px 17px;display:grid;gap:4px;margin:14px 0 16px}
+#screen-simulation .av-land-info b{font-size:13px;color:#275c48}
+#screen-simulation .av-land-info span{font-size:11px;line-height:1.5;color:#638d76}
+#screen-simulation .av-setup-actions{display:grid;grid-template-columns:1fr;gap:9px}
+#screen-simulation .av-main-action{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(115deg,#166651,#319d78);border:0;color:white;border-radius:15px;padding:16px 18px;font-size:14px;font-weight:850;box-shadow:0 12px 26px #217e5a2e}
+#screen-simulation .av-main-action span{font-size:21px}
+#screen-simulation .av-map-action{border:1px solid #bddfc9;border-radius:14px;background:#ffffff;color:#287052;padding:12px;font-weight:800;font-size:12px}
+#screen-simulation .av-truth-note{font-size:10px;line-height:1.6;color:#7b9384;margin:16px 0 0}
+#screen-simulation .av-sprig-button{position:absolute;bottom:18px;left:19px;width:75px;height:75px;z-index:75;pointer-events:auto;border:2px solid #f3ffe5;border-radius:25px;background:linear-gradient(145deg,#d7ffd1,#a8e7a7);box-shadow:0 14px 28px #164f3d62;display:grid;place-items:center;padding:3px;transition:transform .18s}
+#screen-simulation .av-sprig-button:hover{transform:translateY(-4px) rotate(-3deg)}
+#screen-simulation .av-sprig-button .sprig-svg{width:70px;height:70px}
+#screen-simulation .av-sprig-notification{position:absolute;right:-5px;top:-6px;width:23px;height:23px;border-radius:50%;background:#ffdc7b;border:2px solid #fff;color:#194e40;font-size:12px;font-weight:900;display:grid;place-items:center}
+#screen-simulation .sprig-worry{display:none}
+#screen-simulation [data-mood=worried] .sprig-smile{display:none}
+#screen-simulation [data-mood=worried] .sprig-worry{display:block}
+#screen-simulation [data-mood=worried] .sprig-svg{transform:rotate(-4deg)}
+#screen-simulation [data-mood=celebrate] .sprig-svg{animation:av-celebrate .65s ease-in-out infinite alternate}
+#screen-simulation .av-sprig-dialog{position:absolute;z-index:85;left:20px;bottom:106px;width:min(440px,calc(100vw - 40px));max-height:min(630px,calc(100dvh - 155px));pointer-events:auto;display:flex;flex-direction:column;background:linear-gradient(155deg,#f8fff4f7,#e9f9eaf7);border:1px solid #ffffffee;border-radius:24px;box-shadow:0 22px 75px #0b443f7a;overflow:hidden;backdrop-filter:blur(22px);animation:av-enter .24s ease-out}
+#screen-simulation .av-dialog-top{display:flex;align-items:center;gap:10px;background:linear-gradient(110deg,#d7f4d6,#f0ffeb);padding:13px 15px;border-bottom:1px solid #cfe5d1}
+#screen-simulation .av-dialog-avatar{display:grid;place-items:center;width:55px;height:55px;flex:none;background:#bcebb7;border:1px solid #f7fff5;border-radius:16px}
+#screen-simulation .av-dialog-avatar .sprig-svg{width:54px;height:54px}
+#screen-simulation .av-dialog-who{display:grid;gap:3px;flex:1;min-width:0}
+#screen-simulation .av-dialog-who b{font-size:12px;letter-spacing:.09em;color:#28694c}
+#screen-simulation .av-dialog-who small{font-size:10px;color:#749c7d}
+#screen-simulation .av-dialog-chip{font-size:8px;letter-spacing:.04em;font-weight:850;color:#28765a;border:1px solid #b5dcc1;background:#ecf8e7;padding:6px 7px;border-radius:20px;white-space:nowrap}
+#screen-simulation [data-mood=worried] .av-dialog-chip{background:#fff0d9;border-color:#f5d5a4;color:#b96d33}
+#screen-simulation .av-dialog-close{background:transparent;border:0;color:#52836a;font-size:17px;padding:4px}
+#screen-simulation .av-dialog-body{padding:20px 21px 13px;overflow-y:auto;min-height:0}
+#screen-simulation #av-dialog-title{font-size:23px;line-height:1.13;letter-spacing:-.04em;color:#1e5845;margin:0 0 9px;font-weight:900}
+#screen-simulation #av-dialog-text{font-size:13px;line-height:1.7;color:#5d8371;margin:0 0 16px}
+#screen-simulation .av-dialog-choices{display:grid;gap:8px}
+#screen-simulation .av-dialog-choices button{width:100%;padding:11px 13px;border-radius:13px;border:1px solid #cfe3d0;background:#fff;color:#27644d;text-align:left;font-size:12px;font-weight:800;display:flex;justify-content:space-between;gap:5px;flex-direction:column}
+#screen-simulation .av-dialog-choices button:hover{border-color:#4caa7e;background:#f1ffeb}
+#screen-simulation .av-dialog-choices button.av-choice-primary{background:linear-gradient(110deg,#1b795e,#349d77);color:#fff;border-color:#287d60}
+#screen-simulation .av-dialog-choices button small{font-size:10px;font-weight:500;opacity:.8}
+#screen-simulation .av-dialog-foot{padding:10px 20px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #e0ede0;font-size:9px;color:#8aa18e}
+#screen-simulation .av-dialog-foot button{font-size:10px;border:0;background:transparent;color:#538a6c;font-weight:750}
+#screen-simulation .av-adventure-hud{position:absolute;z-index:15;top:151px;left:19px;pointer-events:auto;display:flex;align-items:center;gap:9px;padding:10px 12px;border:1px solid #ffffffd8;border-radius:14px;background:#f6fff1d9;box-shadow:0 9px 23px #154d3e3b;backdrop-filter:blur(18px);max-width:min(345px,calc(100vw - 200px))}
+#screen-simulation .av-hud-mark{font-size:20px;color:#3b9471}
+#screen-simulation .av-adventure-hud>div{display:grid;gap:3px;min-width:0;flex:1}
+#screen-simulation .av-adventure-hud b{font-size:11px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+#screen-simulation .av-adventure-hud small{font-size:9px;color:#6c937b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#screen-simulation .av-adventure-hud button{font-size:10px;border:1px solid #c8e5cf;border-radius:9px;background:#fff;padding:7px;color:#34775b;font-weight:850}
+#screen-simulation .av-scenario-chip{position:absolute;z-index:13;right:18px;top:199px;display:flex;align-items:center;gap:7px;border:1px solid #ffe6b4;background:#fff7e9e8;border-radius:12px;padding:9px 12px;font-size:10px;font-weight:800;color:#9e743e;pointer-events:none;backdrop-filter:blur(14px)}
+#screen-simulation .av-scenario-chip span:first-child{color:#e6a14c}
+#screen-simulation .av-scene-event{position:absolute;z-index:30;left:50%;top:27%;transform:translateX(-50%);border:1px solid #ffffffcf;background:#f5fff0f0;border-radius:24px;box-shadow:0 18px 60px #1c443c55;display:flex;flex-direction:column;align-items:center;gap:6px;padding:22px 36px;pointer-events:none;animation:av-enter .28s ease-out}
+#screen-simulation .av-scene-event span{font-size:45px}
+#screen-simulation .av-scene-event b{font-size:20px;white-space:nowrap}
+#screen-simulation .av-scene-event small{font-size:9px;font-weight:900;letter-spacing:.12em;color:#7b947e}
+#screen-simulation.av-hazard-drought #sim-3d-canvas{filter:saturate(.72) sepia(.12)}
+#screen-simulation.av-hazard-flood #sim-3d-canvas,#screen-simulation.av-hazard-erosion #sim-3d-canvas{filter:brightness(.78) saturate(.82)}
+#screen-simulation.av-hazard-wind #sim-3d-canvas{filter:brightness(.83) saturate(.73)}
+@keyframes av-float{50%{transform:translateY(-9px)}}
+@keyframes av-enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes av-celebrate{to{transform:rotate(10deg) translateY(-3px)}}
+@media(min-width:701px){#screen-simulation .av-sprig-dialog{bottom:104px}#screen-simulation .av-dialog-open~.av-sprig-button{z-index:86}}
+@media(max-width:850px){#screen-simulation .av-setup-shell{grid-template-columns:1fr;max-width:600px}#screen-simulation .av-setup-story{min-height:170px;padding:14px 20px;gap:4px}#screen-simulation .av-setup-mascot{width:95px;height:105px}#screen-simulation .av-story-bubble{font-size:14px;padding:9px 16px}#screen-simulation .av-story-caption{display:none}#screen-simulation .av-setup-content{padding:20px 24px}#screen-simulation .av-setup{align-items:start}}
+@media(max-width:700px){
+ #screen-simulation .av-setup{padding:9px;align-items:center}
+ #screen-simulation .av-setup-shell{min-height:0;border-radius:22px;max-height:calc(100dvh - 18px)}
+ #screen-simulation .av-setup-story{min-height:125px;flex-direction:row;gap:12px;padding:12px 16px;justify-content:center}
+ #screen-simulation .av-setup-story .av-overline{display:none}
+ #screen-simulation .av-setup-mascot{width:78px;height:86px;flex:none}
+ #screen-simulation .av-story-bubble{font-size:13px;padding:10px;max-width:225px}
+ #screen-simulation .av-setup-content{padding:17px 17px 13px}
+ #screen-simulation #av-setup-title{font-size:29px;margin:9px 0 8px}
+ #screen-simulation #av-setup-subtitle{font-size:11px;margin-bottom:11px}
+ #screen-simulation .av-preset-grid{gap:6px}
+ #screen-simulation .av-preset{min-height:91px;padding:9px 7px;border-radius:13px}
+ #screen-simulation .av-preset span{font-size:22px}
+ #screen-simulation .av-preset b{font-size:11px}
+ #screen-simulation .av-preset small{font-size:8px}
+ #screen-simulation .av-land-info{margin:10px 0;padding:9px 11px}
+ #screen-simulation .av-truth-note{font-size:9px;margin:9px 0 0}
+ #screen-simulation .av-sprig-button{bottom:89px;left:10px;width:59px;height:59px;border-radius:19px}
+ #screen-simulation .av-sprig-button .sprig-svg{width:53px;height:53px}
+ #screen-simulation .av-sprig-dialog{left:9px;bottom:154px;width:calc(100vw - 18px);max-height:min(475px,calc(100dvh - 170px));border-radius:19px}
+ #screen-simulation .av-dialog-top{padding:9px 12px}
+ #screen-simulation .av-dialog-avatar{width:44px;height:44px}
+ #screen-simulation .av-dialog-avatar .sprig-svg{width:43px;height:43px}
+ #screen-simulation .av-dialog-body{padding:13px 15px 9px}
+ #screen-simulation #av-dialog-title{font-size:20px}
+ #screen-simulation #av-dialog-text{font-size:12px;margin-bottom:10px}
+ #screen-simulation .av-dialog-choices button{padding:10px 12px;font-size:11px}
+ #screen-simulation .av-adventure-hud{left:10px;top:153px;max-width:calc(100vw - 155px);padding:7px 8px;gap:5px}
+ #screen-simulation .av-adventure-hud button{font-size:9px;padding:6px}
+ #screen-simulation .av-adventure-hud b{font-size:10px}
+ #screen-simulation .av-adventure-hud small{font-size:8px}
+ #screen-simulation .av-scenario-chip{top:201px;right:10px;max-width:calc(100vw - 20px);font-size:9px}
+ #screen-simulation .av-scene-event{top:30%;padding:15px 22px}
+ #screen-simulation .av-scene-event span{font-size:35px}
+ #screen-simulation .av-scene-event b{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){#screen-simulation .av-setup-mascot,#screen-simulation [data-mood=celebrate] .sprig-svg{animation:none}#screen-simulation .av-sprig-dialog,#screen-simulation .av-scene-event{animation:none}}
+
+#screen-simulation .av-field-outline{display:flex;align-items:center;gap:12px;padding:9px 12px;margin:-4px 0 14px;border:1px solid #d4e8d3;border-radius:15px;background:#f4fbef}
+#screen-simulation .av-field-outline svg{width:67px;height:67px;flex:none}
+#screen-simulation .av-field-outline div{display:grid;gap:4px}
+#screen-simulation .av-field-outline b{font-size:12px;color:#2c7154}
+#screen-simulation .av-field-outline small{font-size:10px;color:#719382}
+#screen-simulation.av-dialog-open .sim-scene-foot{opacity:.25;pointer-events:none}
+#screen-simulation.av-dialog-open .sim-3d-hint{opacity:.25}
+/* Prevent browser focus/scrollIntoView from shifting the full-screen world sideways. */
+#screen-simulation.active{overflow:clip!important}

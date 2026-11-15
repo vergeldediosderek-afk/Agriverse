@@ -1,0 +1,12 @@
+/* One clear location action and no duplicate secondary location buttons. */
+#screen-location #to-map {display:flex!important;align-items:center;justify-content:space-between;width:100%;min-height:58px;border-radius:16px;background:linear-gradient(110deg,#155d50,#2e9480);color:white;border:1px solid rgba(255,255,255,.5);font-size:15px;font-weight:800;padding:14px 22px;cursor:pointer;transition:transform .24s ease,box-shadow .24s ease,opacity .24s ease;}
+#screen-location #to-map:hover:not(:disabled) {transform:translateY(-2px);box-shadow:0 15px 30px rgba(25,93,79,.23);}
+#screen-location #to-map:disabled {cursor:wait;opacity:.68;transform:none;}
+#screen-location #to-map:focus-visible {outline:3px solid #90e9c5;outline-offset:3px;}
+#screen-location .avc-location-stage #find-address,
+#screen-location .avc-location-stage .avc-approx-button,
+#screen-location .avc-location-stage .avc-approx-row,
+#screen-location .avc-location-stage [data-city-fallback],
+#screen-location .avc-location-stage #avc-city-fallback {display:none!important;}
+@media(max-width:680px) {#screen-location #to-map{min-height:52px;font-size:14px;padding:12px 16px;}}
+@media(prefers-reduced-motion:reduce){#screen-location #to-map{transition:none;}}

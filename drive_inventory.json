@@ -1,0 +1,488 @@
+{
+  "folder": "https://drive.google.com/drive/folders/1rG1va0xv832wQ3ZUWzrZKmGWTsLJ6j9r",
+  "files": [
+    {
+      "name": "Valencia_adm4.gpkg",
+      "folder": "",
+      "url": "https://drive.google.com/file/d/1iZdBJ1TGXmlakAub82WQ5ccW8AePo3xA/view",
+      "bytes": 368640,
+      "local_match": false
+    },
+    {
+      "name": "AgriVerse_Final_Terrain_Data.zip",
+      "folder": "",
+      "url": "https://drive.google.com/file/d/1mtD82lo-7o88e1BI6MxE8Cf4BPChO86E/view",
+      "bytes": 6196751,
+      "local_match": false
+    },
+    {
+      "name": "2M4AFN06.xlsx",
+      "folder": "Crop_Families_Rotation",
+      "url": "https://docs.google.com/spreadsheets/d/14hlkSnCk45DlmZ4vf42iMIacPBDEcNjD/edit",
+      "bytes": 9329,
+      "local_match": true
+    },
+    {
+      "name": "2M4AFN03.xlsx",
+      "folder": "Crop_Families_Rotation",
+      "url": "https://docs.google.com/spreadsheets/d/11TqxG8EhjN7OwMc1iIM1MrW3ebE9W3xH/edit",
+      "bytes": 9300,
+      "local_match": true
+    },
+    {
+      "name": "2M4AFN02.xlsx",
+      "folder": "Crop_Families_Rotation",
+      "url": "https://docs.google.com/spreadsheets/d/1P5B3CjKEntFo9PrjMkO0y7ra8dxBG6pa/edit",
+      "bytes": 9175,
+      "local_match": true
+    },
+    {
+      "name": "2B5ECOP1.xlsx",
+      "folder": "Crop_Families_Rotation",
+      "url": "https://docs.google.com/spreadsheets/d/1aB0ukbLCT6yHG0fJZqMHx68_bCCGdCgw/edit",
+      "bytes": 10410,
+      "local_match": true
+    },
+    {
+      "name": "2M4AFN05 (1).xlsx",
+      "folder": "Crop_Families_Rotation",
+      "url": "https://docs.google.com/spreadsheets/d/1TtoH5xiC2uOnauikHuaK8J3dcRZaoBBY/edit",
+      "bytes": 9299,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse_PSA_2020_Crop_Economics.csv",
+      "folder": "Crop_Families_Rotation",
+      "url": "https://drive.google.com/file/d/1k44mAFywezZz0sQueLXIpOosm7Rk3LuK/view",
+      "bytes": 6493,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse_PSA_2020_Crop_Economics.xlsx",
+      "folder": "Crop_Families_Rotation",
+      "url": "https://docs.google.com/spreadsheets/d/1Pfw3J8d9zJbjqDm9JjbdXAqSz_rfWZ0q/edit",
+      "bytes": 7526,
+      "local_match": true
+    },
+    {
+      "name": "Screenshot 2026-11-14 211821.png",
+      "folder": "Crop Calender",
+      "url": "https://drive.google.com/file/d/1DGkhW4H6N1z1FkV95Mi8Hkn3sWUOljVT/view",
+      "bytes": 51253,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse_Final_Terrain_Data.zip",
+      "folder": "05_SRTM_Terrain_30m",
+      "url": "https://drive.google.com/file/d/1bs4t37-cCwlU9xwWrGEesFTHvykdvrVM/view",
+      "bytes": 6196751,
+      "local_match": false
+    },
+    {
+      "name": "SRTM_Valencia_Terrain_30m_CLEAN.tif",
+      "folder": "05_SRTM_Terrain_30m",
+      "url": "https://drive.google.com/file/d/1xVI4ifkEcEucOfXU-QN_7Ys9UyeReVfb/view",
+      "bytes": 13336046,
+      "local_match": true
+    },
+    {
+      "name": "SRTM_Terrain_QA.json",
+      "folder": "05_SRTM_Terrain_30m",
+      "url": "https://drive.google.com/file/d/1BetuHSDt4knOeFOvBbqjE75MEFTKxX8e/view",
+      "bytes": 1427,
+      "local_match": true
+    },
+    {
+      "name": "SRTM_Terrain_Validation_Report.md",
+      "folder": "05_SRTM_Terrain_30m",
+      "url": "https://drive.google.com/file/d/1p2q4f21-L668IyXbbr7vOZ6LuWMQ-1zh/view",
+      "bytes": 2513,
+      "local_match": true
+    },
+    {
+      "name": "SRTM_31_Barangay_Reference_Point_Samples_FROM_RASTER.csv",
+      "folder": "05_SRTM_Terrain_30m",
+      "url": "https://drive.google.com/file/d/1JswgEP-J4qC2IcPT6p2NY0y1XkfRoaTf/view",
+      "bytes": 5348,
+      "local_match": true
+    },
+    {
+      "name": "README.md",
+      "folder": "03_Vegetation_MODIS_NDVI",
+      "url": "https://drive.google.com/file/d/1wckZ-d6_65rEwQVZXx_Q_aiSbkFhPFLr/view",
+      "bytes": 31758,
+      "local_match": false
+    },
+    {
+      "name": "AgriVerse-Valencia-NDVI-2016-2025-MOD13Q1-061-metadata.xml",
+      "folder": "03_Vegetation_MODIS_NDVI",
+      "url": "https://drive.google.com/file/d/1yYySmfkQZYHrUnvKwBu41NQSUigxTQS4/view",
+      "bytes": 27457,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse-Valencia-NDVI-2016-2025-request.json",
+      "folder": "03_Vegetation_MODIS_NDVI",
+      "url": "https://drive.google.com/file/d/1GGerN3l2MrkjZJ9k7w2BtvN-iNaGQF8V/view",
+      "bytes": 3614,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse-Valencia-NDVI-2016-2025-granule-list.txt",
+      "folder": "03_Vegetation_MODIS_NDVI",
+      "url": "https://drive.google.com/file/d/18TMaD3m11-g6x5cuHxvkZ0d2NziAj5yX/view",
+      "bytes": 37422,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse-Valencia-NDVI-2016-2025-MOD13Q1-061-results.csv",
+      "folder": "03_Vegetation_MODIS_NDVI",
+      "url": "https://drive.google.com/file/d/1xoMHZyd-HsedyH2Tu5m2OW4xFyU7xegv/view",
+      "bytes": 2539641,
+      "local_match": true
+    },
+    {
+      "name": "README.md",
+      "folder": "02_Soil_Moisture_SMAP",
+      "url": "https://drive.google.com/file/d/1qa8cl493J60QTCzITG4UjnZ7sDwQIaqv/view",
+      "bytes": 31913,
+      "local_match": false
+    },
+    {
+      "name": "AgriVerse-Valencia-SMAP-2016-2025-SPL3SMP-E-006-metadata.xml",
+      "folder": "02_Soil_Moisture_SMAP",
+      "url": "https://drive.google.com/file/d/1J5J-4U4z2D93aWPglKoMSwwPSLW8ll2f/view",
+      "bytes": 27580,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse-Valencia-SMAP-2016-2025-request.json",
+      "folder": "02_Soil_Moisture_SMAP",
+      "url": "https://drive.google.com/file/d/108ANpMpasfb7Ey77O7Q21OCqFfgbJ2rr/view",
+      "bytes": 3589,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse-Valencia-SMAP-2016-2025-granule-list.txt",
+      "folder": "02_Soil_Moisture_SMAP",
+      "url": "https://drive.google.com/file/d/1HR4owafr5XD3RWNWDmcG2jHAkjjlQk8x/view",
+      "bytes": 581980,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse-Valencia-SMAP-2016-2025-SPL3SMP-E-006-results.csv",
+      "folder": "02_Soil_Moisture_SMAP",
+      "url": "https://drive.google.com/file/d/1Kyi7pikWUDSmjlxl6DiVlGODndMHFB1m/view",
+      "bytes": 33449133,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse_Valencia_Rainfall_Analysis_2016_2025.qgz",
+      "folder": "07_GIS_Maps_and_Spatial_Layers",
+      "url": "https://drive.google.com/file/d/1RCh6Te0KK1-LLPCyXWYmtpBEVBPmWV6m/view",
+      "bytes": 48068,
+      "local_match": true
+    },
+    {
+      "name": "Valencia_Roads.gpkg",
+      "folder": "07_GIS_Maps_and_Spatial_Layers",
+      "url": "https://drive.google.com/file/d/1SnPdNbsenhKJn0tIh0BKhKoxqpS4XEh0/view",
+      "bytes": 3313664,
+      "local_match": true
+    },
+    {
+      "name": "Valencia_Temperature_2016_2025.tif",
+      "folder": "07_GIS_Maps_and_Spatial_Layers",
+      "url": "https://drive.google.com/file/d/1T0MQjw7NpDY34Wd1VJJnWPgh5qFneK9b/view",
+      "bytes": 146105,
+      "local_match": true
+    },
+    {
+      "name": "Valencia_Rainfall_2016_2025.tif",
+      "folder": "07_GIS_Maps_and_Spatial_Layers",
+      "url": "https://drive.google.com/file/d/1gbsQRd6lGKSUnvp5HGQsK8vAODKZkvHz/view",
+      "bytes": 488480,
+      "local_match": true
+    },
+    {
+      "name": "barangay_reference_points.csv",
+      "folder": "07_GIS_Maps_and_Spatial_Layers",
+      "url": "https://drive.google.com/file/d/1hgjAkUVTFjwywQJ9CxikRUn7hZMbCRxz/view",
+      "bytes": 7563,
+      "local_match": true
+    },
+    {
+      "name": "Filtered_Valencia_Crops.csv",
+      "folder": "06_Crop_Profiles_and_References",
+      "url": "https://drive.google.com/file/d/1u1d2rjTVrZxPk3GkdvgsO6OW-DhV3Zx4/view",
+      "bytes": 585587,
+      "local_match": true
+    },
+    {
+      "name": "AgriVerse_Improved_Crop_Database.xlsm",
+      "folder": "06_Crop_Profiles_and_References",
+      "url": "https://drive.google.com/file/d/1bw8GUEx10APFlgzpTEN0tLwPxr9ZkysY/view",
+      "bytes": 36665,
+      "local_match": true
+    },
+    {
+      "name": "Philippine-Vegetable-Industry-Roadmap.pdf",
+      "folder": "06_Crop_Profiles_and_References",
+      "url": "https://drive.google.com/file/d/1LwFuX4I9gJo8X93lVvX-6ff60ffaNaI-/view",
+      "bytes": 4994073,
+      "local_match": true
+    },
+    {
+      "name": "EcoCrop_DB.csv",
+      "folder": "06_Crop_Profiles_and_References",
+      "url": "https://drive.google.com/file/d/1r1wry91V2cqZX5pc-1VxgO9WfPcVs28Y/view",
+      "bytes": 1622384,
+      "local_match": true
+    },
+    {
+      "name": "soilseries_Valencia.gpkg",
+      "folder": "04_Soil_Properties",
+      "url": "https://drive.google.com/file/d/1D0JPvoOVoHX2WnQFREoFj4oStMfUS2i5/view",
+      "bytes": 139264,
+      "local_match": true
+    },
+    {
+      "name": "power_yearly_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/NASA_POWER_2016_2025",
+      "url": "https://drive.google.com/file/d/1f8JSZghxCkOOoqlsvELn4KgAEW5OvOg2/view",
+      "bytes": 417,
+      "local_match": true
+    },
+    {
+      "name": "power_solar_humidity_daily_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/NASA_POWER_2016_2025",
+      "url": "https://drive.google.com/file/d/13x52gSS-dNXtlSmsscVPmX36dhqWI9oy/view",
+      "bytes": 359793,
+      "local_match": true
+    },
+    {
+      "name": "power_monthly_2016_2025 (1).csv",
+      "folder": "01_Climate_and_Weather/NASA_POWER_2016_2025",
+      "url": "https://drive.google.com/file/d/1jG5zv0rrHW3BM8MCvEQi4bLnCHa16Gwd/view",
+      "bytes": 7014,
+      "local_match": false
+    },
+    {
+      "name": "power_month_of_year_reference_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/NASA_POWER_2016_2025",
+      "url": "https://drive.google.com/file/d/16MffL1liE92kxcHEHSFPoCjB-QMyK6cH/view",
+      "bytes": 439,
+      "local_match": true
+    },
+    {
+      "name": "README_validation.md",
+      "folder": "01_Climate_and_Weather/NASA_POWER_2016_2025",
+      "url": "https://drive.google.com/file/d/1Uy7W_04HcAj-W5uJWpxNT7zJECcOxLj8/view",
+      "bytes": 2282,
+      "local_match": true
+    },
+    {
+      "name": "request_audit.csv",
+      "folder": "01_Climate_and_Weather/NASA_POWER_2016_2025",
+      "url": "https://drive.google.com/file/d/19PWNeiUa8xbtybbuI5kiBsJLJsnxzKVK/view",
+      "bytes": 12343,
+      "local_match": true
+    },
+    {
+      "name": "power_annual_summary_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/NASA_POWER_2016_2025",
+      "url": "https://drive.google.com/file/d/1I7BKgDU1906Y9D-QimnmBYSD9HqDOIKi/view",
+      "bytes": 9262,
+      "local_match": true
+    },
+    {
+      "name": "power_monthly_climatology_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/NASA_POWER_2016_2025",
+      "url": "https://drive.google.com/file/d/1CBvovieF_N53YUcEfbam57m8LUw6FKVF/view",
+      "bytes": 109945,
+      "local_match": true
+    },
+    {
+      "name": "power_monthly_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/NASA_POWER_2016_2025",
+      "url": "https://drive.google.com/file/d/1Xar04Ea_ngGuK_nIVMegPLNfREBW6hiC/view",
+      "bytes": 1109183,
+      "local_match": true
+    },
+    {
+      "name": "power_daily_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/NASA_POWER_2016_2025",
+      "url": "https://drive.google.com/file/d/1MAjkV8sWbaHx-9c3yRQsU1qKPqLeGIBy/view",
+      "bytes": 32869511,
+      "local_match": true
+    },
+    {
+      "name": "VALIDATION_REPORT.md",
+      "folder": "01_Climate_and_Weather/AgriVerse_ERA5Land_2016_2025_31Barangays_Validated",
+      "url": "https://drive.google.com/file/d/1IzqwU6Y-X9NbR9gDUWWAbGMB2LN9loK6/view",
+      "bytes": 4988,
+      "local_match": true
+    },
+    {
+      "name": "ERA5_Land_Monthly_31_Barangay_Points_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_ERA5Land_2016_2025_31Barangays_Validated",
+      "url": "https://drive.google.com/file/d/117Ht7JWncgqVOdNj7RDdBX19fS0sXElk/view",
+      "bytes": 968508,
+      "local_match": true
+    },
+    {
+      "name": "ERA5_Land_Daily_31_Barangay_Points_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_ERA5Land_2016_2025_31Barangays_Validated",
+      "url": "https://drive.google.com/file/d/1w1EAet9Fu2U8j-49nVzEWeGTyQ0_l-BX/view",
+      "bytes": 26540354,
+      "local_match": true
+    },
+    {
+      "name": "ERA5_Land_Annual_31_Barangay_Points_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_ERA5Land_2016_2025_31Barangays_Validated",
+      "url": "https://drive.google.com/file/d/1dc2q8QXmVXM8ada9XVO_1JnyQFH8yJYP/view",
+      "bytes": 81095,
+      "local_match": true
+    },
+    {
+      "name": "ERA5_Barangay_Point_and_Grid_Mapping.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_ERA5Land_2016_2025_31Barangays_Validated",
+      "url": "https://drive.google.com/file/d/19feULT-0T3cZo9KvgBnu5vkFsezH9lhH/view",
+      "bytes": 3913,
+      "local_match": true
+    },
+    {
+      "name": "DUPLICATE_UPLOAD_COMPARISON.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_ERA5Land_2016_2025_31Barangays_Validated",
+      "url": "https://drive.google.com/file/d/1DyKiCh_ov-78FWw2Q6O3mxA6XazlIop4/view",
+      "bytes": 973,
+      "local_match": false
+    },
+    {
+      "name": "quality_audit.json",
+      "folder": "01_Climate_and_Weather/AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked",
+      "url": "https://drive.google.com/file/d/1jpUBb2aJgm6QgnKXcktRhFln0Ww8VSeo/view",
+      "bytes": 3904,
+      "local_match": true
+    },
+    {
+      "name": "chirps_v3_monthly_31_reference_points.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked",
+      "url": "https://drive.google.com/file/d/1G7HM4RcZHW0XY0sFkpedCSwYxMNt0cMB/view",
+      "bytes": 281355,
+      "local_match": true
+    },
+    {
+      "name": "chirps_v3_monthly_21_unique_pixels.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked",
+      "url": "https://drive.google.com/file/d/1wQ1FWYisazR9zUgEX_99yFqj9xjsAS2K/view",
+      "bytes": 187763,
+      "local_match": true
+    },
+    {
+      "name": "chirps_v3_month_of_year_reference_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked",
+      "url": "https://drive.google.com/file/d/1JEhRfKd3_2szMvfIbmpBVgtgTjqV5SpN/view",
+      "bytes": 27908,
+      "local_match": true
+    },
+    {
+      "name": "chirps_v3_daily_31_reference_points_2016_2025.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked",
+      "url": "https://drive.google.com/file/d/1WuyibGUvUIxsHyCjI7LocaoCbPgP2wSL/view",
+      "bytes": 14345626,
+      "local_match": true
+    },
+    {
+      "name": "chirps_v3_daily_21_unique_pixels.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked",
+      "url": "https://drive.google.com/file/d/1NNdiVVZ5SF7a9nmZziE6D0Sd_9WZu6ct/view",
+      "bytes": 6438327,
+      "local_match": true
+    },
+    {
+      "name": "chirps_v3_annual_31_reference_points.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked",
+      "url": "https://drive.google.com/file/d/1cEZ4xNYWoAjANiNgeSvqdzESrz19u70E/view",
+      "bytes": 22118,
+      "local_match": true
+    },
+    {
+      "name": "barangay_to_chirps_grid_mapping.csv",
+      "folder": "01_Climate_and_Weather/AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked",
+      "url": "https://drive.google.com/file/d/1HxA0SfzqWz-H_J4GSGzl-EM3Q1O4_HWm/view",
+      "bytes": 2034,
+      "local_match": true
+    },
+    {
+      "name": "README_VALIDATION.md",
+      "folder": "01_Climate_and_Weather/AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked",
+      "url": "https://drive.google.com/file/d/1Vb6WsI0r138D_rSiMWSaInvo01lrraAI/view",
+      "bytes": 4113,
+      "local_match": false
+    },
+    {
+      "name": "AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked.zip",
+      "folder": "01_Climate_and_Weather/AgriVerse_CHIRPSv3_31_Barangays_2016_2025_QualityChecked",
+      "url": "https://drive.google.com/file/d/1kNsPFPBH5h2vITbInWP-nqaJi5KPjlk-/view",
+      "bytes": 1569924,
+      "local_match": false
+    },
+    {
+      "name": "SoilGrids_SandSiltClay_Composition_Audit.csv",
+      "folder": "04_Soil_Properties/SoilGrids_250m_31_Barangays_Validated",
+      "url": "https://drive.google.com/file/d/1CWmRYnC-L3bshrnpxvx3ipp8H2lgRCyn/view",
+      "bytes": 333,
+      "local_match": true
+    },
+    {
+      "name": "SoilGrids_Raster_55_Band_Statistics.csv",
+      "folder": "04_Soil_Properties/SoilGrids_250m_31_Barangays_Validated",
+      "url": "https://drive.google.com/file/d/1cf_O0G7p7X5vGljW2Uv18bdtmVJ4jG98/view",
+      "bytes": 3243,
+      "local_match": true
+    },
+    {
+      "name": "SoilGrids_Audit_Metrics.json",
+      "folder": "04_Soil_Properties/SoilGrids_250m_31_Barangays_Validated",
+      "url": "https://drive.google.com/file/d/13bU6uBJBoK8AJzZ5DAZyRVx_aBvTb_yu/view",
+      "bytes": 809,
+      "local_match": true
+    },
+    {
+      "name": "SoilGrids_All54_Properties_Available_Mask.tif",
+      "folder": "04_Soil_Properties/SoilGrids_250m_31_Barangays_Validated",
+      "url": "https://drive.google.com/file/d/1xoXtUk9wI6KgBNDRPxukaUWEZ4dc7b1Q/view",
+      "bytes": 1267,
+      "local_match": true
+    },
+    {
+      "name": "SoilGrids_31_Barangays_Safe_Surface_Preview.csv",
+      "folder": "04_Soil_Properties/SoilGrids_250m_31_Barangays_Validated",
+      "url": "https://drive.google.com/file/d/1YecHGxkX3Z4U96TpWAgMmatR0OvbG73I/view",
+      "bytes": 5682,
+      "local_match": true
+    },
+    {
+      "name": "SoilGrids_31_Barangay_Full_54_Properties_RAW.csv",
+      "folder": "04_Soil_Properties/SoilGrids_250m_31_Barangays_Validated",
+      "url": "https://drive.google.com/file/d/1OP8QdzWA0eTE_Bg_YN6_glZxNkKmjlg4/view",
+      "bytes": 18159,
+      "local_match": true
+    },
+    {
+      "name": "README_VALIDATION_AND_LIMITATIONS.md",
+      "folder": "04_Soil_Properties/SoilGrids_250m_31_Barangays_Validated",
+      "url": "https://drive.google.com/file/d/19st0srAJbYdbnEHow1buNeRcQ0i0W7lk/view",
+      "bytes": 3654,
+      "local_match": true
+    },
+    {
+      "name": "ORIGINAL_SoilGrids_Valencia_250m_55Bands.tif",
+      "folder": "04_Soil_Properties/SoilGrids_250m_31_Barangays_Validated",
+      "url": "https://drive.google.com/file/d/1Szvj9VeAhlzeVAj3BUWu4i2Ajkm1Bw5f/view",
+      "bytes": 2766929,
+      "local_match": true
+    }
+  ]
+}

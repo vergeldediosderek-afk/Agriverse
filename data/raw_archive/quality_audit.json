@@ -1,0 +1,111 @@
+{
+  "dataset": "UCSB-CHC/CHIRPS/V3/DAILY_SAT",
+  "analysis_interval": [
+    "2016-01-01",
+    "2025-12-31"
+  ],
+  "export_type": "reference-point sample, not barangay polygon mean",
+  "nominal_spatial_resolution": "0.05 degrees (~5.6 km at equator)",
+  "daily_value_units": "mm/day",
+  "source_original_archive": "drive-download-20261113T152141Z-1-001.zip",
+  "source_fixed_files": [
+    {
+      "name": "AgriVerse_CHIRPSv3_FIXED_31_Daily_2016.csv",
+      "rows": 11346,
+      "sha256": "6c1d5df76a2e0a8b3e6e6b7e17f123cc412e2e29b8adf60fefdc60e6ed32d4a1",
+      "min_date": "2016-01-01",
+      "max_date": "2016-12-31",
+      "valid_values": 11346
+    },
+    {
+      "name": "AgriVerse_CHIRPSv3_FIXED_31_Daily_2017.csv",
+      "rows": 11315,
+      "sha256": "9ce1b0e169359130a408c21c6512f7c55a88bb9b6caf6c4b21b7386e00ed0d68",
+      "min_date": "2017-01-01",
+      "max_date": "2017-12-31",
+      "valid_values": 11315
+    },
+    {
+      "name": "AgriVerse_CHIRPSv3_FIXED_31_Daily_2018.csv",
+      "rows": 11315,
+      "sha256": "099ea8898f05ebbe0fa124fc1dbba534d4fe16077bb06f40a316395525f74e6a",
+      "min_date": "2018-01-01",
+      "max_date": "2018-12-31",
+      "valid_values": 11315
+    },
+    {
+      "name": "AgriVerse_CHIRPSv3_FIXED_31_Daily_2019.csv",
+      "rows": 11315,
+      "sha256": "22348f39ac0b08a7abeb870331eb292fa0d2d7c5c74aff47b18e5849313b8a42",
+      "min_date": "2019-01-01",
+      "max_date": "2019-12-31",
+      "valid_values": 11315
+    },
+    {
+      "name": "AgriVerse_CHIRPSv3_FIXED_31_Daily_2020.csv",
+      "rows": 11346,
+      "sha256": "459528b1ba18ac90c7193b52ba4ca7a589892a413c4413a822452ad7e8bfe32f",
+      "min_date": "2020-01-01",
+      "max_date": "2020-12-31",
+      "valid_values": 11346
+    },
+    {
+      "name": "AgriVerse_CHIRPSv3_FIXED_31_Daily_2021.csv",
+      "rows": 11315,
+      "sha256": "de70eb3b1d775a8c198b79318f988e1ad85a4046b95195cf8778d2eb2a75c8af",
+      "min_date": "2021-01-01",
+      "max_date": "2021-12-31",
+      "valid_values": 11315
+    },
+    {
+      "name": "AgriVerse_CHIRPSv3_FIXED_31_Daily_2022.csv",
+      "rows": 11315,
+      "sha256": "1f462858a34bfbfe53e6f04e468bdb67f80cac1fb2eb8680f4ae7430a411dbc1",
+      "min_date": "2022-01-01",
+      "max_date": "2022-12-31",
+      "valid_values": 11315
+    },
+    {
+      "name": "AgriVerse_CHIRPSv3_FIXED_31_Daily_2023.csv",
+      "rows": 11315,
+      "sha256": "b9e19726eec36606177fd5df31ebfa90e49c76a71cb4e02f7815b3eedd0bab20",
+      "min_date": "2023-01-01",
+      "max_date": "2023-12-31",
+      "valid_values": 11315
+    },
+    {
+      "name": "AgriVerse_CHIRPSv3_FIXED_31_Daily_2024.csv",
+      "rows": 11346,
+      "sha256": "042659a206bcba7c0fd43b313e9875e188508b575c9f8c3b8d0690da83ff3a38",
+      "min_date": "2024-01-01",
+      "max_date": "2024-12-31",
+      "valid_values": 11346
+    },
+    {
+      "name": "AgriVerse_CHIRPSv3_FIXED_31_Daily_2025.csv",
+      "rows": 11315,
+      "sha256": "80067a6661a6c52f52bde5894fbc2877de759b7e7640282bda7ab475741bd9f8",
+      "min_date": "2025-01-01",
+      "max_date": "2025-12-31",
+      "valid_values": 11315
+    }
+  ],
+  "record_count": 113243,
+  "barangay_count": 31,
+  "distinct_grid_pixels": 21,
+  "calendar_days": 3653,
+  "duplicate_barangay_dates": 0,
+  "missing_rainfall_values": 0,
+  "negative_values": 0,
+  "zero_values": 19391,
+  "minimum_mm_day": 0.0,
+  "maximum_mm_day": 100.78395,
+  "monthly_summary_rows": 3720,
+  "annual_summary_rows": 310,
+  "monthly_reference_rows": 372,
+  "seven_day_test_matches_full_year": true,
+  "numeric_pixel_consistency": "For each day, points sharing a CHIRPS source pixel had identical rainfall values",
+  "audit_scope": "Completeness and internal consistency only; no independent rain-gauge accuracy verification",
+  "status": "PASS_PRELIMINARY_INTERNAL_VALIDATION",
+  "legacy_bad_exports": "Files with Valencia_31_Daily_YYYY have empty rainfall and are NOT included in processed outputs."
+}

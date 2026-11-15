@@ -1,0 +1,373 @@
+barangay,month,ndvi_mean,valid_samples,period,quality
+Bagontaas,1,0.64044,14,2016-2025,pixel reliability 0 or 1
+Bagontaas,2,0.62139,18,2016-2025,pixel reliability 0 or 1
+Bagontaas,3,0.57208,17,2016-2025,pixel reliability 0 or 1
+Bagontaas,4,0.6143,20,2016-2025,pixel reliability 0 or 1
+Bagontaas,5,0.62441,19,2016-2025,pixel reliability 0 or 1
+Bagontaas,6,0.68217,16,2016-2025,pixel reliability 0 or 1
+Bagontaas,7,0.677,12,2016-2025,pixel reliability 0 or 1
+Bagontaas,8,0.67953,15,2016-2025,pixel reliability 0 or 1
+Bagontaas,9,0.7031,16,2016-2025,pixel reliability 0 or 1
+Bagontaas,10,0.70067,10,2016-2025,pixel reliability 0 or 1
+Bagontaas,11,0.70122,17,2016-2025,pixel reliability 0 or 1
+Bagontaas,12,0.67535,16,2016-2025,pixel reliability 0 or 1
+Banlag,1,0.77679,14,2016-2025,pixel reliability 0 or 1
+Banlag,2,0.75481,18,2016-2025,pixel reliability 0 or 1
+Banlag,3,0.68709,17,2016-2025,pixel reliability 0 or 1
+Banlag,4,0.65414,16,2016-2025,pixel reliability 0 or 1
+Banlag,5,0.72308,13,2016-2025,pixel reliability 0 or 1
+Banlag,6,0.81847,12,2016-2025,pixel reliability 0 or 1
+Banlag,7,0.77992,12,2016-2025,pixel reliability 0 or 1
+Banlag,8,0.80865,11,2016-2025,pixel reliability 0 or 1
+Banlag,9,0.81168,14,2016-2025,pixel reliability 0 or 1
+Banlag,10,0.7765,9,2016-2025,pixel reliability 0 or 1
+Banlag,11,0.8034,15,2016-2025,pixel reliability 0 or 1
+Banlag,12,0.77945,14,2016-2025,pixel reliability 0 or 1
+Barobo,1,0.72933,18,2016-2025,pixel reliability 0 or 1
+Barobo,2,0.68216,18,2016-2025,pixel reliability 0 or 1
+Barobo,3,0.60946,18,2016-2025,pixel reliability 0 or 1
+Barobo,4,0.59237,18,2016-2025,pixel reliability 0 or 1
+Barobo,5,0.6499,17,2016-2025,pixel reliability 0 or 1
+Barobo,6,0.75743,17,2016-2025,pixel reliability 0 or 1
+Barobo,7,0.77158,13,2016-2025,pixel reliability 0 or 1
+Barobo,8,0.79334,16,2016-2025,pixel reliability 0 or 1
+Barobo,9,0.79975,16,2016-2025,pixel reliability 0 or 1
+Barobo,10,0.78678,12,2016-2025,pixel reliability 0 or 1
+Barobo,11,0.79663,17,2016-2025,pixel reliability 0 or 1
+Barobo,12,0.77805,17,2016-2025,pixel reliability 0 or 1
+Batangan,1,0.67841,16,2016-2025,pixel reliability 0 or 1
+Batangan,2,0.72466,20,2016-2025,pixel reliability 0 or 1
+Batangan,3,0.58045,18,2016-2025,pixel reliability 0 or 1
+Batangan,4,0.49148,18,2016-2025,pixel reliability 0 or 1
+Batangan,5,0.50265,18,2016-2025,pixel reliability 0 or 1
+Batangan,6,0.62574,18,2016-2025,pixel reliability 0 or 1
+Batangan,7,0.74829,13,2016-2025,pixel reliability 0 or 1
+Batangan,8,0.74079,17,2016-2025,pixel reliability 0 or 1
+Batangan,9,0.60641,16,2016-2025,pixel reliability 0 or 1
+Batangan,10,0.54962,12,2016-2025,pixel reliability 0 or 1
+Batangan,11,0.53524,16,2016-2025,pixel reliability 0 or 1
+Batangan,12,0.61957,18,2016-2025,pixel reliability 0 or 1
+Catumbalon,1,0.64135,18,2016-2025,pixel reliability 0 or 1
+Catumbalon,2,0.5635,20,2016-2025,pixel reliability 0 or 1
+Catumbalon,3,0.56829,19,2016-2025,pixel reliability 0 or 1
+Catumbalon,4,0.60114,19,2016-2025,pixel reliability 0 or 1
+Catumbalon,5,0.67873,18,2016-2025,pixel reliability 0 or 1
+Catumbalon,6,0.73163,17,2016-2025,pixel reliability 0 or 1
+Catumbalon,7,0.71648,15,2016-2025,pixel reliability 0 or 1
+Catumbalon,8,0.71096,18,2016-2025,pixel reliability 0 or 1
+Catumbalon,9,0.72888,19,2016-2025,pixel reliability 0 or 1
+Catumbalon,10,0.76433,12,2016-2025,pixel reliability 0 or 1
+Catumbalon,11,0.75208,16,2016-2025,pixel reliability 0 or 1
+Catumbalon,12,0.71434,18,2016-2025,pixel reliability 0 or 1
+Colonia,1,0.72308,17,2016-2025,pixel reliability 0 or 1
+Colonia,2,0.67186,19,2016-2025,pixel reliability 0 or 1
+Colonia,3,0.60022,19,2016-2025,pixel reliability 0 or 1
+Colonia,4,0.57631,18,2016-2025,pixel reliability 0 or 1
+Colonia,5,0.56936,18,2016-2025,pixel reliability 0 or 1
+Colonia,6,0.56859,17,2016-2025,pixel reliability 0 or 1
+Colonia,7,0.68119,12,2016-2025,pixel reliability 0 or 1
+Colonia,8,0.69134,16,2016-2025,pixel reliability 0 or 1
+Colonia,9,0.60352,17,2016-2025,pixel reliability 0 or 1
+Colonia,10,0.55719,12,2016-2025,pixel reliability 0 or 1
+Colonia,11,0.53879,15,2016-2025,pixel reliability 0 or 1
+Colonia,12,0.57094,17,2016-2025,pixel reliability 0 or 1
+Concepcion,1,0.79073,15,2016-2025,pixel reliability 0 or 1
+Concepcion,2,0.71688,16,2016-2025,pixel reliability 0 or 1
+Concepcion,3,0.68277,18,2016-2025,pixel reliability 0 or 1
+Concepcion,4,0.64606,19,2016-2025,pixel reliability 0 or 1
+Concepcion,5,0.69661,17,2016-2025,pixel reliability 0 or 1
+Concepcion,6,0.77518,16,2016-2025,pixel reliability 0 or 1
+Concepcion,7,0.74146,13,2016-2025,pixel reliability 0 or 1
+Concepcion,8,0.74075,16,2016-2025,pixel reliability 0 or 1
+Concepcion,9,0.74644,15,2016-2025,pixel reliability 0 or 1
+Concepcion,10,0.76494,11,2016-2025,pixel reliability 0 or 1
+Concepcion,11,0.76602,16,2016-2025,pixel reliability 0 or 1
+Concepcion,12,0.76719,17,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,1,0.73409,18,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,2,0.66799,19,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,3,0.53257,19,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,4,0.54313,19,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,5,0.56722,17,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,6,0.50202,14,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,7,0.7084,13,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,8,0.77978,19,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,9,0.63653,17,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,10,0.50112,12,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,11,0.49785,17,2016-2025,pixel reliability 0 or 1
+Dagat-Kidavao,12,0.62889,19,2016-2025,pixel reliability 0 or 1
+Guinoyuran,1,0.73956,17,2016-2025,pixel reliability 0 or 1
+Guinoyuran,2,0.68163,17,2016-2025,pixel reliability 0 or 1
+Guinoyuran,3,0.59499,18,2016-2025,pixel reliability 0 or 1
+Guinoyuran,4,0.5757,16,2016-2025,pixel reliability 0 or 1
+Guinoyuran,5,0.63412,13,2016-2025,pixel reliability 0 or 1
+Guinoyuran,6,0.7566,13,2016-2025,pixel reliability 0 or 1
+Guinoyuran,7,0.74654,10,2016-2025,pixel reliability 0 or 1
+Guinoyuran,8,0.69701,11,2016-2025,pixel reliability 0 or 1
+Guinoyuran,9,0.74295,11,2016-2025,pixel reliability 0 or 1
+Guinoyuran,10,0.77999,10,2016-2025,pixel reliability 0 or 1
+Guinoyuran,11,0.74009,15,2016-2025,pixel reliability 0 or 1
+Guinoyuran,12,0.74947,17,2016-2025,pixel reliability 0 or 1
+Kahaponan,1,0.66438,17,2016-2025,pixel reliability 0 or 1
+Kahaponan,2,0.7554,20,2016-2025,pixel reliability 0 or 1
+Kahaponan,3,0.65371,18,2016-2025,pixel reliability 0 or 1
+Kahaponan,4,0.47381,18,2016-2025,pixel reliability 0 or 1
+Kahaponan,5,0.4648,16,2016-2025,pixel reliability 0 or 1
+Kahaponan,6,0.54793,17,2016-2025,pixel reliability 0 or 1
+Kahaponan,7,0.78878,14,2016-2025,pixel reliability 0 or 1
+Kahaponan,8,0.77866,19,2016-2025,pixel reliability 0 or 1
+Kahaponan,9,0.57932,14,2016-2025,pixel reliability 0 or 1
+Kahaponan,10,0.5109,12,2016-2025,pixel reliability 0 or 1
+Kahaponan,11,0.52081,16,2016-2025,pixel reliability 0 or 1
+Kahaponan,12,0.47744,19,2016-2025,pixel reliability 0 or 1
+Laligan,1,0.68652,18,2016-2025,pixel reliability 0 or 1
+Laligan,2,0.63686,18,2016-2025,pixel reliability 0 or 1
+Laligan,3,0.54979,17,2016-2025,pixel reliability 0 or 1
+Laligan,4,0.51298,19,2016-2025,pixel reliability 0 or 1
+Laligan,5,0.56425,17,2016-2025,pixel reliability 0 or 1
+Laligan,6,0.63459,14,2016-2025,pixel reliability 0 or 1
+Laligan,7,0.69319,13,2016-2025,pixel reliability 0 or 1
+Laligan,8,0.67289,17,2016-2025,pixel reliability 0 or 1
+Laligan,9,0.57691,16,2016-2025,pixel reliability 0 or 1
+Laligan,10,0.60598,12,2016-2025,pixel reliability 0 or 1
+Laligan,11,0.62172,15,2016-2025,pixel reliability 0 or 1
+Laligan,12,0.65199,17,2016-2025,pixel reliability 0 or 1
+Lilingayon,1,0.7097,16,2016-2025,pixel reliability 0 or 1
+Lilingayon,2,0.68311,16,2016-2025,pixel reliability 0 or 1
+Lilingayon,3,0.63703,19,2016-2025,pixel reliability 0 or 1
+Lilingayon,4,0.64907,18,2016-2025,pixel reliability 0 or 1
+Lilingayon,5,0.70918,16,2016-2025,pixel reliability 0 or 1
+Lilingayon,6,0.73912,19,2016-2025,pixel reliability 0 or 1
+Lilingayon,7,0.71619,14,2016-2025,pixel reliability 0 or 1
+Lilingayon,8,0.72663,16,2016-2025,pixel reliability 0 or 1
+Lilingayon,9,0.69183,16,2016-2025,pixel reliability 0 or 1
+Lilingayon,10,0.72863,13,2016-2025,pixel reliability 0 or 1
+Lilingayon,11,0.72484,16,2016-2025,pixel reliability 0 or 1
+Lilingayon,12,0.71954,19,2016-2025,pixel reliability 0 or 1
+Lourdes,1,0.77727,17,2016-2025,pixel reliability 0 or 1
+Lourdes,2,0.74562,17,2016-2025,pixel reliability 0 or 1
+Lourdes,3,0.70847,20,2016-2025,pixel reliability 0 or 1
+Lourdes,4,0.71633,19,2016-2025,pixel reliability 0 or 1
+Lourdes,5,0.75706,13,2016-2025,pixel reliability 0 or 1
+Lourdes,6,0.79859,8,2016-2025,pixel reliability 0 or 1
+Lourdes,7,0.80832,8,2016-2025,pixel reliability 0 or 1
+Lourdes,8,0.8128,5,2016-2025,pixel reliability 0 or 1
+Lourdes,9,0.81423,7,2016-2025,pixel reliability 0 or 1
+Lourdes,10,0.80578,5,2016-2025,pixel reliability 0 or 1
+Lourdes,11,0.78954,13,2016-2025,pixel reliability 0 or 1
+Lourdes,12,0.78671,15,2016-2025,pixel reliability 0 or 1
+Lumbayao,1,0.78617,15,2016-2025,pixel reliability 0 or 1
+Lumbayao,2,0.74121,17,2016-2025,pixel reliability 0 or 1
+Lumbayao,3,0.70309,18,2016-2025,pixel reliability 0 or 1
+Lumbayao,4,0.71642,18,2016-2025,pixel reliability 0 or 1
+Lumbayao,5,0.75879,18,2016-2025,pixel reliability 0 or 1
+Lumbayao,6,0.79606,19,2016-2025,pixel reliability 0 or 1
+Lumbayao,7,0.8061,15,2016-2025,pixel reliability 0 or 1
+Lumbayao,8,0.78531,17,2016-2025,pixel reliability 0 or 1
+Lumbayao,9,0.78323,19,2016-2025,pixel reliability 0 or 1
+Lumbayao,10,0.79276,11,2016-2025,pixel reliability 0 or 1
+Lumbayao,11,0.79289,15,2016-2025,pixel reliability 0 or 1
+Lumbayao,12,0.78106,18,2016-2025,pixel reliability 0 or 1
+Lumbo,1,0.69777,18,2016-2025,pixel reliability 0 or 1
+Lumbo,2,0.64409,20,2016-2025,pixel reliability 0 or 1
+Lumbo,3,0.56023,19,2016-2025,pixel reliability 0 or 1
+Lumbo,4,0.53364,19,2016-2025,pixel reliability 0 or 1
+Lumbo,5,0.62494,19,2016-2025,pixel reliability 0 or 1
+Lumbo,6,0.72017,19,2016-2025,pixel reliability 0 or 1
+Lumbo,7,0.76014,15,2016-2025,pixel reliability 0 or 1
+Lumbo,8,0.77505,19,2016-2025,pixel reliability 0 or 1
+Lumbo,9,0.74848,18,2016-2025,pixel reliability 0 or 1
+Lumbo,10,0.79383,12,2016-2025,pixel reliability 0 or 1
+Lumbo,11,0.76777,17,2016-2025,pixel reliability 0 or 1
+Lumbo,12,0.74861,18,2016-2025,pixel reliability 0 or 1
+Lurugan,1,0.74997,15,2016-2025,pixel reliability 0 or 1
+Lurugan,2,0.66815,17,2016-2025,pixel reliability 0 or 1
+Lurugan,3,0.62643,18,2016-2025,pixel reliability 0 or 1
+Lurugan,4,0.6104,18,2016-2025,pixel reliability 0 or 1
+Lurugan,5,0.68036,16,2016-2025,pixel reliability 0 or 1
+Lurugan,6,0.73898,16,2016-2025,pixel reliability 0 or 1
+Lurugan,7,0.78482,11,2016-2025,pixel reliability 0 or 1
+Lurugan,8,0.75859,15,2016-2025,pixel reliability 0 or 1
+Lurugan,9,0.76664,12,2016-2025,pixel reliability 0 or 1
+Lurugan,10,0.77945,12,2016-2025,pixel reliability 0 or 1
+Lurugan,11,0.78334,17,2016-2025,pixel reliability 0 or 1
+Lurugan,12,0.73088,16,2016-2025,pixel reliability 0 or 1
+Maapag,1,0.69123,18,2016-2025,pixel reliability 0 or 1
+Maapag,2,0.64184,20,2016-2025,pixel reliability 0 or 1
+Maapag,3,0.54549,18,2016-2025,pixel reliability 0 or 1
+Maapag,4,0.53903,19,2016-2025,pixel reliability 0 or 1
+Maapag,5,0.56397,19,2016-2025,pixel reliability 0 or 1
+Maapag,6,0.61771,17,2016-2025,pixel reliability 0 or 1
+Maapag,7,0.71991,15,2016-2025,pixel reliability 0 or 1
+Maapag,8,0.71862,18,2016-2025,pixel reliability 0 or 1
+Maapag,9,0.66619,19,2016-2025,pixel reliability 0 or 1
+Maapag,10,0.67848,12,2016-2025,pixel reliability 0 or 1
+Maapag,11,0.6499,17,2016-2025,pixel reliability 0 or 1
+Maapag,12,0.68715,19,2016-2025,pixel reliability 0 or 1
+Mabuhay,1,0.74818,17,2016-2025,pixel reliability 0 or 1
+Mabuhay,2,0.58791,20,2016-2025,pixel reliability 0 or 1
+Mabuhay,3,0.47346,18,2016-2025,pixel reliability 0 or 1
+Mabuhay,4,0.4665,20,2016-2025,pixel reliability 0 or 1
+Mabuhay,5,0.46381,16,2016-2025,pixel reliability 0 or 1
+Mabuhay,6,0.51676,16,2016-2025,pixel reliability 0 or 1
+Mabuhay,7,0.70065,15,2016-2025,pixel reliability 0 or 1
+Mabuhay,8,0.73779,19,2016-2025,pixel reliability 0 or 1
+Mabuhay,9,0.57641,17,2016-2025,pixel reliability 0 or 1
+Mabuhay,10,0.49089,12,2016-2025,pixel reliability 0 or 1
+Mabuhay,11,0.59564,17,2016-2025,pixel reliability 0 or 1
+Mabuhay,12,0.70522,18,2016-2025,pixel reliability 0 or 1
+Mailag,1,0.68737,17,2016-2025,pixel reliability 0 or 1
+Mailag,2,0.63557,18,2016-2025,pixel reliability 0 or 1
+Mailag,3,0.60707,18,2016-2025,pixel reliability 0 or 1
+Mailag,4,0.57904,17,2016-2025,pixel reliability 0 or 1
+Mailag,5,0.68045,15,2016-2025,pixel reliability 0 or 1
+Mailag,6,0.72291,17,2016-2025,pixel reliability 0 or 1
+Mailag,7,0.76082,13,2016-2025,pixel reliability 0 or 1
+Mailag,8,0.76755,16,2016-2025,pixel reliability 0 or 1
+Mailag,9,0.73617,14,2016-2025,pixel reliability 0 or 1
+Mailag,10,0.76706,11,2016-2025,pixel reliability 0 or 1
+Mailag,11,0.75059,16,2016-2025,pixel reliability 0 or 1
+Mailag,12,0.69542,20,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,1,0.79868,15,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,2,0.77325,15,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,3,0.75309,19,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,4,0.71494,16,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,5,0.74985,16,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,6,0.75748,12,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,7,0.75369,9,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,8,0.79535,8,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,9,0.79368,6,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,10,0.79881,10,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,11,0.79434,14,2016-2025,pixel reliability 0 or 1
+Mt. Nebo,12,0.80394,17,2016-2025,pixel reliability 0 or 1
+Nabag-o,1,0.68208,17,2016-2025,pixel reliability 0 or 1
+Nabag-o,2,0.71427,17,2016-2025,pixel reliability 0 or 1
+Nabag-o,3,0.67052,20,2016-2025,pixel reliability 0 or 1
+Nabag-o,4,0.57205,17,2016-2025,pixel reliability 0 or 1
+Nabag-o,5,0.5935,18,2016-2025,pixel reliability 0 or 1
+Nabag-o,6,0.68366,18,2016-2025,pixel reliability 0 or 1
+Nabag-o,7,0.71036,14,2016-2025,pixel reliability 0 or 1
+Nabag-o,8,0.70788,19,2016-2025,pixel reliability 0 or 1
+Nabag-o,9,0.71318,15,2016-2025,pixel reliability 0 or 1
+Nabag-o,10,0.65584,11,2016-2025,pixel reliability 0 or 1
+Nabag-o,11,0.64539,16,2016-2025,pixel reliability 0 or 1
+Nabag-o,12,0.6474,18,2016-2025,pixel reliability 0 or 1
+Pinatilan,1,0.6934,17,2016-2025,pixel reliability 0 or 1
+Pinatilan,2,0.63143,20,2016-2025,pixel reliability 0 or 1
+Pinatilan,3,0.56118,19,2016-2025,pixel reliability 0 or 1
+Pinatilan,4,0.56269,19,2016-2025,pixel reliability 0 or 1
+Pinatilan,5,0.59257,18,2016-2025,pixel reliability 0 or 1
+Pinatilan,6,0.63921,20,2016-2025,pixel reliability 0 or 1
+Pinatilan,7,0.69877,14,2016-2025,pixel reliability 0 or 1
+Pinatilan,8,0.73434,17,2016-2025,pixel reliability 0 or 1
+Pinatilan,9,0.61978,18,2016-2025,pixel reliability 0 or 1
+Pinatilan,10,0.64214,12,2016-2025,pixel reliability 0 or 1
+Pinatilan,11,0.60523,17,2016-2025,pixel reliability 0 or 1
+Pinatilan,12,0.62935,19,2016-2025,pixel reliability 0 or 1
+Poblacion,1,0.65809,13,2016-2025,pixel reliability 0 or 1
+Poblacion,2,0.58523,20,2016-2025,pixel reliability 0 or 1
+Poblacion,3,0.51171,18,2016-2025,pixel reliability 0 or 1
+Poblacion,4,0.48969,18,2016-2025,pixel reliability 0 or 1
+Poblacion,5,0.63066,16,2016-2025,pixel reliability 0 or 1
+Poblacion,6,0.70754,16,2016-2025,pixel reliability 0 or 1
+Poblacion,7,0.71076,13,2016-2025,pixel reliability 0 or 1
+Poblacion,8,0.72632,14,2016-2025,pixel reliability 0 or 1
+Poblacion,9,0.72365,15,2016-2025,pixel reliability 0 or 1
+Poblacion,10,0.76514,12,2016-2025,pixel reliability 0 or 1
+Poblacion,11,0.75796,17,2016-2025,pixel reliability 0 or 1
+Poblacion,12,0.70956,17,2016-2025,pixel reliability 0 or 1
+San Carlos,1,0.69521,16,2016-2025,pixel reliability 0 or 1
+San Carlos,2,0.61537,18,2016-2025,pixel reliability 0 or 1
+San Carlos,3,0.51865,16,2016-2025,pixel reliability 0 or 1
+San Carlos,4,0.53098,17,2016-2025,pixel reliability 0 or 1
+San Carlos,5,0.60261,18,2016-2025,pixel reliability 0 or 1
+San Carlos,6,0.74123,16,2016-2025,pixel reliability 0 or 1
+San Carlos,7,0.77206,12,2016-2025,pixel reliability 0 or 1
+San Carlos,8,0.77034,16,2016-2025,pixel reliability 0 or 1
+San Carlos,9,0.72152,15,2016-2025,pixel reliability 0 or 1
+San Carlos,10,0.75214,12,2016-2025,pixel reliability 0 or 1
+San Carlos,11,0.77438,16,2016-2025,pixel reliability 0 or 1
+San Carlos,12,0.74541,18,2016-2025,pixel reliability 0 or 1
+San Isidro,1,0.63923,16,2016-2025,pixel reliability 0 or 1
+San Isidro,2,0.66793,13,2016-2025,pixel reliability 0 or 1
+San Isidro,3,0.64376,16,2016-2025,pixel reliability 0 or 1
+San Isidro,4,0.57276,18,2016-2025,pixel reliability 0 or 1
+San Isidro,5,0.53254,18,2016-2025,pixel reliability 0 or 1
+San Isidro,6,0.61051,17,2016-2025,pixel reliability 0 or 1
+San Isidro,7,0.71574,13,2016-2025,pixel reliability 0 or 1
+San Isidro,8,0.72374,13,2016-2025,pixel reliability 0 or 1
+San Isidro,9,0.61279,14,2016-2025,pixel reliability 0 or 1
+San Isidro,10,0.57271,10,2016-2025,pixel reliability 0 or 1
+San Isidro,11,0.56364,16,2016-2025,pixel reliability 0 or 1
+San Isidro,12,0.56401,16,2016-2025,pixel reliability 0 or 1
+Sinabuagan,1,0.70862,16,2016-2025,pixel reliability 0 or 1
+Sinabuagan,2,0.71712,17,2016-2025,pixel reliability 0 or 1
+Sinabuagan,3,0.64428,19,2016-2025,pixel reliability 0 or 1
+Sinabuagan,4,0.57865,17,2016-2025,pixel reliability 0 or 1
+Sinabuagan,5,0.5527,16,2016-2025,pixel reliability 0 or 1
+Sinabuagan,6,0.59649,17,2016-2025,pixel reliability 0 or 1
+Sinabuagan,7,0.70655,14,2016-2025,pixel reliability 0 or 1
+Sinabuagan,8,0.72247,16,2016-2025,pixel reliability 0 or 1
+Sinabuagan,9,0.68058,14,2016-2025,pixel reliability 0 or 1
+Sinabuagan,10,0.58294,11,2016-2025,pixel reliability 0 or 1
+Sinabuagan,11,0.5949,16,2016-2025,pixel reliability 0 or 1
+Sinabuagan,12,0.5146,17,2016-2025,pixel reliability 0 or 1
+Sinayawan,1,0.66179,18,2016-2025,pixel reliability 0 or 1
+Sinayawan,2,0.64437,18,2016-2025,pixel reliability 0 or 1
+Sinayawan,3,0.61557,19,2016-2025,pixel reliability 0 or 1
+Sinayawan,4,0.48833,18,2016-2025,pixel reliability 0 or 1
+Sinayawan,5,0.56214,17,2016-2025,pixel reliability 0 or 1
+Sinayawan,6,0.59883,15,2016-2025,pixel reliability 0 or 1
+Sinayawan,7,0.66891,14,2016-2025,pixel reliability 0 or 1
+Sinayawan,8,0.69875,16,2016-2025,pixel reliability 0 or 1
+Sinayawan,9,0.70625,17,2016-2025,pixel reliability 0 or 1
+Sinayawan,10,0.646,10,2016-2025,pixel reliability 0 or 1
+Sinayawan,11,0.59394,17,2016-2025,pixel reliability 0 or 1
+Sinayawan,12,0.55435,17,2016-2025,pixel reliability 0 or 1
+Sugod,1,0.64495,15,2016-2025,pixel reliability 0 or 1
+Sugod,2,0.59884,18,2016-2025,pixel reliability 0 or 1
+Sugod,3,0.56686,19,2016-2025,pixel reliability 0 or 1
+Sugod,4,0.5672,20,2016-2025,pixel reliability 0 or 1
+Sugod,5,0.60883,18,2016-2025,pixel reliability 0 or 1
+Sugod,6,0.67477,16,2016-2025,pixel reliability 0 or 1
+Sugod,7,0.68185,13,2016-2025,pixel reliability 0 or 1
+Sugod,8,0.66901,18,2016-2025,pixel reliability 0 or 1
+Sugod,9,0.67078,18,2016-2025,pixel reliability 0 or 1
+Sugod,10,0.69132,12,2016-2025,pixel reliability 0 or 1
+Sugod,11,0.67336,17,2016-2025,pixel reliability 0 or 1
+Sugod,12,0.66952,18,2016-2025,pixel reliability 0 or 1
+Tongantongan,1,0.6787,17,2016-2025,pixel reliability 0 or 1
+Tongantongan,2,0.67671,17,2016-2025,pixel reliability 0 or 1
+Tongantongan,3,0.57925,18,2016-2025,pixel reliability 0 or 1
+Tongantongan,4,0.54548,18,2016-2025,pixel reliability 0 or 1
+Tongantongan,5,0.58949,16,2016-2025,pixel reliability 0 or 1
+Tongantongan,6,0.61901,16,2016-2025,pixel reliability 0 or 1
+Tongantongan,7,0.67207,16,2016-2025,pixel reliability 0 or 1
+Tongantongan,8,0.69372,18,2016-2025,pixel reliability 0 or 1
+Tongantongan,9,0.57276,18,2016-2025,pixel reliability 0 or 1
+Tongantongan,10,0.58862,11,2016-2025,pixel reliability 0 or 1
+Tongantongan,11,0.61358,16,2016-2025,pixel reliability 0 or 1
+Tongantongan,12,0.62556,19,2016-2025,pixel reliability 0 or 1
+Tugaya,1,0.75731,16,2016-2025,pixel reliability 0 or 1
+Tugaya,2,0.65549,16,2016-2025,pixel reliability 0 or 1
+Tugaya,3,0.59552,17,2016-2025,pixel reliability 0 or 1
+Tugaya,4,0.5054,18,2016-2025,pixel reliability 0 or 1
+Tugaya,5,0.60896,16,2016-2025,pixel reliability 0 or 1
+Tugaya,6,0.69618,13,2016-2025,pixel reliability 0 or 1
+Tugaya,7,0.7398,10,2016-2025,pixel reliability 0 or 1
+Tugaya,8,0.74209,12,2016-2025,pixel reliability 0 or 1
+Tugaya,9,0.76895,13,2016-2025,pixel reliability 0 or 1
+Tugaya,10,0.78468,12,2016-2025,pixel reliability 0 or 1
+Tugaya,11,0.77132,15,2016-2025,pixel reliability 0 or 1
+Tugaya,12,0.7727,17,2016-2025,pixel reliability 0 or 1
+Vintar,1,0.64042,17,2016-2025,pixel reliability 0 or 1
+Vintar,2,0.64709,17,2016-2025,pixel reliability 0 or 1
+Vintar,3,0.61236,19,2016-2025,pixel reliability 0 or 1
+Vintar,4,0.52764,17,2016-2025,pixel reliability 0 or 1
+Vintar,5,0.56364,17,2016-2025,pixel reliability 0 or 1
+Vintar,6,0.70791,17,2016-2025,pixel reliability 0 or 1
+Vintar,7,0.75589,15,2016-2025,pixel reliability 0 or 1
+Vintar,8,0.64507,16,2016-2025,pixel reliability 0 or 1
+Vintar,9,0.57312,16,2016-2025,pixel reliability 0 or 1
+Vintar,10,0.58778,12,2016-2025,pixel reliability 0 or 1
+Vintar,11,0.61951,16,2016-2025,pixel reliability 0 or 1
+Vintar,12,0.66235,19,2016-2025,pixel reliability 0 or 1

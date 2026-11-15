@@ -1,0 +1,148 @@
+/* AgriVerse Future Farmer · Vibrant Edition
+   Nature-inspired palettes; all changes are presentation only.
+   One familiar interface follows the selected fictional landscape.
+*/
+#screen-simulation{
+ --av-accent:#b96b13;
+ --av-accent-strong:#87500e;
+ --av-accent-light:#fff1c9;
+ --av-accent-line:#efc87e;
+ --av-secondary:#14875e;
+ --av-card-tint:#fffdf2;
+ --av-game-sky:#e6f8ce;
+ --av-soft-shadow:rgba(36,86,52,.19);
+}
+#screen-simulation[data-farm-theme="lowland"]{
+ --av-accent:#b46a0e;--av-accent-strong:#7d4b08;--av-accent-light:#fff0c6;
+ --av-accent-line:#e9bf72;--av-secondary:#188852;--av-card-tint:#fffdf4;
+ --av-game-sky:#c7eb91;--av-soft-shadow:rgba(56,94,29,.2);
+}
+#screen-simulation[data-farm-theme="hillside"]{
+ --av-accent:#7751b2;--av-accent-strong:#55338e;--av-accent-light:#efe5ff;
+ --av-accent-line:#c9aff6;--av-secondary:#29805e;--av-card-tint:#fbf8ff;
+ --av-game-sky:#b8e9ce;--av-soft-shadow:rgba(42,74,74,.2);
+}
+#screen-simulation[data-farm-theme="riverside"]{
+ --av-accent:#087f9c;--av-accent-strong:#075b75;--av-accent-light:#d9f7fd;
+ --av-accent-line:#78d6e9;--av-secondary:#198764;--av-card-tint:#f5ffff;
+ --av-game-sky:#b0f1e4;--av-soft-shadow:rgba(13,88,94,.2);
+}
+#screen-simulation.active{background:var(--av-game-sky)!important;transition:background .35s ease}
+/* Bright, readable glass navigation and scene labels */
+#screen-simulation .sim-top>div:first-child{
+ background:linear-gradient(120deg,rgba(255,255,255,.97),var(--av-accent-light))!important;
+ border:1px solid rgba(255,255,255,.98)!important;
+ box-shadow:0 8px 28px var(--av-soft-shadow)!important;
+}
+#screen-simulation .sim-top h2 em{color:var(--av-accent)!important}
+#screen-simulation .sim-top .sim-kicker{color:var(--av-secondary)!important}
+#screen-simulation .sim-top .sim-kicker i{background:#ffba3b;box-shadow:0 0 0 5px rgba(255,195,70,.23)}
+#screen-simulation .sim-top-actions button{
+ border-color:#fff!important;background:rgba(255,255,255,.95)!important;
+ box-shadow:0 5px 18px var(--av-soft-shadow)!important;
+ color:#1f5142!important;transition:background .17s ease,transform .17s ease!important;
+}
+#screen-simulation .sim-top-actions button:hover{background:var(--av-accent-light)!important;transform:translateY(-1px)}
+#screen-simulation .sim-scene-header>span{background:rgba(17,69,62,.86)!important;color:#fff!important;border-color:rgba(255,255,255,.35)!important}
+#screen-simulation .sim-3d-tools button{background:rgba(255,255,255,.95)!important;border-color:#fff!important;color:#1d604d!important}
+#screen-simulation .sim-3d-tools button:hover{background:var(--av-accent-light)!important;color:var(--av-accent-strong)!important;box-shadow:0 8px 23px var(--av-soft-shadow)!important}
+#screen-simulation .sim-scene-foot{background:rgba(16,71,61,.88)!important;border-color:rgba(255,255,255,.4)!important}
+#screen-simulation .av3d-hud-item{background:rgba(255,255,255,.95)!important;border-color:#fff!important;box-shadow:0 6px 19px var(--av-soft-shadow)!important}
+#screen-simulation .av3d-hud-item:nth-child(2){background:#fff4ce!important;color:#7a4c08!important}
+#screen-simulation .av3d-hud-item:nth-child(3){background:#fef1d6!important;color:#79500b!important}
+#screen-simulation .av3d-hud-item:nth-child(4){background:#dcf8fd!important;color:#075d79!important}
+#screen-simulation .av3d-hud-item:nth-child(5){background:#def8e1!important;color:#176344!important}
+#screen-simulation .av3d-dock{background:rgba(255,255,255,.95)!important;box-shadow:0 14px 37px var(--av-soft-shadow)!important}
+#screen-simulation .av3d-dock button{color:#245745!important;transition:transform .16s,background .16s}
+#screen-simulation .av3d-dock button:hover,#screen-simulation .av3d-dock button[aria-pressed=true]{background:var(--av-accent-light)!important;color:var(--av-accent-strong)!important}
+#screen-simulation .av3d-dock button.av3d-primary{background:linear-gradient(115deg,#13865a,#37b878)!important;color:#fff!important}
+#screen-simulation .av3d-dock button.av3d-primary:hover{background:linear-gradient(115deg,#08774f,#249966)!important;color:#fff!important}
+/* Lively colored surfaces for mission, planting and care. Content remains highly readable. */
+#screen-simulation .sim-panel{
+ background:linear-gradient(145deg,rgba(255,255,255,.98),var(--av-card-tint))!important;
+ border:1px solid rgba(255,255,255,.96)!important;
+ box-shadow:0 19px 60px var(--av-soft-shadow)!important;
+}
+#screen-simulation .sim-panel .sim-label,#screen-simulation .sim-action-title{color:var(--av-accent-strong)!important}
+#screen-simulation .sim-mission{background:linear-gradient(120deg,var(--av-accent-light),rgba(255,255,255,.98))!important;border-color:var(--av-accent-line)!important}
+#screen-simulation .sim-weather{background:linear-gradient(110deg,#fff3ce,#e8faea)!important;border-color:#f1d9a3!important}
+#screen-simulation .sim-finance:first-child{background:linear-gradient(135deg,#fff3cf,#ffe5ad)!important}
+#screen-simulation .sim-finance:nth-child(2){background:linear-gradient(135deg,#e0f8e7,#bff3d2)!important}
+#screen-simulation .sim-finance strong{color:#1d6047}
+#screen-simulation .sim-finance:first-child strong{color:#78510d}
+#screen-simulation .sim-finance small{color:#6b7454}
+#screen-simulation .sim-track{background:#e1ede3}
+#screen-simulation #sim-soil-bar{background:linear-gradient(90deg,#58c46b,#00a887)!important}
+#screen-simulation #sim-water-bar{background:linear-gradient(90deg,#3fd4f0,#087fc8)!important}
+#screen-simulation .av-month-controls{background:linear-gradient(110deg,var(--av-accent-light),#e6f6e9)!important;border:1px solid rgba(255,255,255,.95)}
+#screen-simulation .av-month-controls label{color:#285849}
+#screen-simulation .av-month-controls select,#screen-simulation .av-start-month-label select{border-color:var(--av-accent-line)!important;color:#215e4d!important}
+#screen-simulation .av-context{background:#e3f7fa!important;color:#236474!important;border:1px solid #b3dfe7}
+#screen-simulation .av-mission-board{background:linear-gradient(155deg,#fffaf0,#e9faed 75%)!important;border:1px solid var(--av-accent-line)!important;box-shadow:0 5px 16px rgba(86,135,66,.08)}
+#screen-simulation .av-q-eyebrow{color:var(--av-accent-strong)!important}
+#screen-simulation .av-q-head b{color:#205a47}
+#screen-simulation .av-q-points{background:var(--av-accent-light)!important;color:var(--av-accent-strong)!important}
+#screen-simulation .av-q-progress{background:#e8e9db}
+#screen-simulation .av-q-progress i{background:linear-gradient(90deg,#ffd453,#41bb78)!important}
+#screen-simulation .av-q-item{background:#fff!important;border-color:#dcebdc!important}
+#screen-simulation .av-q-item.is-done{background:#e3f9e6!important;border-color:#9cddb1!important}
+#screen-simulation .av-q-symbol{background:#fff0d4!important}
+#screen-simulation .av-q-item.is-done .av-q-symbol{background:#199561!important}
+#screen-simulation .av-q-line em{background:#fff0cb!important;color:#81500c!important}
+#screen-simulation .av-q-sprig{background:var(--av-accent-light)!important;border:1px solid var(--av-accent-line)!important;color:var(--av-accent-strong)!important}
+#screen-simulation .av-q-sprig:hover{filter:brightness(.97)}
+#screen-simulation .av-q-feedback{background:#e8f9e3!important}
+#screen-simulation .sim-crop{background:#fff!important;border-color:#dde9db!important}
+#screen-simulation .sim-crop:hover{border-color:var(--av-accent-line)!important;background:var(--av-accent-light)!important;transform:translateY(-1px)}
+#screen-simulation .sim-crop[aria-pressed="true"],#screen-simulation .sim-action[aria-pressed="true"]{background:var(--av-accent-light)!important;border-color:var(--av-accent)!important;box-shadow:0 0 0 2px color-mix(in srgb,var(--av-accent) 24%,transparent)!important}
+#screen-simulation .sim-crop[aria-pressed="true"]{outline-color:var(--av-accent)!important}
+#screen-simulation .sim-crop .av-match{color:#208a5d!important}
+#screen-simulation .sim-crop .av-match.low{color:#ab5d19!important}
+#screen-simulation .sim-action{background:#edf9f0!important;border-color:#d1ead9!important}
+#screen-simulation .sim-pick[aria-pressed="true"]{background:var(--av-secondary)!important;color:#fff!important;border-color:var(--av-secondary)!important}
+#screen-simulation .sim-apply{background:var(--av-accent-light)!important;border-color:var(--av-accent-line)!important;color:var(--av-accent-strong)!important}
+#screen-simulation .sim-plant,#screen-simulation .sim-next{background:linear-gradient(115deg,#13835a,#39b878)!important;color:#fff!important}
+#screen-simulation .sim-grow{background:linear-gradient(115deg,#d7f3fe,#b8eaf6)!important;border-color:#91d2e6!important;color:#075c78!important}
+#screen-simulation .sim-harvest{background:linear-gradient(115deg,#ffefbd,#ffd57b)!important;border-color:#eac46b!important;color:#714909!important}
+#screen-simulation .sim-choice-info{background:#effaf3!important}
+/* Welcome: more inviting mascot stage and clearly differentiated cards */
+#screen-simulation .av-setup{background:radial-gradient(ellipse at 20% 15%,rgba(255,222,141,.32),transparent 45%),rgba(12,49,47,.84)!important}
+#screen-simulation .av-setup-shell{background:#fffdf7!important;box-shadow:0 32px 95px rgba(13,52,53,.4)!important}
+#screen-simulation .av-setup-story{background:radial-gradient(circle at 51% 28%,#ffed9a 0%,#7bd48e 39%,#1d927e 84%,#0f665a 100%)!important}
+#screen-simulation .av-setup-content{background:linear-gradient(160deg,#fffefb,#f4fff5)!important}
+#screen-simulation .av-story-bubble{background:#ffffffee!important;color:#215747!important;border-color:#fff!important}
+#screen-simulation #av-setup-title{color:#194c3e!important}
+#screen-simulation .av-preset{position:relative;isolation:isolate;overflow:hidden;border-width:2px!important;box-shadow:0 5px 13px rgba(24,70,54,.07)!important;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease!important}
+#screen-simulation .av-preset[data-terrain="lowland"]{background:linear-gradient(155deg,#fff5cb 0%,#d1f59b 77%,#9fdf7b 100%)!important;border-color:#ded58a!important}
+#screen-simulation .av-preset[data-terrain="hillside"]{background:linear-gradient(155deg,#efe3ff 0%,#bff0d0 75%,#8accad 100%)!important;border-color:#b8b1e6!important}
+#screen-simulation .av-preset[data-terrain="riverside"]{background:linear-gradient(155deg,#d7f7ff 0%,#b0f4e8 68%,#72d9d2 100%)!important;border-color:#80d1dd!important}
+#screen-simulation .av-preset[data-terrain]::after{content:'';position:absolute;right:-27px;bottom:-30px;width:74px;height:74px;border:2px solid rgba(255,255,255,.45);border-radius:50%;z-index:-1;box-shadow:0 0 0 13px rgba(255,255,255,.11)}
+#screen-simulation .av-preset[data-terrain]:hover{transform:translateY(-4px)!important;box-shadow:0 10px 19px rgba(17,87,69,.15)!important}
+#screen-simulation .av-preset[data-terrain][aria-pressed="true"]{outline:3px solid var(--av-accent)!important;outline-offset:-5px;box-shadow:0 7px 16px var(--av-soft-shadow)!important}
+#screen-simulation .av-preset[data-terrain] span{background:rgba(255,255,255,.75)!important;border-color:rgba(255,255,255,.95)!important}
+#screen-simulation .av-preset b{color:#224e3c!important}
+#screen-simulation .av-preset small{color:#476a5a!important}
+#screen-simulation .av-land-info{background:linear-gradient(110deg,var(--av-accent-light),rgba(239,252,238,.92))!important;border-color:var(--av-accent-line)!important}
+#screen-simulation .av-land-info b{color:var(--av-accent-strong)!important}
+#screen-simulation .av-land-info span{color:#476759!important}
+#screen-simulation .av-main-action{background:linear-gradient(110deg,#0c8158,#38b773)!important;box-shadow:0 11px 26px rgba(18,115,79,.22)!important}
+#screen-simulation .av-main-action:hover{filter:brightness(1.05)}
+/* Sprig dialog stays welcoming without compromising warning labels */
+#screen-simulation .av-sprig-dialog{background:linear-gradient(155deg,#fffefb,#f0fdf4)!important}
+#screen-simulation .av-dialog-top{background:linear-gradient(110deg,#fff2c7,#e2f8de)!important}
+#screen-simulation .av-dialog-avatar{background:#b8f2ba!important}
+#screen-simulation .av-dialog-choices button:not(.av-choice-primary){background:#fffdf5!important}
+#screen-simulation .av-dialog-choices button.av-choice-primary{background:linear-gradient(110deg,#117d57,#37ad7a)!important}
+#screen-simulation .av-sprig-button{background:linear-gradient(145deg,#f5ffca,#a2efa6)!important;border-color:#fff!important}
+#screen-simulation .av-scene-event{background:linear-gradient(135deg,#fff8dc,#f0ffe9)!important}
+#screen-simulation .av-scenario-chip{background:rgba(255,247,225,.94)!important;border-color:#f1d491!important;color:#79530f!important}
+#screen-simulation .av-final-quests{background:#f1ffed!important}
+#screen-simulation button:focus-visible,#screen-simulation input:focus-visible,#screen-simulation select:focus-visible{outline:3px solid #136dcb!important;outline-offset:2px}
+@media(max-width:700px){
+ #screen-simulation .av-preset[data-terrain]::after{width:55px;height:55px;right:-23px;bottom:-23px}
+ #screen-simulation .av-setup-story{background:linear-gradient(125deg,#86d894,#28aa8c)!important}
+ #screen-simulation .sim-panel{box-shadow:0 14px 30px var(--av-soft-shadow)!important}
+}
+@media(prefers-reduced-motion:reduce){
+ #screen-simulation .av-preset,#screen-simulation .sim-top-actions button{transition:none!important}
+}

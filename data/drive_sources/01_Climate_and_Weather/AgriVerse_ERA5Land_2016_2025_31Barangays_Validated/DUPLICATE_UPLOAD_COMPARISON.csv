@@ -1,0 +1,11 @@
+year,original_rows,copy_rows,differing_fields,different_columns,max_numeric_difference,nonnumeric_difference,same_keys
+2016,11346,11346,372,{'rh_from_daily_means_approx_pct': 372},2.842170943040401e-14,0,True
+2017,11315,11315,390,{'rh_from_daily_means_approx_pct': 390},4.263256414560601e-14,0,True
+2018,11315,11315,278,{'rh_from_daily_means_approx_pct': 278},2.842170943040401e-14,0,True
+2019,11315,11315,373,{'rh_from_daily_means_approx_pct': 373},2.842170943040401e-14,0,True
+2020,11346,11346,441,{'rh_from_daily_means_approx_pct': 441},2.842170943040401e-14,0,True
+2021,11315,11315,297,{'rh_from_daily_means_approx_pct': 297},2.842170943040401e-14,0,True
+2022,11315,11315,367,{'rh_from_daily_means_approx_pct': 367},2.842170943040401e-14,0,True
+2023,11315,11315,360,{'rh_from_daily_means_approx_pct': 360},4.263256414560601e-14,0,True
+2024,11346,11346,490,{'rh_from_daily_means_approx_pct': 490},2.842170943040401e-14,0,True
+2025,11315,11315,0,{},0.0,0,True

@@ -1,0 +1,32 @@
+barangay,latitude,longitude,elevation_m,slope_deg,aspect_deg,quality_flag,sample_method,source_dataset,source_raster
+Bagontaas,7.9479588,125.1017749,323.0,5.0,329.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Banlag,7.8301532,125.1986163,766.0,12.0,213.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Barobo,7.9135801,125.0475895,596.0,8.0,186.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Batangan,7.9099593,125.1200746,299.0,2.0,207.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Catumbalon,7.8380856,125.0888238,292.0,3.0,341.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Colonia,7.9868653,125.1191311,327.0,3.0,161.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Concepcion,7.8720936,125.2276543,784.0,17.0,232.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Dagat-Kidavao,7.8165144,125.1351028,320.0,3.0,270.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Guinoyuran,7.9137585,124.977521,1052.0,11.0,138.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Kahaponan,7.932255,125.1518802,312.0,2.0,296.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Laligan,7.8763603,125.189998,331.0,4.0,270.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Lilingayon,8.004122,124.8991195,1070.0,9.0,72.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Lourdes,7.9013967,124.9151879,1154.0,3.0,123.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Lumbayao,7.9515771,125.2467585,381.0,10.0,292.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Lumbo,7.8752101,125.0809306,310.0,7.0,90.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Lurugan,7.9644094,125.028387,620.0,3.0,19.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Maapag,7.8635106,125.1077292,298.0,6.0,180.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Mabuhay,7.8486155,125.1302,302.0,3.0,19.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Mailag,7.9674769,125.1214619,323.0,3.0,123.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Mt. Nebo,7.9710254,124.9394015,1220.0,9.0,19.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Nabag-o,7.961584,125.1602288,314.0,2.0,90.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Pinatilan,7.8843989,125.1117289,299.0,3.0,45.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Poblacion,7.9160897,125.083445,325.0,5.0,127.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+San Carlos,7.9637151,125.0787655,379.0,3.0,57.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+San Isidro,7.9601459,125.1902334,322.0,2.0,296.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Sinabuagan,7.941432,125.2142717,328.0,4.0,0.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Sinayawan,7.8791684,125.1500942,303.0,1.0,180.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Sugod,7.9436793,125.1203169,333.0,7.0,150.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Tongantongan,7.9043283,125.1754874,315.0,1.0,225.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Tugaya,7.9182216,125.0130609,727.0,14.0,53.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif
+Vintar,7.9387009,125.1871727,324.0,2.0,244.0,VALID,source_GeoTIFF_pixel_value_at_reference_coordinate,USGS/SRTMGL1_003,AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif

@@ -1,0 +1,32 @@
+barangay,latitude,longitude,era5_grid_x,era5_grid_y,spatial_interpretation
+Bagontaas,7.9479588,125.1017749,3051.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Banlag,7.8301532,125.1986163,3052.5,822.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Barobo,7.9135801,125.0475895,3050.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Batangan,7.9099593,125.1200746,3051.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Catumbalon,7.8380856,125.0888238,3051.5,822.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Colonia,7.9868653,125.1191311,3051.5,820.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Concepcion,7.8720936,125.2276543,3052.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Dagat-Kidavao,7.8165144,125.1351028,3051.5,822.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Guinoyuran,7.9137585,124.977521,3050.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Kahaponan,7.932255,125.1518802,3052.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Laligan,7.8763603,125.189998,3052.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Lilingayon,8.004122,124.8991195,3049.5,820.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Lourdes,7.9013967,124.9151879,3049.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Lumbayao,7.9515771,125.2467585,3052.5,820.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Lumbo,7.8752101,125.0809306,3051.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Lurugan,7.9644094,125.028387,3050.5,820.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Maapag,7.8635106,125.1077292,3051.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Mabuhay,7.8486155,125.1302,3051.5,822.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Mailag,7.9674769,125.1214619,3051.5,820.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Mt. Nebo,7.9710254,124.9394015,3049.5,820.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Nabag-o,7.961584,125.1602288,3052.5,820.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Pinatilan,7.8843989,125.1117289,3051.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Poblacion,7.9160897,125.083445,3051.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+San Carlos,7.9637151,125.0787655,3051.5,820.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+San Isidro,7.9601459,125.1902334,3052.5,820.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Sinabuagan,7.941432,125.2142717,3052.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Sinayawan,7.8791684,125.1500942,3052.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Sugod,7.9436793,125.1203169,3051.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Tongantongan,7.9043283,125.1754874,3052.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Tugaya,7.9182216,125.0130609,3050.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average
+Vintar,7.9387009,125.1871727,3052.5,821.5,Nearest ERA5-Land gridded point sample (~11.1 km pixel); not a polygon average

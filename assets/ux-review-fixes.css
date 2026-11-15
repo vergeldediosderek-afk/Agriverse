@@ -1,0 +1,59 @@
+/* AgriVerse UX review: hidden states, readable text, wrapping, compact layouts. */
+/* A display:flex/grid declaration can unintentionally override the browser's hidden attribute. */
+#screen-location [hidden], #screen-location .avc-substage[hidden],
+#screen-location .avc-recommend-strip[hidden],
+#screen-location .avc-profile-stage[hidden],
+#screen-location .avc-location-stage[hidden],
+#screen-location .avc-boundary-stage[hidden] { display:none !important; }
+#screen-location *, #screen-analysis *, #screen-strategy * { box-sizing:border-box; }
+#screen-location .avc-heading, #screen-location .avc-profile-grid,
+#screen-location .avc-profile-grid > *, #screen-location .avc-farm-details,
+#screen-location .avc-recommend-strip > * { min-width:0; }
+#screen-location .avc-farm-details { overflow-x:hidden; overflow-y:auto; overscroll-behavior:contain; }
+#screen-location .avc-farm-details h3 { overflow-wrap:break-word; }
+#screen-location .avc-spec-top { flex-wrap:wrap; row-gap:7px; }
+#screen-location .avc-spec-card, #screen-location .avc-area-hero,
+#screen-location .avc-info-caveat { overflow-wrap:anywhere; }
+#screen-location .avc-spec-card span { font-size:11px; line-height:1.35; }
+#screen-location .avc-spec-card strong { font-size:12px; line-height:1.45; }
+#screen-location .avc-spec-card small { font-size:10px; line-height:1.4; }
+#screen-location .avc-spec-selects label { font-size:12px; line-height:1.35; }
+#screen-location .avc-spec-selects label small { font-size:10px; }
+#screen-location .avc-spec-selects select { min-width:0; max-width:100%; font-size:12px; }
+#screen-location .avc-info-caveat, #screen-location .avc-farm-details .avc-info-caveat { font-size:11px; line-height:1.55; }
+#screen-location .avc-small-hint, #screen-location .avc-recommend-strip p { font-size:12px; line-height:1.5; }
+#screen-location .avc-recommend-strip { flex-wrap:wrap; min-height:0; }
+#screen-location .avc-recommend-strip h3 { font-size:clamp(17px,1.4vw,21px); line-height:1.2; }
+#screen-location .avc-recommend-strip .primary { max-width:100%; white-space:normal; min-height:43px; text-align:center; }
+#screen-location .avc-crop-preview small { font-size:10px; line-height:1.35; }
+#screen-location .avc-place-form { min-width:0; }
+#screen-location .avc-fields label, #screen-location .avc-fields select,
+#screen-location .avc-fields input { min-width:0; }
+#screen-location #geocode-status { overflow-wrap:anywhere; }
+#screen-location .avr-history { padding:14px; gap:10px; min-width:0; }
+#screen-location .avr-history-heading { align-items:flex-start; min-width:0; }
+#screen-location .avr-history-heading > div { min-width:0; }
+#screen-location .avr-history h4 { font-size:18px; line-height:1.25; overflow-wrap:break-word; }
+#screen-location .avr-history p, #screen-location .avr-history label { font-size:12px; line-height:1.45; }
+#screen-location .avr-history .avc-pane-tag { font-size:9px; line-height:1.35; letter-spacing:.08em; }
+#screen-location .avr-history select, #screen-location .avr-history input { font-size:13px; min-height:44px; padding:9px 10px; }
+#screen-location .avr-disclaimer { font-size:11px !important; line-height:1.45; }
+#screen-location .avr-analyze { font-size:13px; white-space:normal; line-height:1.3; }
+@media (max-width:1050px) and (min-width:681px) {
+ #screen-location .avc-profile-grid { grid-template-columns:minmax(0,1fr) minmax(285px,35%); }
+ #screen-location .avc-farm-details { padding:16px 14px; }
+ #screen-location .avc-spec-selects { grid-template-columns:1fr; }
+ #screen-location .avc-spec-selects label:last-child:nth-child(odd) { grid-column:auto; }
+}
+@media(max-width:680px) {
+ #screen-location .avc-heading { align-items:flex-start; }
+ #screen-location .avc-heading h2 { font-size:clamp(28px,8vw,40px); }
+ #screen-location .avc-step-indicator { font-size:9px; white-space:normal; text-align:center; max-width:85px; }
+ #screen-location .avc-farm-details { overflow:visible; height:auto; }
+ #screen-location .avc-spec-selects { grid-template-columns:1fr; }
+ #screen-location .avc-spec-selects label:last-child:nth-child(odd) { grid-column:auto; }
+ #screen-location .avc-recommend-strip { gap:10px; }
+ #screen-location .avc-recommend-strip .primary { width:100%; }
+ #screen-location .avc-recommend-strip .avc-crop-preview { gap:6px; }
+}
+@media(prefers-reduced-motion:reduce){ #screen-location * {scroll-behavior:auto !important;} }

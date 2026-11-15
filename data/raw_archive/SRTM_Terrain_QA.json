@@ -1,0 +1,63 @@
+{
+  "source_file": "AgriVerse_SRTM_Valencia_Terrain_30m_3Bands.tif",
+  "raster_shape": [
+    1441,
+    2022
+  ],
+  "bands": [
+    "elevation_m",
+    "slope_deg",
+    "aspect_deg"
+  ],
+  "crs": "EPSG:32651",
+  "pixel_resolution_m": [
+    30.0,
+    30.0
+  ],
+  "bbox_utm_m": [
+    698220.0,
+    853350.0,
+    758880.0,
+    896580.0
+  ],
+  "original_declared_nodata": -9999.0,
+  "nan_or_invalid_pixel_count_per_band": [
+    32810,
+    32810,
+    32810
+  ],
+  "valid_pixel_count_per_band": [
+    2880892,
+    2880892,
+    2880892
+  ],
+  "valid_fraction_per_band": [
+    0.9887394112369762,
+    0.9887394112369762,
+    0.9887394112369762
+  ],
+  "valid_ranges": {
+    "elevation_m": [
+      155.0,
+      2872.0
+    ],
+    "slope_deg": [
+      0.0,
+      74.0
+    ],
+    "aspect_deg": [
+      0.0,
+      359.0
+    ]
+  },
+  "reference_points_sampled": 31,
+  "valid_reference_point_samples": 31,
+  "quality_remedy": "Converted non-finite values to explicit -9999 GeoTIFF nodata; no invented values",
+  "study_area_type": "buffered rectangle around 31 representative locations; not verified Valencia administrative boundary",
+  "limitations": [
+    "Reference point != whole barangay or farm",
+    "SRTM acquisition year 2000; not live",
+    "Elevation and terrain slope are raster estimates, not ground surveys",
+    "Point sample read from exported raster and could differ slightly from independently sampled Earth Engine points"
+  ]
+}
